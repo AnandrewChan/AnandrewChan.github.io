@@ -1,5 +1,5 @@
 ---
-title: test
+title: queue_array
 date: 2019-03-16
 tags:ds
 ---
@@ -129,3 +129,4 @@ int Queue<T>::size()
     return ((rear_ -  front_ + capacity_) % capacity_);
 }
 ```
+
