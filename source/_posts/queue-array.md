@@ -1,7 +1,7 @@
 ---
 title: queue_array
 date: 2019-03-16
-tags:ds
+tags: ds
 ---
 
 ### 队列的数组实现
@@ -24,6 +24,7 @@ private:
     int rear_;
     int capacity_;
 ```
+<!--more-->
 
 变量 | 功能
 ---|---
