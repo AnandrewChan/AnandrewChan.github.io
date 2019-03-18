@@ -346,7 +346,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/18/49_UglyNumber/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/18/48_LongestSubstringWithoutDup/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Andrew Chan">
@@ -366,7 +366,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/03/18/49_UglyNumber/" class="post-title-link" itemprop="url">剑指_49_UglyNumber</a>
+                <a href="/2019/03/18/48_LongestSubstringWithoutDup/" class="post-title-link" itemprop="url">剑指_48_LongestSubstringWithoutDup</a>
               
             
           </h1>
@@ -391,7 +391,7 @@
                 
               
 
-              <time title="Created: 2019-03-18 00:00:00 / Modified: 16:18:25" itemprop="dateCreated datePublished" datetime="2019-03-18T00:00:00+08:00">2019-03-18</time>
+              <time title="Created: 2019-03-18 00:00:00 / Modified: 16:40:07" itemprop="dateCreated datePublished" datetime="2019-03-18T00:00:00+08:00">2019-03-18</time>
             
 
             
@@ -431,9 +431,17 @@
 
       
         
+          <h4 id="面试题48：最长不含重复字符的子字符串"><a href="#面试题48：最长不含重复字符的子字符串" class="headerlink" title="面试题48：最长不含重复字符的子字符串"></a>面试题48：最长不含重复字符的子字符串</h4><hr>
+<p>题目：请从字符串中找出一个最长的不包含重复字符的子字符串，计算该最长子字符串的长度。假设字符串中只包含从’a’到’z’的字符。</p>
+          <!--noindex-->
           
-            <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br></pre></td><td class="code"><pre><span class="line">/*******************************************************************</span><br><span class="line">Copyright(c) 2016, Harry He</span><br><span class="line">All rights reserved.</span><br><span class="line"></span><br><span class="line">Distributed under the BSD license.</span><br><span class="line">(See accompanying file LICENSE.txt at</span><br><span class="line">https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)</span><br><span class="line">*******************************************************************/</span><br><span class="line"></span><br><span class="line">//==================================================================</span><br><span class="line">// 《剑指Offer——名企面试官精讲典型编程题》代码</span><br><span class="line">// 作者：何海涛</span><br><span class="line">//==================================================================</span><br><span class="line"></span><br><span class="line">// 面试题49：丑数</span><br><span class="line">// 题目：我们把只包含因子2、3和5的数称作丑数（Ugly Number）。求按从小到</span><br><span class="line">// 大的顺序的第1500个丑数。例如6、8都是丑数，但14不是，因为它包含因子7。</span><br><span class="line">// 习惯上我们把1当做第一个丑数。</span><br><span class="line"></span><br><span class="line">#include &lt;cstdio&gt;</span><br><span class="line"></span><br><span class="line">// ====================算法1的代码====================</span><br><span class="line">bool IsUgly(int number)</span><br><span class="line">&#123;</span><br><span class="line">    while (number % 2 == 0)</span><br><span class="line">        number /= 2;</span><br><span class="line">    while (number % 3 == 0)</span><br><span class="line">        number /= 3;</span><br><span class="line">    while (number % 5 == 0)</span><br><span class="line">        number /= 5;</span><br><span class="line"></span><br><span class="line">    return (number == 1) ? true : false;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int GetUglyNumber_Solution1(int index)</span><br><span class="line">&#123;</span><br><span class="line">    if (index &lt;= 0)</span><br><span class="line">        return 0;</span><br><span class="line"></span><br><span class="line">    int number = 0;</span><br><span class="line">    int uglyFound = 0;</span><br><span class="line">    while (uglyFound &lt; index) &#123;</span><br><span class="line">        ++number;</span><br><span class="line"></span><br><span class="line">        if (IsUgly(number))</span><br><span class="line">            ++uglyFound;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return number;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// ====================算法2的代码====================</span><br><span class="line">int Min(int number1, int number2, int number3);</span><br><span class="line"></span><br><span class="line">int GetUglyNumber_Solution2(int index)</span><br><span class="line">&#123;</span><br><span class="line">    if (index &lt;= 0)</span><br><span class="line">        return 0;</span><br><span class="line"></span><br><span class="line">    int* pUglyNumbers = new int[index];</span><br><span class="line">    pUglyNumbers[0] = 1;</span><br><span class="line">    int nextUglyIndex = 1;</span><br><span class="line"></span><br><span class="line">    int* pMultiply2 = pUglyNumbers;</span><br><span class="line">    int* pMultiply3 = pUglyNumbers;</span><br><span class="line">    int* pMultiply5 = pUglyNumbers;</span><br><span class="line"></span><br><span class="line">    while (nextUglyIndex &lt; index) &#123;</span><br><span class="line">        int min = Min(*pMultiply2 * 2, *pMultiply3 * 3, *pMultiply5 * 5);</span><br><span class="line">        pUglyNumbers[nextUglyIndex] = min;</span><br><span class="line"></span><br><span class="line">        while (*pMultiply2 * 2 &lt;= pUglyNumbers[nextUglyIndex])</span><br><span class="line">            ++pMultiply2;</span><br><span class="line">        while (*pMultiply3 * 3 &lt;= pUglyNumbers[nextUglyIndex])</span><br><span class="line">            ++pMultiply3;</span><br><span class="line">        while (*pMultiply5 * 5 &lt;= pUglyNumbers[nextUglyIndex])</span><br><span class="line">            ++pMultiply5;</span><br><span class="line"></span><br><span class="line">        ++nextUglyIndex;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    int ugly = pUglyNumbers[nextUglyIndex - 1];</span><br><span class="line">    delete[] pUglyNumbers;</span><br><span class="line">    return ugly;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int Min(int number1, int number2, int number3)</span><br><span class="line">&#123;</span><br><span class="line">    int min = (number1 &lt; number2) ? number1 : number2;</span><br><span class="line">    min = (min &lt; number3) ? min : number3;</span><br><span class="line"></span><br><span class="line">    return min;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// ====================测试代码====================</span><br><span class="line">void Test(int index, int expected)</span><br><span class="line">&#123;</span><br><span class="line">    if (GetUglyNumber_Solution1(index) == expected)</span><br><span class="line">        printf(&quot;solution1 passed\n&quot;);</span><br><span class="line">    else</span><br><span class="line">        printf(&quot;solution1 failed\n&quot;);</span><br><span class="line"></span><br><span class="line">    if (GetUglyNumber_Solution2(index) == expected)</span><br><span class="line">        printf(&quot;solution2 passed\n&quot;);</span><br><span class="line">    else</span><br><span class="line">        printf(&quot;solution2 failed\n&quot;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main(int argc, char* argv[])</span><br><span class="line">&#123;</span><br><span class="line">    Test(1, 1);</span><br><span class="line"></span><br><span class="line">    Test(2, 2);</span><br><span class="line">    Test(3, 3);</span><br><span class="line">    Test(4, 4);</span><br><span class="line">    Test(5, 5);</span><br><span class="line">    Test(6, 6);</span><br><span class="line">    Test(7, 8);</span><br><span class="line">    Test(8, 9);</span><br><span class="line">    Test(9, 10);</span><br><span class="line">    Test(10, 12);</span><br><span class="line">    Test(11, 15);</span><br><span class="line"></span><br><span class="line">    Test(1500, 859963392);</span><br><span class="line"></span><br><span class="line">    Test(0, 0);</span><br><span class="line"></span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/03/18/48_LongestSubstringWithoutDup/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
           
+          <!--/noindex-->
         
       
     </div>
@@ -772,6 +780,148 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/18/11_MinNumberInRotatedArray/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Andrew Chan">
+      <meta itemprop="description" content="Personnal blogs">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Andrew Chan">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/03/18/11_MinNumberInRotatedArray/" class="post-title-link" itemprop="url">剑指_11_MinNumberInRotatedArray</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-03-18 00:00:00 / Modified: 16:14:29" itemprop="dateCreated datePublished" datetime="2019-03-18T00:00:00+08:00">2019-03-18</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br></pre></td><td class="code"><pre><span class="line">Copyright(c) 2016, Harry He</span><br><span class="line">All rights reserved.</span><br><span class="line"></span><br><span class="line">Distributed under the BSD license.</span><br><span class="line">(See accompanying file LICENSE.txt at</span><br><span class="line">https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)</span><br><span class="line">*******************************************************************/</span><br><span class="line"></span><br><span class="line">//==================================================================</span><br><span class="line">// 《剑指Offer——名企面试官精讲典型编程题》代码</span><br><span class="line">// 作者：何海涛</span><br><span class="line">//==================================================================</span><br><span class="line"></span><br><span class="line">// 面试题11：旋转数组的最小数字</span><br><span class="line">// 题目：把一个数组最开始的若干个元素搬到数组的末尾，我们称之为数组的旋转。</span><br><span class="line">// 输入一个递增排序的数组的一个旋转，输出旋转数组的最小元素。例如数组</span><br><span class="line">// &#123;3, 4, 5, 1, 2&#125;为&#123;1, 2, 3, 4, 5&#125;的一个旋转，该数组的最小值为1。</span><br><span class="line"></span><br><span class="line">#include &lt;cstdio&gt;</span><br><span class="line">#include &lt;exception&gt;</span><br><span class="line"></span><br><span class="line">int MinInOrder(int* numbers, int index1, int index2);</span><br><span class="line"></span><br><span class="line">int Min(int* numbers, int length)</span><br><span class="line">&#123;</span><br><span class="line">    if (numbers == nullptr || length &lt;= 0)</span><br><span class="line">        throw new std::exception(&quot;Invalid parameters&quot;);</span><br><span class="line"></span><br><span class="line">    int index1 = 0;</span><br><span class="line">    int index2 = length - 1;</span><br><span class="line">    int indexMid = index1;</span><br><span class="line">    while (numbers[index1] &gt;= numbers[index2]) &#123;</span><br><span class="line">        // 如果index1和index2指向相邻的两个数，</span><br><span class="line">        // 则index1指向第一个递增子数组的最后一个数字，</span><br><span class="line">        // index2指向第二个子数组的第一个数字，也就是数组中的最小数字</span><br><span class="line">        if (index2 - index1 == 1) &#123;</span><br><span class="line">            indexMid = index2;</span><br><span class="line">            break;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        // 如果下标为index1、index2和indexMid指向的三个数字相等，</span><br><span class="line">        // 则只能顺序查找</span><br><span class="line">        indexMid = (index1 + index2) / 2;</span><br><span class="line">        if (numbers[index1] == numbers[index2] &amp;&amp; numbers[indexMid] == numbers[index1])</span><br><span class="line">            return MinInOrder(numbers, index1, index2);</span><br><span class="line"></span><br><span class="line">        // 缩小查找范围</span><br><span class="line">        if (numbers[indexMid] &gt;= numbers[index1])</span><br><span class="line">            index1 = indexMid;</span><br><span class="line">        else if (numbers[indexMid] &lt;= numbers[index2])</span><br><span class="line">            index2 = indexMid;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return numbers[indexMid];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int MinInOrder(int* numbers, int index1, int index2)</span><br><span class="line">&#123;</span><br><span class="line">    int result = numbers[index1];</span><br><span class="line">    for (int i = index1 + 1; i &lt;= index2; ++i) &#123;</span><br><span class="line">        if (result &gt; numbers[i])</span><br><span class="line">            result = numbers[i];</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return result;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// ====================测试代码====================</span><br><span class="line">void Test(int* numbers, int length, int expected)</span><br><span class="line">&#123;</span><br><span class="line">    int result = 0;</span><br><span class="line">    try &#123;</span><br><span class="line">        result = Min(numbers, length);</span><br><span class="line"></span><br><span class="line">        for (int i = 0; i &lt; length; ++i)</span><br><span class="line">            printf(&quot;%d &quot;, numbers[i]);</span><br><span class="line"></span><br><span class="line">        if (result == expected)</span><br><span class="line">            printf(&quot;\tpassed\n&quot;);</span><br><span class="line">        else</span><br><span class="line">            printf(&quot;\tfailed\n&quot;);</span><br><span class="line">    &#125; catch (...) &#123;</span><br><span class="line">        if (numbers == nullptr)</span><br><span class="line">            printf(&quot;Test passed.\n&quot;);</span><br><span class="line">        else</span><br><span class="line">            printf(&quot;Test failed.\n&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main(int argc, char* argv[])</span><br><span class="line">&#123;</span><br><span class="line">    // 典型输入，单调升序的数组的一个旋转</span><br><span class="line">    int array1[] = &#123; 3, 4, 5, 1, 2 &#125;;</span><br><span class="line">    Test(array1, sizeof(array1) / sizeof(int), 1);</span><br><span class="line"></span><br><span class="line">    // 有重复数字，并且重复的数字刚好的最小的数字</span><br><span class="line">    int array2[] = &#123; 3, 4, 5, 1, 1, 2 &#125;;</span><br><span class="line">    Test(array2, sizeof(array2) / sizeof(int), 1);</span><br><span class="line"></span><br><span class="line">    // 有重复数字，但重复的数字不是第一个数字和最后一个数字</span><br><span class="line">    int array3[] = &#123; 3, 4, 5, 1, 2, 2 &#125;;</span><br><span class="line">    Test(array3, sizeof(array3) / sizeof(int), 1);</span><br><span class="line"></span><br><span class="line">    // 有重复的数字，并且重复的数字刚好是第一个数字和最后一个数字</span><br><span class="line">    int array4[] = &#123; 1, 0, 1, 1, 1 &#125;;</span><br><span class="line">    Test(array4, sizeof(array4) / sizeof(int), 0);</span><br><span class="line"></span><br><span class="line">    // 单调升序数组，旋转0个元素，也就是单调升序数组本身</span><br><span class="line">    int array5[] = &#123; 1, 2, 3, 4, 5 &#125;;</span><br><span class="line">    Test(array5, sizeof(array5) / sizeof(int), 1);</span><br><span class="line"></span><br><span class="line">    // 数组中只有一个数字</span><br><span class="line">    int array6[] = &#123; 2 &#125;;</span><br><span class="line">    Test(array6, sizeof(array6) / sizeof(int), 2);</span><br><span class="line"></span><br><span class="line">    // 输入nullptr</span><br><span class="line">    Test(nullptr, 0, 0);</span><br><span class="line"></span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/18/13_RobotMove/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -859,148 +1009,6 @@
         
           
             <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br></pre></td><td class="code"><pre><span class="line">Copyright(c) 2016, Harry He</span><br><span class="line">All rights reserved.</span><br><span class="line"></span><br><span class="line">Distributed under the BSD license.</span><br><span class="line">(See accompanying file LICENSE.txt at</span><br><span class="line">https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)</span><br><span class="line">*******************************************************************/</span><br><span class="line"></span><br><span class="line">//==================================================================</span><br><span class="line">// 《剑指Offer——名企面试官精讲典型编程题》代码</span><br><span class="line">// 作者：何海涛</span><br><span class="line">//==================================================================</span><br><span class="line"></span><br><span class="line">// 面试题13：机器人的运动范围</span><br><span class="line">// 题目：地上有一个m行n列的方格。一个机器人从坐标(0, 0)的格子开始移动，它</span><br><span class="line">// 每一次可以向左、右、上、下移动一格，但不能进入行坐标和列坐标的数位之和</span><br><span class="line">// 大于k的格子。例如，当k为18时，机器人能够进入方格(35, 37)，因为3+5+3+7=18。</span><br><span class="line">// 但它不能进入方格(35, 38)，因为3+5+3+8=19。请问该机器人能够到达多少个格子？</span><br><span class="line"></span><br><span class="line">#include &lt;cstdio&gt;</span><br><span class="line"></span><br><span class="line">int movingCountCore(int threshold, int rows, int cols, int row, int col, bool* visited);</span><br><span class="line">bool check(int threshold, int rows, int cols, int row, int col, bool* visited);</span><br><span class="line">int getDigitSum(int number);</span><br><span class="line"></span><br><span class="line">int movingCount(int threshold, int rows, int cols)</span><br><span class="line">&#123;</span><br><span class="line">    if (threshold &lt; 0 || rows &lt;= 0 || cols &lt;= 0)</span><br><span class="line">        return 0;</span><br><span class="line"></span><br><span class="line">    bool* visited = new bool[rows * cols];</span><br><span class="line">    for (int i = 0; i &lt; rows * cols; ++i)</span><br><span class="line">        visited[i] = false;</span><br><span class="line"></span><br><span class="line">    int count = movingCountCore(threshold, rows, cols,</span><br><span class="line">        0, 0, visited);</span><br><span class="line"></span><br><span class="line">    delete[] visited;</span><br><span class="line"></span><br><span class="line">    return count;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int movingCountCore(int threshold, int rows, int cols, int row,</span><br><span class="line">    int col, bool* visited)</span><br><span class="line">&#123;</span><br><span class="line">    int count = 0;</span><br><span class="line">    if (check(threshold, rows, cols, row, col, visited)) &#123;</span><br><span class="line">        visited[row * cols + col] = true;</span><br><span class="line"></span><br><span class="line">        count = 1 + movingCountCore(threshold, rows, cols, row - 1, col, visited)</span><br><span class="line">            + movingCountCore(threshold, rows, cols,</span><br><span class="line">                  row, col - 1, visited)</span><br><span class="line">            + movingCountCore(threshold, rows, cols,</span><br><span class="line">                  row + 1, col, visited)</span><br><span class="line">            + movingCountCore(threshold, rows, cols,</span><br><span class="line">                  row, col + 1, visited);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return count;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">bool check(int threshold, int rows, int cols, int row, int col,</span><br><span class="line">    bool* visited)</span><br><span class="line">&#123;</span><br><span class="line">    if (row &gt;= 0 &amp;&amp; row &lt; rows &amp;&amp; col &gt;= 0 &amp;&amp; col &lt; cols</span><br><span class="line">        &amp;&amp; getDigitSum(row) + getDigitSum(col) &lt;= threshold</span><br><span class="line">        &amp;&amp; !visited[row * cols + col])</span><br><span class="line">        return true;</span><br><span class="line"></span><br><span class="line">    return false;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int getDigitSum(int number)</span><br><span class="line">&#123;</span><br><span class="line">    int sum = 0;</span><br><span class="line">    while (number &gt; 0) &#123;</span><br><span class="line">        sum += number % 10;</span><br><span class="line">        number /= 10;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return sum;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// ====================测试代码====================</span><br><span class="line">void test(char* testName, int threshold, int rows, int cols, int expected)</span><br><span class="line">&#123;</span><br><span class="line">    if (testName != nullptr)</span><br><span class="line">        printf(&quot;%s begins: &quot;, testName);</span><br><span class="line"></span><br><span class="line">    if (movingCount(threshold, rows, cols) == expected)</span><br><span class="line">        printf(&quot;Passed.\n&quot;);</span><br><span class="line">    else</span><br><span class="line">        printf(&quot;FAILED.\n&quot;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 方格多行多列</span><br><span class="line">void test1()</span><br><span class="line">&#123;</span><br><span class="line">    test(&quot;Test1&quot;, 5, 10, 10, 21);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 方格多行多列</span><br><span class="line">void test2()</span><br><span class="line">&#123;</span><br><span class="line">    test(&quot;Test2&quot;, 15, 20, 20, 359);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 方格只有一行，机器人只能到达部分方格</span><br><span class="line">void test3()</span><br><span class="line">&#123;</span><br><span class="line">    test(&quot;Test3&quot;, 10, 1, 100, 29);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 方格只有一行，机器人能到达所有方格</span><br><span class="line">void test4()</span><br><span class="line">&#123;</span><br><span class="line">    test(&quot;Test4&quot;, 10, 1, 10, 10);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 方格只有一列，机器人只能到达部分方格</span><br><span class="line">void test5()</span><br><span class="line">&#123;</span><br><span class="line">    test(&quot;Test5&quot;, 15, 100, 1, 79);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 方格只有一列，机器人能到达所有方格</span><br><span class="line">void test6()</span><br><span class="line">&#123;</span><br><span class="line">    test(&quot;Test6&quot;, 15, 10, 1, 10);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 方格只有一行一列</span><br><span class="line">void test7()</span><br><span class="line">&#123;</span><br><span class="line">    test(&quot;Test7&quot;, 15, 1, 1, 1);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 方格只有一行一列</span><br><span class="line">void test8()</span><br><span class="line">&#123;</span><br><span class="line">    test(&quot;Test8&quot;, 0, 1, 1, 1);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 机器人不能进入任意一个方格</span><br><span class="line">void test9()</span><br><span class="line">&#123;</span><br><span class="line">    test(&quot;Test9&quot;, -10, 10, 10, 0);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main(int agrc, char* argv[])</span><br><span class="line">&#123;</span><br><span class="line">    test1();</span><br><span class="line">    test2();</span><br><span class="line">    test3();</span><br><span class="line">    test4();</span><br><span class="line">    test5();</span><br><span class="line">    test6();</span><br><span class="line">    test7();</span><br><span class="line">    test8();</span><br><span class="line">    test9();</span><br><span class="line"></span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/18/14_CuttingRope/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Andrew Chan">
-      <meta itemprop="description" content="Personnal blogs">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Andrew Chan">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/03/18/14_CuttingRope/" class="post-title-link" itemprop="url">剑指_14_CuttingRope</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-03-18 00:00:00 / Modified: 16:14:26" itemprop="dateCreated datePublished" datetime="2019-03-18T00:00:00+08:00">2019-03-18</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br></pre></td><td class="code"><pre><span class="line">Copyright(c) 2016, Harry He</span><br><span class="line">All rights reserved.</span><br><span class="line"></span><br><span class="line">Distributed under the BSD license.</span><br><span class="line">(See accompanying file LICENSE.txt at</span><br><span class="line">https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)</span><br><span class="line">*******************************************************************/</span><br><span class="line"></span><br><span class="line">//==================================================================</span><br><span class="line">// 《剑指Offer——名企面试官精讲典型编程题》代码</span><br><span class="line">// 作者：何海涛</span><br><span class="line">//==================================================================</span><br><span class="line"></span><br><span class="line">// 面试题14：剪绳子</span><br><span class="line">// 题目：给你一根长度为n绳子，请把绳子剪成m段（m、n都是整数，n&gt;1并且m≥1）。</span><br><span class="line">// 每段的绳子的长度记为k[0]、k[1]、……、k[m]。k[0]*k[1]*…*k[m]可能的最大乘</span><br><span class="line">// 积是多少？例如当绳子的长度是8时，我们把它剪成长度分别为2、3、3的三段，此</span><br><span class="line">// 时得到最大的乘积18。</span><br><span class="line"></span><br><span class="line">#include &lt;cmath&gt;</span><br><span class="line">#include &lt;iostream&gt;</span><br><span class="line"></span><br><span class="line">// ====================动态规划====================</span><br><span class="line">int maxProductAfterCutting_solution1(int length)</span><br><span class="line">&#123;</span><br><span class="line">    if (length &lt; 2)</span><br><span class="line">        return 0;</span><br><span class="line">    if (length == 2)</span><br><span class="line">        return 1;</span><br><span class="line">    if (length == 3)</span><br><span class="line">        return 2;</span><br><span class="line"></span><br><span class="line">    int* products = new int[length + 1];</span><br><span class="line">    products[0] = 0;</span><br><span class="line">    products[1] = 1;</span><br><span class="line">    products[2] = 2;</span><br><span class="line">    products[3] = 3;</span><br><span class="line"></span><br><span class="line">    int max = 0;</span><br><span class="line">    for (int i = 4; i &lt;= length; ++i) &#123;</span><br><span class="line">        max = 0;</span><br><span class="line">        for (int j = 1; j &lt;= i / 2; ++j) &#123;</span><br><span class="line">            int product = products[j] * products[i - j];</span><br><span class="line">            if (max &lt; product)</span><br><span class="line">                max = product;</span><br><span class="line"></span><br><span class="line">            products[i] = max;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    max = products[length];</span><br><span class="line">    delete[] products;</span><br><span class="line"></span><br><span class="line">    return max;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// ====================贪婪算法====================</span><br><span class="line">int maxProductAfterCutting_solution2(int length)</span><br><span class="line">&#123;</span><br><span class="line">    if (length &lt; 2)</span><br><span class="line">        return 0;</span><br><span class="line">    if (length == 2)</span><br><span class="line">        return 1;</span><br><span class="line">    if (length == 3)</span><br><span class="line">        return 2;</span><br><span class="line"></span><br><span class="line">    // 尽可能多地减去长度为3的绳子段</span><br><span class="line">    int timesOf3 = length / 3;</span><br><span class="line"></span><br><span class="line">    // 当绳子最后剩下的长度为4的时候，不能再剪去长度为3的绳子段。</span><br><span class="line">    // 此时更好的方法是把绳子剪成长度为2的两段，因为2*2 &gt; 3*1。</span><br><span class="line">    if (length - timesOf3 * 3 == 1)</span><br><span class="line">        timesOf3 -= 1;</span><br><span class="line"></span><br><span class="line">    int timesOf2 = (length - timesOf3 * 3) / 2;</span><br><span class="line"></span><br><span class="line">    return (int)(pow(3, timesOf3)) * (int)(pow(2, timesOf2));</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// ====================测试代码====================</span><br><span class="line">void test(const char* testName, int length, int expected)</span><br><span class="line">&#123;</span><br><span class="line">    int result1 = maxProductAfterCutting_solution1(length);</span><br><span class="line">    if (result1 == expected)</span><br><span class="line">        std::cout &lt;&lt; &quot;Solution1 for &quot; &lt;&lt; testName &lt;&lt; &quot; passed.&quot; &lt;&lt; std::endl;</span><br><span class="line">    else</span><br><span class="line">        std::cout &lt;&lt; &quot;Solution1 for &quot; &lt;&lt; testName &lt;&lt; &quot; FAILED.&quot; &lt;&lt; std::endl;</span><br><span class="line"></span><br><span class="line">    int result2 = maxProductAfterCutting_solution2(length);</span><br><span class="line">    if (result2 == expected)</span><br><span class="line">        std::cout &lt;&lt; &quot;Solution2 for &quot; &lt;&lt; testName &lt;&lt; &quot; passed.&quot; &lt;&lt; std::endl;</span><br><span class="line">    else</span><br><span class="line">        std::cout &lt;&lt; &quot;Solution2 for &quot; &lt;&lt; testName &lt;&lt; &quot; FAILED.&quot; &lt;&lt; std::endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void test1()</span><br><span class="line">&#123;</span><br><span class="line">    int length = 1;</span><br><span class="line">    int expected = 0;</span><br><span class="line">    test(&quot;test1&quot;, length, expected);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void test2()</span><br><span class="line">&#123;</span><br><span class="line">    int length = 2;</span><br><span class="line">    int expected = 1;</span><br><span class="line">    test(&quot;test2&quot;, length, expected);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void test3()</span><br><span class="line">&#123;</span><br><span class="line">    int length = 3;</span><br><span class="line">    int expected = 2;</span><br><span class="line">    test(&quot;test3&quot;, length, expected);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void test4()</span><br><span class="line">&#123;</span><br><span class="line">    int length = 4;</span><br><span class="line">    int expected = 4;</span><br><span class="line">    test(&quot;test4&quot;, length, expected);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void test5()</span><br><span class="line">&#123;</span><br><span class="line">    int length = 5;</span><br><span class="line">    int expected = 6;</span><br><span class="line">    test(&quot;test5&quot;, length, expected);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void test6()</span><br><span class="line">&#123;</span><br><span class="line">    int length = 6;</span><br><span class="line">    int expected = 9;</span><br><span class="line">    test(&quot;test6&quot;, length, expected);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void test7()</span><br><span class="line">&#123;</span><br><span class="line">    int length = 7;</span><br><span class="line">    int expected = 12;</span><br><span class="line">    test(&quot;test7&quot;, length, expected);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void test8()</span><br><span class="line">&#123;</span><br><span class="line">    int length = 8;</span><br><span class="line">    int expected = 18;</span><br><span class="line">    test(&quot;test8&quot;, length, expected);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void test9()</span><br><span class="line">&#123;</span><br><span class="line">    int length = 9;</span><br><span class="line">    int expected = 27;</span><br><span class="line">    test(&quot;test9&quot;, length, expected);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void test10()</span><br><span class="line">&#123;</span><br><span class="line">    int length = 10;</span><br><span class="line">    int expected = 36;</span><br><span class="line">    test(&quot;test10&quot;, length, expected);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void test11()</span><br><span class="line">&#123;</span><br><span class="line">    int length = 50;</span><br><span class="line">    int expected = 86093442;</span><br><span class="line">    test(&quot;test11&quot;, length, expected);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main(int agrc, char* argv[])</span><br><span class="line">&#123;</span><br><span class="line">    test1();</span><br><span class="line">    test2();</span><br><span class="line">    test3();</span><br><span class="line">    test4();</span><br><span class="line">    test5();</span><br><span class="line">    test6();</span><br><span class="line">    test7();</span><br><span class="line">    test8();</span><br><span class="line">    test9();</span><br><span class="line">    test10();</span><br><span class="line">    test11();</span><br><span class="line"></span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
           
         
       
@@ -2902,148 +2910,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/18/31_StackPushPopOrder/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Andrew Chan">
-      <meta itemprop="description" content="Personnal blogs">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Andrew Chan">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/03/18/31_StackPushPopOrder/" class="post-title-link" itemprop="url">剑指_31_StackPushPopOrder</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-03-18 00:00:00 / Modified: 16:20:07" itemprop="dateCreated datePublished" datetime="2019-03-18T00:00:00+08:00">2019-03-18</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br></pre></td><td class="code"><pre><span class="line">Copyright(c) 2016, Harry He</span><br><span class="line">All rights reserved.</span><br><span class="line"></span><br><span class="line">Distributed under the BSD license.</span><br><span class="line">(See accompanying file LICENSE.txt at</span><br><span class="line">https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)</span><br><span class="line">*******************************************************************/</span><br><span class="line"></span><br><span class="line">//==================================================================</span><br><span class="line">// 《剑指Offer——名企面试官精讲典型编程题》代码</span><br><span class="line">// 作者：何海涛</span><br><span class="line">//==================================================================</span><br><span class="line"></span><br><span class="line">// 面试题31：栈的压入、弹出序列</span><br><span class="line">// 题目：输入两个整数序列，第一个序列表示栈的压入顺序，请判断第二个序列是</span><br><span class="line">// 否为该栈的弹出顺序。假设压入栈的所有数字均不相等。例如序列1、2、3、4、</span><br><span class="line">// 5是某栈的压栈序列，序列4、5、3、2、1是该压栈序列对应的一个弹出序列，但</span><br><span class="line">// 4、3、5、1、2就不可能是该压栈序列的弹出序列。</span><br><span class="line"></span><br><span class="line">#include &lt;cstdio&gt;</span><br><span class="line">#include &lt;stack&gt;</span><br><span class="line"></span><br><span class="line">bool IsPopOrder(const int* pPush, const int* pPop, int nLength)</span><br><span class="line">&#123;</span><br><span class="line">    bool bPossible = false;</span><br><span class="line"></span><br><span class="line">    if (pPush != nullptr &amp;&amp; pPop != nullptr &amp;&amp; nLength &gt; 0) &#123;</span><br><span class="line">        const int* pNextPush = pPush;</span><br><span class="line">        const int* pNextPop = pPop;</span><br><span class="line"></span><br><span class="line">        std::stack&lt;int&gt; stackData;</span><br><span class="line"></span><br><span class="line">        while (pNextPop - pPop &lt; nLength) &#123;</span><br><span class="line">            // 当辅助栈的栈顶元素不是要弹出的元素</span><br><span class="line">            // 先压入一些数字入栈</span><br><span class="line">            while (stackData.empty() || stackData.top() != *pNextPop) &#123;</span><br><span class="line">                // 如果所有数字都压入辅助栈了，退出循环</span><br><span class="line">                if (pNextPush - pPush == nLength)</span><br><span class="line">                    break;</span><br><span class="line"></span><br><span class="line">                stackData.push(*pNextPush);</span><br><span class="line"></span><br><span class="line">                pNextPush++;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            if (stackData.top() != *pNextPop)</span><br><span class="line">                break;</span><br><span class="line"></span><br><span class="line">            stackData.pop();</span><br><span class="line">            pNextPop++;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        if (stackData.empty() &amp;&amp; pNextPop - pPop == nLength)</span><br><span class="line">            bPossible = true;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return bPossible;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// ====================测试代码====================</span><br><span class="line">void Test(const char* testName, const int* pPush, const int* pPop, int nLength, bool expected)</span><br><span class="line">&#123;</span><br><span class="line">    if (testName != nullptr)</span><br><span class="line">        printf(&quot;%s begins: &quot;, testName);</span><br><span class="line"></span><br><span class="line">    if (IsPopOrder(pPush, pPop, nLength) == expected)</span><br><span class="line">        printf(&quot;Passed.\n&quot;);</span><br><span class="line">    else</span><br><span class="line">        printf(&quot;failed.\n&quot;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void Test1()</span><br><span class="line">&#123;</span><br><span class="line">    const int nLength = 5;</span><br><span class="line">    int push[nLength] = &#123; 1, 2, 3, 4, 5 &#125;;</span><br><span class="line">    int pop[nLength] = &#123; 4, 5, 3, 2, 1 &#125;;</span><br><span class="line"></span><br><span class="line">    Test(&quot;Test1&quot;, push, pop, nLength, true);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void Test2()</span><br><span class="line">&#123;</span><br><span class="line">    const int nLength = 5;</span><br><span class="line">    int push[nLength] = &#123; 1, 2, 3, 4, 5 &#125;;</span><br><span class="line">    int pop[nLength] = &#123; 3, 5, 4, 2, 1 &#125;;</span><br><span class="line"></span><br><span class="line">    Test(&quot;Test2&quot;, push, pop, nLength, true);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void Test3()</span><br><span class="line">&#123;</span><br><span class="line">    const int nLength = 5;</span><br><span class="line">    int push[nLength] = &#123; 1, 2, 3, 4, 5 &#125;;</span><br><span class="line">    int pop[nLength] = &#123; 4, 3, 5, 1, 2 &#125;;</span><br><span class="line"></span><br><span class="line">    Test(&quot;Test3&quot;, push, pop, nLength, false);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void Test4()</span><br><span class="line">&#123;</span><br><span class="line">    const int nLength = 5;</span><br><span class="line">    int push[nLength] = &#123; 1, 2, 3, 4, 5 &#125;;</span><br><span class="line">    int pop[nLength] = &#123; 3, 5, 4, 1, 2 &#125;;</span><br><span class="line"></span><br><span class="line">    Test(&quot;Test4&quot;, push, pop, nLength, false);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// push和pop序列只有一个数字</span><br><span class="line">void Test5()</span><br><span class="line">&#123;</span><br><span class="line">    const int nLength = 1;</span><br><span class="line">    int push[nLength] = &#123; 1 &#125;;</span><br><span class="line">    int pop[nLength] = &#123; 2 &#125;;</span><br><span class="line"></span><br><span class="line">    Test(&quot;Test5&quot;, push, pop, nLength, false);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void Test6()</span><br><span class="line">&#123;</span><br><span class="line">    const int nLength = 1;</span><br><span class="line">    int push[nLength] = &#123; 1 &#125;;</span><br><span class="line">    int pop[nLength] = &#123; 1 &#125;;</span><br><span class="line"></span><br><span class="line">    Test(&quot;Test6&quot;, push, pop, nLength, true);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void Test7()</span><br><span class="line">&#123;</span><br><span class="line">    Test(&quot;Test7&quot;, nullptr, nullptr, 0, false);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main(int argc, char* argv[])</span><br><span class="line">&#123;</span><br><span class="line">    Test1();</span><br><span class="line">    Test2();</span><br><span class="line">    Test3();</span><br><span class="line">    Test4();</span><br><span class="line">    Test5();</span><br><span class="line">    Test6();</span><br><span class="line">    Test7();</span><br><span class="line"></span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/18/30_MinInStack/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -3131,6 +2997,148 @@
         
           
             <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br></pre></td><td class="code"><pre><span class="line">Copyright(c) 2016, Harry He</span><br><span class="line">All rights reserved.</span><br><span class="line"></span><br><span class="line">Distributed under the BSD license.</span><br><span class="line">(See accompanying file LICENSE.txt at</span><br><span class="line">https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)</span><br><span class="line">*******************************************************************/</span><br><span class="line"></span><br><span class="line">//==================================================================</span><br><span class="line">// 《剑指Offer——名企面试官精讲典型编程题》代码</span><br><span class="line">// 作者：何海涛</span><br><span class="line">//==================================================================</span><br><span class="line"></span><br><span class="line">// 面试题30：包含min函数的栈</span><br><span class="line">// 题目：定义栈的数据结构，请在该类型中实现一个能够得到栈的最小元素的min</span><br><span class="line">// 函数。在该栈中，调用min、push及pop的时间复杂度都是O(1)。</span><br><span class="line"></span><br><span class="line">#include &quot;StackWithMin.h&quot;</span><br><span class="line">#include &lt;cstdio&gt;</span><br><span class="line"></span><br><span class="line">void Test(const char* testName, const StackWithMin&lt;int&gt;&amp; stack, int expected)</span><br><span class="line">&#123;</span><br><span class="line">    if (testName != nullptr)</span><br><span class="line">        printf(&quot;%s begins: &quot;, testName);</span><br><span class="line"></span><br><span class="line">    if (stack.min() == expected)</span><br><span class="line">        printf(&quot;Passed.\n&quot;);</span><br><span class="line">    else</span><br><span class="line">        printf(&quot;Failed.\n&quot;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main(int argc, char* argv[])</span><br><span class="line">&#123;</span><br><span class="line">    StackWithMin&lt;int&gt; stack;</span><br><span class="line"></span><br><span class="line">    stack.push(3);</span><br><span class="line">    Test(&quot;Test1&quot;, stack, 3);</span><br><span class="line"></span><br><span class="line">    stack.push(4);</span><br><span class="line">    Test(&quot;Test2&quot;, stack, 3);</span><br><span class="line"></span><br><span class="line">    stack.push(2);</span><br><span class="line">    Test(&quot;Test3&quot;, stack, 2);</span><br><span class="line"></span><br><span class="line">    stack.push(3);</span><br><span class="line">    Test(&quot;Test4&quot;, stack, 2);</span><br><span class="line"></span><br><span class="line">    stack.pop();</span><br><span class="line">    Test(&quot;Test5&quot;, stack, 2);</span><br><span class="line"></span><br><span class="line">    stack.pop();</span><br><span class="line">    Test(&quot;Test6&quot;, stack, 3);</span><br><span class="line"></span><br><span class="line">    stack.pop();</span><br><span class="line">    Test(&quot;Test7&quot;, stack, 3);</span><br><span class="line"></span><br><span class="line">    stack.push(0);</span><br><span class="line">    Test(&quot;Test8&quot;, stack, 0);</span><br><span class="line"></span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/18/31_StackPushPopOrder/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Andrew Chan">
+      <meta itemprop="description" content="Personnal blogs">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Andrew Chan">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/03/18/31_StackPushPopOrder/" class="post-title-link" itemprop="url">剑指_31_StackPushPopOrder</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-03-18 00:00:00 / Modified: 16:20:07" itemprop="dateCreated datePublished" datetime="2019-03-18T00:00:00+08:00">2019-03-18</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br></pre></td><td class="code"><pre><span class="line">Copyright(c) 2016, Harry He</span><br><span class="line">All rights reserved.</span><br><span class="line"></span><br><span class="line">Distributed under the BSD license.</span><br><span class="line">(See accompanying file LICENSE.txt at</span><br><span class="line">https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)</span><br><span class="line">*******************************************************************/</span><br><span class="line"></span><br><span class="line">//==================================================================</span><br><span class="line">// 《剑指Offer——名企面试官精讲典型编程题》代码</span><br><span class="line">// 作者：何海涛</span><br><span class="line">//==================================================================</span><br><span class="line"></span><br><span class="line">// 面试题31：栈的压入、弹出序列</span><br><span class="line">// 题目：输入两个整数序列，第一个序列表示栈的压入顺序，请判断第二个序列是</span><br><span class="line">// 否为该栈的弹出顺序。假设压入栈的所有数字均不相等。例如序列1、2、3、4、</span><br><span class="line">// 5是某栈的压栈序列，序列4、5、3、2、1是该压栈序列对应的一个弹出序列，但</span><br><span class="line">// 4、3、5、1、2就不可能是该压栈序列的弹出序列。</span><br><span class="line"></span><br><span class="line">#include &lt;cstdio&gt;</span><br><span class="line">#include &lt;stack&gt;</span><br><span class="line"></span><br><span class="line">bool IsPopOrder(const int* pPush, const int* pPop, int nLength)</span><br><span class="line">&#123;</span><br><span class="line">    bool bPossible = false;</span><br><span class="line"></span><br><span class="line">    if (pPush != nullptr &amp;&amp; pPop != nullptr &amp;&amp; nLength &gt; 0) &#123;</span><br><span class="line">        const int* pNextPush = pPush;</span><br><span class="line">        const int* pNextPop = pPop;</span><br><span class="line"></span><br><span class="line">        std::stack&lt;int&gt; stackData;</span><br><span class="line"></span><br><span class="line">        while (pNextPop - pPop &lt; nLength) &#123;</span><br><span class="line">            // 当辅助栈的栈顶元素不是要弹出的元素</span><br><span class="line">            // 先压入一些数字入栈</span><br><span class="line">            while (stackData.empty() || stackData.top() != *pNextPop) &#123;</span><br><span class="line">                // 如果所有数字都压入辅助栈了，退出循环</span><br><span class="line">                if (pNextPush - pPush == nLength)</span><br><span class="line">                    break;</span><br><span class="line"></span><br><span class="line">                stackData.push(*pNextPush);</span><br><span class="line"></span><br><span class="line">                pNextPush++;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            if (stackData.top() != *pNextPop)</span><br><span class="line">                break;</span><br><span class="line"></span><br><span class="line">            stackData.pop();</span><br><span class="line">            pNextPop++;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        if (stackData.empty() &amp;&amp; pNextPop - pPop == nLength)</span><br><span class="line">            bPossible = true;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return bPossible;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// ====================测试代码====================</span><br><span class="line">void Test(const char* testName, const int* pPush, const int* pPop, int nLength, bool expected)</span><br><span class="line">&#123;</span><br><span class="line">    if (testName != nullptr)</span><br><span class="line">        printf(&quot;%s begins: &quot;, testName);</span><br><span class="line"></span><br><span class="line">    if (IsPopOrder(pPush, pPop, nLength) == expected)</span><br><span class="line">        printf(&quot;Passed.\n&quot;);</span><br><span class="line">    else</span><br><span class="line">        printf(&quot;failed.\n&quot;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void Test1()</span><br><span class="line">&#123;</span><br><span class="line">    const int nLength = 5;</span><br><span class="line">    int push[nLength] = &#123; 1, 2, 3, 4, 5 &#125;;</span><br><span class="line">    int pop[nLength] = &#123; 4, 5, 3, 2, 1 &#125;;</span><br><span class="line"></span><br><span class="line">    Test(&quot;Test1&quot;, push, pop, nLength, true);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void Test2()</span><br><span class="line">&#123;</span><br><span class="line">    const int nLength = 5;</span><br><span class="line">    int push[nLength] = &#123; 1, 2, 3, 4, 5 &#125;;</span><br><span class="line">    int pop[nLength] = &#123; 3, 5, 4, 2, 1 &#125;;</span><br><span class="line"></span><br><span class="line">    Test(&quot;Test2&quot;, push, pop, nLength, true);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void Test3()</span><br><span class="line">&#123;</span><br><span class="line">    const int nLength = 5;</span><br><span class="line">    int push[nLength] = &#123; 1, 2, 3, 4, 5 &#125;;</span><br><span class="line">    int pop[nLength] = &#123; 4, 3, 5, 1, 2 &#125;;</span><br><span class="line"></span><br><span class="line">    Test(&quot;Test3&quot;, push, pop, nLength, false);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void Test4()</span><br><span class="line">&#123;</span><br><span class="line">    const int nLength = 5;</span><br><span class="line">    int push[nLength] = &#123; 1, 2, 3, 4, 5 &#125;;</span><br><span class="line">    int pop[nLength] = &#123; 3, 5, 4, 1, 2 &#125;;</span><br><span class="line"></span><br><span class="line">    Test(&quot;Test4&quot;, push, pop, nLength, false);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// push和pop序列只有一个数字</span><br><span class="line">void Test5()</span><br><span class="line">&#123;</span><br><span class="line">    const int nLength = 1;</span><br><span class="line">    int push[nLength] = &#123; 1 &#125;;</span><br><span class="line">    int pop[nLength] = &#123; 2 &#125;;</span><br><span class="line"></span><br><span class="line">    Test(&quot;Test5&quot;, push, pop, nLength, false);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void Test6()</span><br><span class="line">&#123;</span><br><span class="line">    const int nLength = 1;</span><br><span class="line">    int push[nLength] = &#123; 1 &#125;;</span><br><span class="line">    int pop[nLength] = &#123; 1 &#125;;</span><br><span class="line"></span><br><span class="line">    Test(&quot;Test6&quot;, push, pop, nLength, true);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void Test7()</span><br><span class="line">&#123;</span><br><span class="line">    Test(&quot;Test7&quot;, nullptr, nullptr, 0, false);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main(int argc, char* argv[])</span><br><span class="line">&#123;</span><br><span class="line">    Test1();</span><br><span class="line">    Test2();</span><br><span class="line">    Test3();</span><br><span class="line">    Test4();</span><br><span class="line">    Test5();</span><br><span class="line">    Test6();</span><br><span class="line">    Test7();</span><br><span class="line"></span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
           
         
       
