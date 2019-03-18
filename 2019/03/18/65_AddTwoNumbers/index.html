@@ -98,18 +98,18 @@
 
 
 
-  <meta name="description" content="1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859/*******************************************************************Copyright(c) 2016, Harr">
+  <meta name="description" content="123456789101112131415161718192021222324252627282930313233/*******************************************************************Copyright(c) 2016, Harry HeAll rights reserved.Distributed under the BSD li">
 <meta name="keywords" content="code">
 <meta property="og:type" content="article">
 <meta property="og:title" content="剑指_65_AddTwoNumbers">
 <meta property="og:url" content="http://yoursite.com/2019/03/18/65_AddTwoNumbers/index.html">
 <meta property="og:site_name" content="Andrew Chan">
-<meta property="og:description" content="1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859/*******************************************************************Copyright(c) 2016, Harr">
+<meta property="og:description" content="123456789101112131415161718192021222324252627282930313233/*******************************************************************Copyright(c) 2016, Harry HeAll rights reserved.Distributed under the BSD li">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-03-18T08:15:28.578Z">
+<meta property="og:updated_time" content="2019-03-18T08:41:22.221Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="剑指_65_AddTwoNumbers">
-<meta name="twitter:description" content="1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556575859/*******************************************************************Copyright(c) 2016, Harr">
+<meta name="twitter:description" content="123456789101112131415161718192021222324252627282930313233/*******************************************************************Copyright(c) 2016, Harry HeAll rights reserved.Distributed under the BSD li">
 
 
 
@@ -389,7 +389,7 @@
                 
               
 
-              <time title="Created: 2019-03-18 00:00:00 / Modified: 16:15:28" itemprop="dateCreated datePublished" datetime="2019-03-18T00:00:00+08:00">2019-03-18</time>
+              <time title="Created: 2019-03-18 00:00:00 / Modified: 16:41:22" itemprop="dateCreated datePublished" datetime="2019-03-18T00:00:00+08:00">2019-03-18</time>
             
 
             
@@ -428,7 +428,7 @@
       
 
       
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line">/*******************************************************************</span><br><span class="line">Copyright(c) 2016, Harry He</span><br><span class="line">All rights reserved.</span><br><span class="line"></span><br><span class="line">Distributed under the BSD license.</span><br><span class="line">(See accompanying file LICENSE.txt at</span><br><span class="line">https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)</span><br><span class="line">*******************************************************************/</span><br><span class="line"></span><br><span class="line">//==================================================================</span><br><span class="line">// 《剑指Offer——名企面试官精讲典型编程题》代码</span><br><span class="line">// 作者：何海涛</span><br><span class="line">//==================================================================</span><br><span class="line"></span><br><span class="line">// 面试题65：不用加减乘除做加法</span><br><span class="line">// 题目：写一个函数，求两个整数之和，要求在函数体内不得使用＋、－、×、÷</span><br><span class="line">// 四则运算符号。</span><br><span class="line"></span><br><span class="line">#include &lt;cstdio&gt;</span><br><span class="line"></span><br><span class="line">int Add(int num1, int num2)</span><br><span class="line">&#123;</span><br><span class="line">    int sum, carry;</span><br><span class="line">    do &#123;</span><br><span class="line">        sum = num1 ^ num2;</span><br><span class="line">        carry = (num1 &amp; num2) &lt;&lt; 1;</span><br><span class="line"></span><br><span class="line">        num1 = sum;</span><br><span class="line">        num2 = carry;</span><br><span class="line">    &#125; while (num2 != 0);</span><br><span class="line"></span><br><span class="line">    return num1;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// ====================测试代码====================</span><br><span class="line">void Test(int num1, int num2, int expected)</span><br><span class="line">&#123;</span><br><span class="line">    int result = Add(num1, num2);</span><br><span class="line">    if (result == expected)</span><br><span class="line">        printf(&quot;%d + %d is %d. Passed\n&quot;, num1, num2, result);</span><br><span class="line">    else</span><br><span class="line">        printf(&quot;%d + %d is %d. FAILED\n&quot;, num1, num2, result);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main(int argc, char* argv[])</span><br><span class="line">&#123;</span><br><span class="line">    Test(1, 2, 3);</span><br><span class="line">    Test(111, 899, 1010);</span><br><span class="line"></span><br><span class="line">    Test(-1, 2, 1);</span><br><span class="line">    Test(1, -2, -1);</span><br><span class="line"></span><br><span class="line">    Test(3, 0, 3);</span><br><span class="line">    Test(0, -4, -4);</span><br><span class="line"></span><br><span class="line">    Test(-2, -8, -10);</span><br><span class="line"></span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">/*******************************************************************</span><br><span class="line">Copyright(c) 2016, Harry He</span><br><span class="line">All rights reserved.</span><br><span class="line"></span><br><span class="line">Distributed under the BSD license.</span><br><span class="line">(See accompanying file LICENSE.txt at</span><br><span class="line">https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)</span><br><span class="line">*******************************************************************/</span><br><span class="line"></span><br><span class="line">//==================================================================</span><br><span class="line">// 《剑指Offer——名企面试官精讲典型编程题》代码</span><br><span class="line">// 作者：何海涛</span><br><span class="line">//==================================================================</span><br><span class="line"></span><br><span class="line">// 面试题65：不用加减乘除做加法</span><br><span class="line">// 题目：写一个函数，求两个整数之和，要求在函数体内不得使用＋、－、×、÷</span><br><span class="line">// 四则运算符号。</span><br><span class="line"></span><br><span class="line">#include &lt;cstdio&gt;</span><br><span class="line"></span><br><span class="line">int Add(int num1, int num2)</span><br><span class="line">&#123;</span><br><span class="line">    int sum, carry;</span><br><span class="line">    do &#123;</span><br><span class="line">        sum = num1 ^ num2;</span><br><span class="line">        carry = (num1 &amp; num2) &lt;&lt; 1;</span><br><span class="line"></span><br><span class="line">        num1 = sum;</span><br><span class="line">        num2 = carry;</span><br><span class="line">    &#125; while (num2 != 0);</span><br><span class="line"></span><br><span class="line">    return num1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -464,8 +464,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/03/18/67_StringToInt/" rel="next" title="剑指_67_StringToInt">
-                <i class="fa fa-chevron-left"></i> 剑指_67_StringToInt
+              <a href="/2019/03/18/66_ConstuctArray/" rel="next" title="剑指_66_ConstuctArray">
+                <i class="fa fa-chevron-left"></i> 剑指_66_ConstuctArray
               </a>
             
           </div>
@@ -474,8 +474,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/03/18/66_ConstuctArray/" rel="prev" title="剑指_66_ConstuctArray">
-                剑指_66_ConstuctArray <i class="fa fa-chevron-right"></i>
+              <a href="/2019/03/18/64_Accumulate/" rel="prev" title="剑指_64_Accumulate">
+                剑指_64_Accumulate <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
