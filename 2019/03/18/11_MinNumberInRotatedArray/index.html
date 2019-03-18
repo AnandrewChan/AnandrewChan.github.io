@@ -98,18 +98,18 @@
 
 
 
-  <meta name="description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210">
-<meta name="keywords" content="code">
+  <meta name="description" content="旋转数组的最小数字 题目：把一个数组最开始的若干个元素搬到数组的末尾，我们称之为数组的旋转。输入一个递增排序的数组的一个旋转，输出旋转数组的最小元素。例如数组{3, 4, 5, 1, 2}为{1, 2, 3, 4, 5}的一个旋转，该数组的最小值为1。">
+<meta name="keywords" content="code,array">
 <meta property="og:type" content="article">
-<meta property="og:title" content="剑指_11_MinNumberInRotatedArray">
+<meta property="og:title" content="剑指_MinNumberInRotatedArray">
 <meta property="og:url" content="http://yoursite.com/2019/03/18/11_MinNumberInRotatedArray/index.html">
 <meta property="og:site_name" content="Andrew Chan">
-<meta property="og:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210">
+<meta property="og:description" content="旋转数组的最小数字 题目：把一个数组最开始的若干个元素搬到数组的末尾，我们称之为数组的旋转。输入一个递增排序的数组的一个旋转，输出旋转数组的最小元素。例如数组{3, 4, 5, 1, 2}为{1, 2, 3, 4, 5}的一个旋转，该数组的最小值为1。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-03-18T08:14:29.061Z">
+<meta property="og:updated_time" content="2019-03-18T11:30:43.151Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="剑指_11_MinNumberInRotatedArray">
-<meta name="twitter:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210">
+<meta name="twitter:title" content="剑指_MinNumberInRotatedArray">
+<meta name="twitter:description" content="旋转数组的最小数字 题目：把一个数组最开始的若干个元素搬到数组的末尾，我们称之为数组的旋转。输入一个递增排序的数组的一个旋转，输出旋转数组的最小元素。例如数组{3, 4, 5, 1, 2}为{1, 2, 3, 4, 5}的一个旋转，该数组的最小值为1。">
 
 
 
@@ -126,7 +126,7 @@
   };
 </script>
 
-  <title>剑指_11_MinNumberInRotatedArray | Andrew Chan</title>
+  <title>剑指_MinNumberInRotatedArray | Andrew Chan</title>
   
 
 
@@ -363,7 +363,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">剑指_11_MinNumberInRotatedArray
+          <h1 class="post-title" itemprop="name headline">剑指_MinNumberInRotatedArray
 
               
             
@@ -389,7 +389,7 @@
                 
               
 
-              <time title="Created: 2019-03-18 00:00:00 / Modified: 16:14:29" itemprop="dateCreated datePublished" datetime="2019-03-18T00:00:00+08:00">2019-03-18</time>
+              <time title="Created: 2019-03-18 00:00:00 / Modified: 19:30:43" itemprop="dateCreated datePublished" datetime="2019-03-18T00:00:00+08:00">2019-03-18</time>
             
 
             
@@ -428,7 +428,10 @@
       
 
       
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br></pre></td><td class="code"><pre><span class="line">Copyright(c) 2016, Harry He</span><br><span class="line">All rights reserved.</span><br><span class="line"></span><br><span class="line">Distributed under the BSD license.</span><br><span class="line">(See accompanying file LICENSE.txt at</span><br><span class="line">https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)</span><br><span class="line">*******************************************************************/</span><br><span class="line"></span><br><span class="line">//==================================================================</span><br><span class="line">// 《剑指Offer——名企面试官精讲典型编程题》代码</span><br><span class="line">// 作者：何海涛</span><br><span class="line">//==================================================================</span><br><span class="line"></span><br><span class="line">// 面试题11：旋转数组的最小数字</span><br><span class="line">// 题目：把一个数组最开始的若干个元素搬到数组的末尾，我们称之为数组的旋转。</span><br><span class="line">// 输入一个递增排序的数组的一个旋转，输出旋转数组的最小元素。例如数组</span><br><span class="line">// &#123;3, 4, 5, 1, 2&#125;为&#123;1, 2, 3, 4, 5&#125;的一个旋转，该数组的最小值为1。</span><br><span class="line"></span><br><span class="line">#include &lt;cstdio&gt;</span><br><span class="line">#include &lt;exception&gt;</span><br><span class="line"></span><br><span class="line">int MinInOrder(int* numbers, int index1, int index2);</span><br><span class="line"></span><br><span class="line">int Min(int* numbers, int length)</span><br><span class="line">&#123;</span><br><span class="line">    if (numbers == nullptr || length &lt;= 0)</span><br><span class="line">        throw new std::exception(&quot;Invalid parameters&quot;);</span><br><span class="line"></span><br><span class="line">    int index1 = 0;</span><br><span class="line">    int index2 = length - 1;</span><br><span class="line">    int indexMid = index1;</span><br><span class="line">    while (numbers[index1] &gt;= numbers[index2]) &#123;</span><br><span class="line">        // 如果index1和index2指向相邻的两个数，</span><br><span class="line">        // 则index1指向第一个递增子数组的最后一个数字，</span><br><span class="line">        // index2指向第二个子数组的第一个数字，也就是数组中的最小数字</span><br><span class="line">        if (index2 - index1 == 1) &#123;</span><br><span class="line">            indexMid = index2;</span><br><span class="line">            break;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        // 如果下标为index1、index2和indexMid指向的三个数字相等，</span><br><span class="line">        // 则只能顺序查找</span><br><span class="line">        indexMid = (index1 + index2) / 2;</span><br><span class="line">        if (numbers[index1] == numbers[index2] &amp;&amp; numbers[indexMid] == numbers[index1])</span><br><span class="line">            return MinInOrder(numbers, index1, index2);</span><br><span class="line"></span><br><span class="line">        // 缩小查找范围</span><br><span class="line">        if (numbers[indexMid] &gt;= numbers[index1])</span><br><span class="line">            index1 = indexMid;</span><br><span class="line">        else if (numbers[indexMid] &lt;= numbers[index2])</span><br><span class="line">            index2 = indexMid;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return numbers[indexMid];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int MinInOrder(int* numbers, int index1, int index2)</span><br><span class="line">&#123;</span><br><span class="line">    int result = numbers[index1];</span><br><span class="line">    for (int i = index1 + 1; i &lt;= index2; ++i) &#123;</span><br><span class="line">        if (result &gt; numbers[i])</span><br><span class="line">            result = numbers[i];</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return result;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// ====================测试代码====================</span><br><span class="line">void Test(int* numbers, int length, int expected)</span><br><span class="line">&#123;</span><br><span class="line">    int result = 0;</span><br><span class="line">    try &#123;</span><br><span class="line">        result = Min(numbers, length);</span><br><span class="line"></span><br><span class="line">        for (int i = 0; i &lt; length; ++i)</span><br><span class="line">            printf(&quot;%d &quot;, numbers[i]);</span><br><span class="line"></span><br><span class="line">        if (result == expected)</span><br><span class="line">            printf(&quot;\tpassed\n&quot;);</span><br><span class="line">        else</span><br><span class="line">            printf(&quot;\tfailed\n&quot;);</span><br><span class="line">    &#125; catch (...) &#123;</span><br><span class="line">        if (numbers == nullptr)</span><br><span class="line">            printf(&quot;Test passed.\n&quot;);</span><br><span class="line">        else</span><br><span class="line">            printf(&quot;Test failed.\n&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main(int argc, char* argv[])</span><br><span class="line">&#123;</span><br><span class="line">    // 典型输入，单调升序的数组的一个旋转</span><br><span class="line">    int array1[] = &#123; 3, 4, 5, 1, 2 &#125;;</span><br><span class="line">    Test(array1, sizeof(array1) / sizeof(int), 1);</span><br><span class="line"></span><br><span class="line">    // 有重复数字，并且重复的数字刚好的最小的数字</span><br><span class="line">    int array2[] = &#123; 3, 4, 5, 1, 1, 2 &#125;;</span><br><span class="line">    Test(array2, sizeof(array2) / sizeof(int), 1);</span><br><span class="line"></span><br><span class="line">    // 有重复数字，但重复的数字不是第一个数字和最后一个数字</span><br><span class="line">    int array3[] = &#123; 3, 4, 5, 1, 2, 2 &#125;;</span><br><span class="line">    Test(array3, sizeof(array3) / sizeof(int), 1);</span><br><span class="line"></span><br><span class="line">    // 有重复的数字，并且重复的数字刚好是第一个数字和最后一个数字</span><br><span class="line">    int array4[] = &#123; 1, 0, 1, 1, 1 &#125;;</span><br><span class="line">    Test(array4, sizeof(array4) / sizeof(int), 0);</span><br><span class="line"></span><br><span class="line">    // 单调升序数组，旋转0个元素，也就是单调升序数组本身</span><br><span class="line">    int array5[] = &#123; 1, 2, 3, 4, 5 &#125;;</span><br><span class="line">    Test(array5, sizeof(array5) / sizeof(int), 1);</span><br><span class="line"></span><br><span class="line">    // 数组中只有一个数字</span><br><span class="line">    int array6[] = &#123; 2 &#125;;</span><br><span class="line">    Test(array6, sizeof(array6) / sizeof(int), 2);</span><br><span class="line"></span><br><span class="line">    // 输入nullptr</span><br><span class="line">    Test(nullptr, 0, 0);</span><br><span class="line"></span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <hr>
+<h4 id="旋转数组的最小数字"><a href="#旋转数组的最小数字" class="headerlink" title="旋转数组的最小数字"></a>旋转数组的最小数字</h4><hr>
+<p>题目：把一个数组最开始的若干个元素搬到数组的末尾，我们称之为数组的旋转。输入一个递增排序的数组的一个旋转，输出旋转数组的最小元素。例如数组{3, 4, 5, 1, 2}为{1, 2, 3, 4, 5}的一个旋转，该数组的最小值为1。<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br></pre></td><td class="code"><pre><span class="line">Copyright(c) 2016, Harry He</span><br><span class="line">All rights reserved.</span><br><span class="line"></span><br><span class="line">Distributed under the BSD license.</span><br><span class="line">(See accompanying file LICENSE.txt at</span><br><span class="line">https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)</span><br><span class="line">*******************************************************************/</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#include &lt;cstdio&gt;</span><br><span class="line">#include &lt;exception&gt;</span><br><span class="line"></span><br><span class="line">int MinInOrder(int* numbers, int index1, int index2);</span><br><span class="line"></span><br><span class="line">int Min(int* numbers, int length)</span><br><span class="line">&#123;</span><br><span class="line">    if (numbers == nullptr || length &lt;= 0)</span><br><span class="line">        throw new std::exception(&quot;Invalid parameters&quot;);</span><br><span class="line"></span><br><span class="line">    int index1 = 0;</span><br><span class="line">    int index2 = length - 1;</span><br><span class="line">    int indexMid = index1;</span><br><span class="line">    while (numbers[index1] &gt;= numbers[index2]) &#123;</span><br><span class="line">        // 如果index1和index2指向相邻的两个数，</span><br><span class="line">        // 则index1指向第一个递增子数组的最后一个数字，</span><br><span class="line">        // index2指向第二个子数组的第一个数字，也就是数组中的最小数字</span><br><span class="line">        if (index2 - index1 == 1) &#123;</span><br><span class="line">            indexMid = index2;</span><br><span class="line">            break;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        // 如果下标为index1、index2和indexMid指向的三个数字相等，</span><br><span class="line">        // 则只能顺序查找</span><br><span class="line">        indexMid = (index1 + index2) / 2;</span><br><span class="line">        if (numbers[index1] == numbers[index2] &amp;&amp; numbers[indexMid] == numbers[index1])</span><br><span class="line">            return MinInOrder(numbers, index1, index2);</span><br><span class="line"></span><br><span class="line">        // 缩小查找范围</span><br><span class="line">        if (numbers[indexMid] &gt;= numbers[index1])</span><br><span class="line">            index1 = indexMid;</span><br><span class="line">        else if (numbers[indexMid] &lt;= numbers[index2])</span><br><span class="line">            index2 = indexMid;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return numbers[indexMid];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int MinInOrder(int* numbers, int index1, int index2)</span><br><span class="line">&#123;</span><br><span class="line">    int result = numbers[index1];</span><br><span class="line">    for (int i = index1 + 1; i &lt;= index2; ++i) &#123;</span><br><span class="line">        if (result &gt; numbers[i])</span><br><span class="line">            result = numbers[i];</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
       
     </div>
 
@@ -453,6 +456,8 @@
           
             <a href="/tags/code/" rel="tag"># code</a>
           
+            <a href="/tags/array/" rel="tag"># array</a>
+          
         </div>
       
 
@@ -474,8 +479,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/03/18/10_Fibonacci/" rel="prev" title="剑指_Fibonacci">
-                剑指_Fibonacci <i class="fa fa-chevron-right"></i>
+              <a href="/2019/03/18/48_LongestSubstringWithoutDup/" rel="prev" title="剑指_LongestSubstringWithoutDup">
+                剑指_LongestSubstringWithoutDup <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -520,8 +525,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -571,7 +585,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">7</span>
+                      
+                    
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
@@ -598,6 +614,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#旋转数组的最小数字"><span class="nav-number">1.</span> <span class="nav-text">旋转数组的最小数字</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
