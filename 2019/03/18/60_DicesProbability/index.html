@@ -98,18 +98,18 @@
 
 
 
-  <meta name="description" content="面试题60：n个骰子的点数 题目：把n个骰子扔在地上，所有骰子朝上一面的点数之和为s。输入n，打印出s的所有可能的值出现的概率。">
+  <meta name="description" content="n个骰子的点数 题目：把n个骰子扔在地上，所有骰子朝上一面的点数之和为s。输入n，打印出s的所有可能的值出现的概率。">
 <meta name="keywords" content="code">
 <meta property="og:type" content="article">
-<meta property="og:title" content="剑指_60_DicesProbability">
+<meta property="og:title" content="剑指_DicesProbability">
 <meta property="og:url" content="http://yoursite.com/2019/03/18/60_DicesProbability/index.html">
 <meta property="og:site_name" content="Andrew Chan">
-<meta property="og:description" content="面试题60：n个骰子的点数 题目：把n个骰子扔在地上，所有骰子朝上一面的点数之和为s。输入n，打印出s的所有可能的值出现的概率。">
+<meta property="og:description" content="n个骰子的点数 题目：把n个骰子扔在地上，所有骰子朝上一面的点数之和为s。输入n，打印出s的所有可能的值出现的概率。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-03-18T08:46:33.541Z">
+<meta property="og:updated_time" content="2019-03-18T11:25:15.973Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="剑指_60_DicesProbability">
-<meta name="twitter:description" content="面试题60：n个骰子的点数 题目：把n个骰子扔在地上，所有骰子朝上一面的点数之和为s。输入n，打印出s的所有可能的值出现的概率。">
+<meta name="twitter:title" content="剑指_DicesProbability">
+<meta name="twitter:description" content="n个骰子的点数 题目：把n个骰子扔在地上，所有骰子朝上一面的点数之和为s。输入n，打印出s的所有可能的值出现的概率。">
 
 
 
@@ -126,7 +126,7 @@
   };
 </script>
 
-  <title>剑指_60_DicesProbability | Andrew Chan</title>
+  <title>剑指_DicesProbability | Andrew Chan</title>
   
 
 
@@ -363,7 +363,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">剑指_60_DicesProbability
+          <h1 class="post-title" itemprop="name headline">剑指_DicesProbability
 
               
             
@@ -389,7 +389,7 @@
                 
               
 
-              <time title="Created: 2019-03-18 00:00:00 / Modified: 16:46:33" itemprop="dateCreated datePublished" datetime="2019-03-18T00:00:00+08:00">2019-03-18</time>
+              <time title="Created: 2019-03-18 00:00:00 / Modified: 19:25:15" itemprop="dateCreated datePublished" datetime="2019-03-18T00:00:00+08:00">2019-03-18</time>
             
 
             
@@ -428,8 +428,8 @@
       
 
       
-        <h4 id="面试题60：n个骰子的点数"><a href="#面试题60：n个骰子的点数" class="headerlink" title="面试题60：n个骰子的点数"></a>面试题60：n个骰子的点数</h4><hr>
-<p>题目：把n个骰子扔在地上，所有骰子朝上一面的点数之和为s。输入n，打印出s的所有可能的值出现的概率。<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br></pre></td><td class="code"><pre><span class="line">/*******************************************************************</span><br><span class="line">Copyright(c) 2016, Harry He</span><br><span class="line">All rights reserved.</span><br><span class="line"></span><br><span class="line">Distributed under the BSD license.</span><br><span class="line">(See accompanying file LICENSE.txt at</span><br><span class="line">https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)</span><br><span class="line">*******************************************************************/</span><br><span class="line"></span><br><span class="line">//==================================================================</span><br><span class="line">// 《剑指Offer——名企面试官精讲典型编程题》代码</span><br><span class="line">// 作者：何海涛</span><br><span class="line">//==================================================================</span><br><span class="line"></span><br><span class="line">#include &lt;cstdio&gt;</span><br><span class="line">#include &lt;math.h&gt;</span><br><span class="line"></span><br><span class="line">int g_maxValue = 6;</span><br><span class="line"></span><br><span class="line">// ====================方法一====================</span><br><span class="line">void Probability(int number, int* pProbabilities);</span><br><span class="line">void Probability(int original, int current, int sum, int* pProbabilities);</span><br><span class="line"></span><br><span class="line">void PrintProbability_Solution1(int number)</span><br><span class="line">&#123;</span><br><span class="line">    if (number &lt; 1)</span><br><span class="line">        return;</span><br><span class="line"></span><br><span class="line">    int maxSum = number * g_maxValue;</span><br><span class="line">    int* pProbabilities = new int[maxSum - number + 1];</span><br><span class="line">    for (int i = number; i &lt;= maxSum; ++i)</span><br><span class="line">        pProbabilities[i - number] = 0;</span><br><span class="line"></span><br><span class="line">    Probability(number, pProbabilities);</span><br><span class="line"></span><br><span class="line">    int total = pow((double)g_maxValue, number);</span><br><span class="line">    for (int i = number; i &lt;= maxSum; ++i) &#123;</span><br><span class="line">        double ratio = (double)pProbabilities[i - number] / total;</span><br><span class="line">        printf(&quot;%d: %e\n&quot;, i, ratio);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    delete[] pProbabilities;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void Probability(int number, int* pProbabilities)</span><br><span class="line">&#123;</span><br><span class="line">    for (int i = 1; i &lt;= g_maxValue; ++i)</span><br><span class="line">        Probability(number, number, i, pProbabilities);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void Probability(int original, int current, int sum,</span><br><span class="line">    int* pProbabilities)</span><br><span class="line">&#123;</span><br><span class="line">    if (current == 1) &#123;</span><br><span class="line">        pProbabilities[sum - original]++;</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        for (int i = 1; i &lt;= g_maxValue; ++i) &#123;</span><br><span class="line">            Probability(original, current - 1, i + sum, pProbabilities);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// ====================方法二====================</span><br><span class="line">void PrintProbability_Solution2(int number)</span><br><span class="line">&#123;</span><br><span class="line">    if (number &lt; 1)</span><br><span class="line">        return;</span><br><span class="line"></span><br><span class="line">    int* pProbabilities[2];</span><br><span class="line">    pProbabilities[0] = new int[g_maxValue * number + 1];</span><br><span class="line">    pProbabilities[1] = new int[g_maxValue * number + 1];</span><br><span class="line">    for (int i = 0; i &lt; g_maxValue * number + 1; ++i) &#123;</span><br><span class="line">        pProbabilities[0][i] = 0;</span><br><span class="line">        pProbabilities[1][i] = 0;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    int flag = 0;</span><br><span class="line">    for (int i = 1; i &lt;= g_maxValue; ++i)</span><br><span class="line">        pProbabilities[flag][i] = 1;</span><br><span class="line"></span><br><span class="line">    for (int k = 2; k &lt;= number; ++k) &#123;</span><br><span class="line">        for (int i = 0; i &lt; k; ++i)</span><br><span class="line">            pProbabilities[1 - flag][i] = 0;</span><br><span class="line"></span><br><span class="line">        for (int i = k; i &lt;= g_maxValue * k; ++i) &#123;</span><br><span class="line">            pProbabilities[1 - flag][i] = 0;</span><br><span class="line">            for (int j = 1; j &lt;= i &amp;&amp; j &lt;= g_maxValue; ++j)</span><br><span class="line">                pProbabilities[1 - flag][i] += pProbabilities[flag][i - j];</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        flag = 1 - flag;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    double total = pow((double)g_maxValue, number);</span><br><span class="line">    for (int i = number; i &lt;= g_maxValue * number; ++i) &#123;</span><br><span class="line">        double ratio = (double)pProbabilities[flag][i] / total;</span><br><span class="line">        printf(&quot;%d: %e\n&quot;, i, ratio);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    delete[] pProbabilities[0];</span><br><span class="line">    delete[] pProbabilities[1];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+        <h4 id="n个骰子的点数"><a href="#n个骰子的点数" class="headerlink" title="n个骰子的点数"></a>n个骰子的点数</h4><hr>
+<p>题目：把n个骰子扔在地上，所有骰子朝上一面的点数之和为s。输入n，打印出s的所有可能的值出现的概率。<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br></pre></td><td class="code"><pre><span class="line">/*******************************************************************</span><br><span class="line">Copyright(c) 2016, Harry He</span><br><span class="line">All rights reserved.</span><br><span class="line"></span><br><span class="line">Distributed under the BSD license.</span><br><span class="line">(See accompanying file LICENSE.txt at</span><br><span class="line">https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)</span><br><span class="line">*******************************************************************/</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#include &lt;cstdio&gt;</span><br><span class="line">#include &lt;math.h&gt;</span><br><span class="line"></span><br><span class="line">int g_maxValue = 6;</span><br><span class="line"></span><br><span class="line">// ====================方法一====================</span><br><span class="line">void Probability(int number, int* pProbabilities);</span><br><span class="line">void Probability(int original, int current, int sum, int* pProbabilities);</span><br><span class="line"></span><br><span class="line">void PrintProbability_Solution1(int number)</span><br><span class="line">&#123;</span><br><span class="line">    if (number &lt; 1)</span><br><span class="line">        return;</span><br><span class="line"></span><br><span class="line">    int maxSum = number * g_maxValue;</span><br><span class="line">    int* pProbabilities = new int[maxSum - number + 1];</span><br><span class="line">    for (int i = number; i &lt;= maxSum; ++i)</span><br><span class="line">        pProbabilities[i - number] = 0;</span><br><span class="line"></span><br><span class="line">    Probability(number, pProbabilities);</span><br><span class="line"></span><br><span class="line">    int total = pow((double)g_maxValue, number);</span><br><span class="line">    for (int i = number; i &lt;= maxSum; ++i) &#123;</span><br><span class="line">        double ratio = (double)pProbabilities[i - number] / total;</span><br><span class="line">        printf(&quot;%d: %e\n&quot;, i, ratio);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    delete[] pProbabilities;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void Probability(int number, int* pProbabilities)</span><br><span class="line">&#123;</span><br><span class="line">    for (int i = 1; i &lt;= g_maxValue; ++i)</span><br><span class="line">        Probability(number, number, i, pProbabilities);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void Probability(int original, int current, int sum,</span><br><span class="line">    int* pProbabilities)</span><br><span class="line">&#123;</span><br><span class="line">    if (current == 1) &#123;</span><br><span class="line">        pProbabilities[sum - original]++;</span><br><span class="line">    &#125; else &#123;</span><br><span class="line">        for (int i = 1; i &lt;= g_maxValue; ++i) &#123;</span><br><span class="line">            Probability(original, current - 1, i + sum, pProbabilities);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// ====================方法二====================</span><br><span class="line">void PrintProbability_Solution2(int number)</span><br><span class="line">&#123;</span><br><span class="line">    if (number &lt; 1)</span><br><span class="line">        return;</span><br><span class="line"></span><br><span class="line">    int* pProbabilities[2];</span><br><span class="line">    pProbabilities[0] = new int[g_maxValue * number + 1];</span><br><span class="line">    pProbabilities[1] = new int[g_maxValue * number + 1];</span><br><span class="line">    for (int i = 0; i &lt; g_maxValue * number + 1; ++i) &#123;</span><br><span class="line">        pProbabilities[0][i] = 0;</span><br><span class="line">        pProbabilities[1][i] = 0;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    int flag = 0;</span><br><span class="line">    for (int i = 1; i &lt;= g_maxValue; ++i)</span><br><span class="line">        pProbabilities[flag][i] = 1;</span><br><span class="line"></span><br><span class="line">    for (int k = 2; k &lt;= number; ++k) &#123;</span><br><span class="line">        for (int i = 0; i &lt; k; ++i)</span><br><span class="line">            pProbabilities[1 - flag][i] = 0;</span><br><span class="line"></span><br><span class="line">        for (int i = k; i &lt;= g_maxValue * k; ++i) &#123;</span><br><span class="line">            pProbabilities[1 - flag][i] = 0;</span><br><span class="line">            for (int j = 1; j &lt;= i &amp;&amp; j &lt;= g_maxValue; ++j)</span><br><span class="line">                pProbabilities[1 - flag][i] += pProbabilities[flag][i - j];</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        flag = 1 - flag;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    double total = pow((double)g_maxValue, number);</span><br><span class="line">    for (int i = number; i &lt;= g_maxValue * number; ++i) &#123;</span><br><span class="line">        double ratio = (double)pProbabilities[flag][i] / total;</span><br><span class="line">        printf(&quot;%d: %e\n&quot;, i, ratio);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    delete[] pProbabilities[0];</span><br><span class="line">    delete[] pProbabilities[1];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -466,8 +466,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/03/18/61_ContinousCards/" rel="next" title="剑指_61_ContinousCards">
-                <i class="fa fa-chevron-left"></i> 剑指_61_ContinousCards
+              <a href="/2019/03/18/61_ContinousCards/" rel="next" title="剑指_ContinousCards">
+                <i class="fa fa-chevron-left"></i> 剑指_ContinousCards
               </a>
             
           </div>
@@ -476,8 +476,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/03/18/5_ReplaceSpaces/" rel="prev" title="剑指_5_ReplaceSpaces">
-                剑指_5_ReplaceSpaces <i class="fa fa-chevron-right"></i>
+              <a href="/2019/03/18/5_ReplaceSpaces/" rel="prev" title="剑指_ReplaceSpaces">
+                剑指_ReplaceSpaces <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -549,7 +549,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">82</span>
+                    <span class="site-state-item-count">81</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -572,7 +572,17 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
@@ -610,7 +620,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#面试题60：n个骰子的点数"><span class="nav-number">1.</span> <span class="nav-text">面试题60：n个骰子的点数</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#n个骰子的点数"><span class="nav-number">1.</span> <span class="nav-text">n个骰子的点数</span></a></li></ol></div>
             
 
           </div>

@@ -98,18 +98,18 @@
 
 
 
-  <meta name="description" content="面试题3（一）：找出数组中重复的数字 题目：在一个长度为n的数组里的所有数字都在0到n-1的范围内。数组中某些数字是重复的，但不知道有几个数字重复了，也不知道每个数字重复了几次。请找出数组中任意一个重复的数字。例如，如果输入长度为7的数组{2, 3, 1, 0, 2, 5, 3}，那么对应的输出是重复的数字2或者3。">
-<meta name="keywords" content="code">
+  <meta name="description" content="（一）：找出数组中重复的数字 题目：在一个长度为n的数组里的所有数字都在0到n-1的范围内。数组中某些数字是重复的，但不知道有几个数字重复了，也不知道每个数字重复了几次。请找出数组中任意一个重复的数字。例如，如果输入长度为7的数组{2, 3, 1, 0, 2, 5, 3}，那么对应的输出是重复的数字2或者3。">
+<meta name="keywords" content="code array">
 <meta property="og:type" content="article">
-<meta property="og:title" content="剑指_3_FindDuplication">
+<meta property="og:title" content="剑指_FindDuplication">
 <meta property="og:url" content="http://yoursite.com/2019/03/18/3_FindDuplication/index.html">
 <meta property="og:site_name" content="Andrew Chan">
-<meta property="og:description" content="面试题3（一）：找出数组中重复的数字 题目：在一个长度为n的数组里的所有数字都在0到n-1的范围内。数组中某些数字是重复的，但不知道有几个数字重复了，也不知道每个数字重复了几次。请找出数组中任意一个重复的数字。例如，如果输入长度为7的数组{2, 3, 1, 0, 2, 5, 3}，那么对应的输出是重复的数字2或者3。">
+<meta property="og:description" content="（一）：找出数组中重复的数字 题目：在一个长度为n的数组里的所有数字都在0到n-1的范围内。数组中某些数字是重复的，但不知道有几个数字重复了，也不知道每个数字重复了几次。请找出数组中任意一个重复的数字。例如，如果输入长度为7的数组{2, 3, 1, 0, 2, 5, 3}，那么对应的输出是重复的数字2或者3。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-03-18T08:37:26.854Z">
+<meta property="og:updated_time" content="2019-03-18T11:25:15.972Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="剑指_3_FindDuplication">
-<meta name="twitter:description" content="面试题3（一）：找出数组中重复的数字 题目：在一个长度为n的数组里的所有数字都在0到n-1的范围内。数组中某些数字是重复的，但不知道有几个数字重复了，也不知道每个数字重复了几次。请找出数组中任意一个重复的数字。例如，如果输入长度为7的数组{2, 3, 1, 0, 2, 5, 3}，那么对应的输出是重复的数字2或者3。">
+<meta name="twitter:title" content="剑指_FindDuplication">
+<meta name="twitter:description" content="（一）：找出数组中重复的数字 题目：在一个长度为n的数组里的所有数字都在0到n-1的范围内。数组中某些数字是重复的，但不知道有几个数字重复了，也不知道每个数字重复了几次。请找出数组中任意一个重复的数字。例如，如果输入长度为7的数组{2, 3, 1, 0, 2, 5, 3}，那么对应的输出是重复的数字2或者3。">
 
 
 
@@ -126,7 +126,7 @@
   };
 </script>
 
-  <title>剑指_3_FindDuplication | Andrew Chan</title>
+  <title>剑指_FindDuplication | Andrew Chan</title>
   
 
 
@@ -363,7 +363,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">剑指_3_FindDuplication
+          <h1 class="post-title" itemprop="name headline">剑指_FindDuplication
 
               
             
@@ -389,7 +389,7 @@
                 
               
 
-              <time title="Created: 2019-03-18 00:00:00 / Modified: 16:37:26" itemprop="dateCreated datePublished" datetime="2019-03-18T00:00:00+08:00">2019-03-18</time>
+              <time title="Created: 2019-03-18 00:00:00 / Modified: 19:25:15" itemprop="dateCreated datePublished" datetime="2019-03-18T00:00:00+08:00">2019-03-18</time>
             
 
             
@@ -428,9 +428,11 @@
       
 
       
-        <h4 id="面试题3（一）：找出数组中重复的数字"><a href="#面试题3（一）：找出数组中重复的数字" class="headerlink" title="面试题3（一）：找出数组中重复的数字"></a>面试题3（一）：找出数组中重复的数字</h4><hr>
-<p>题目：在一个长度为n的数组里的所有数字都在0到n-1的范围内。数组中某些数字是重复的，但不知道有几个数字重复了，也不知道每个数字重复了几次。请找出数组中任意一个重复的数字。例如，如果输入长度为7的数组{2, 3, 1, 0, 2, 5, 3}，那么对应的输出是重复的数字2或者3。<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">/*******************************************************************</span><br><span class="line">Copyright(c) 2016, Harry He</span><br><span class="line">All rights reserved.</span><br><span class="line"></span><br><span class="line">Distributed under the BSD license.</span><br><span class="line">(See accompanying file LICENSE.txt at</span><br><span class="line">https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)</span><br><span class="line">*******************************************************************/</span><br><span class="line"></span><br><span class="line">//==================================================================</span><br><span class="line">// 《剑指Offer——名企面试官精讲典型编程题》代码</span><br><span class="line">// 作者：何海涛</span><br><span class="line">//==================================================================</span><br><span class="line"></span><br><span class="line">#include &lt;cstdio&gt;</span><br><span class="line"></span><br><span class="line">// 参数:</span><br><span class="line">//        numbers:     一个整数数组</span><br><span class="line">//        length:      数组的长度</span><br><span class="line">//        duplication: (输出) 数组中的一个重复的数字</span><br><span class="line">// 返回值:</span><br><span class="line">//        true  - 输入有效，并且数组中存在重复的数字</span><br><span class="line">//        false - 输入无效，或者数组中没有重复的数字</span><br><span class="line">bool duplicate(int numbers[], int length, int* duplication)</span><br><span class="line">&#123;</span><br><span class="line">    if (numbers == nullptr || length &lt;= 0)</span><br><span class="line">        return false;</span><br><span class="line"></span><br><span class="line">    for (int i = 0; i &lt; length; ++i) &#123;</span><br><span class="line">        if (numbers[i] &lt; 0 || numbers[i] &gt; length - 1)</span><br><span class="line">            return false;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    for (int i = 0; i &lt; length; ++i) &#123;</span><br><span class="line">        while (numbers[i] != i) &#123;</span><br><span class="line">            if (numbers[i] == numbers[numbers[i]]) &#123;</span><br><span class="line">                *duplication = numbers[i];</span><br><span class="line">                return true;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            // 交换numbers[i]和numbers[numbers[i]]</span><br><span class="line">            int temp = numbers[i];</span><br><span class="line">            numbers[i] = numbers[temp];</span><br><span class="line">            numbers[temp] = temp;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return false;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-
+        <h4 id="（一）：找出数组中重复的数字"><a href="#（一）：找出数组中重复的数字" class="headerlink" title="（一）：找出数组中重复的数字"></a>（一）：找出数组中重复的数字</h4><hr>
+<p>题目：在一个长度为n的数组里的所有数字都在0到n-1的范围内。数组中某些数字是重复的，但不知道有几个数字重复了，也不知道每个数字重复了几次。请找出数组中任意一个重复的数字。例如，如果输入长度为7的数组{2, 3, 1, 0, 2, 5, 3}，那么对应的输出是重复的数字2或者3。<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">/*******************************************************************</span><br><span class="line">Copyright(c) 2016, Harry He</span><br><span class="line">All rights reserved.</span><br><span class="line"></span><br><span class="line">Distributed under the BSD license.</span><br><span class="line">(See accompanying file LICENSE.txt at</span><br><span class="line">https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)</span><br><span class="line">*******************************************************************/</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#include &lt;cstdio&gt;</span><br><span class="line"></span><br><span class="line">// 参数:</span><br><span class="line">//        numbers:     一个整数数组</span><br><span class="line">//        length:      数组的长度</span><br><span class="line">//        duplication: (输出) 数组中的一个重复的数字</span><br><span class="line">// 返回值:</span><br><span class="line">//        true  - 输入有效，并且数组中存在重复的数字</span><br><span class="line">//        false - 输入无效，或者数组中没有重复的数字</span><br><span class="line">bool duplicate(int numbers[], int length, int* duplication)</span><br><span class="line">&#123;</span><br><span class="line">    if (numbers == nullptr || length &lt;= 0)</span><br><span class="line">        return false;</span><br><span class="line"></span><br><span class="line">    for (int i = 0; i &lt; length; ++i) &#123;</span><br><span class="line">        if (numbers[i] &lt; 0 || numbers[i] &gt; length - 1)</span><br><span class="line">            return false;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    for (int i = 0; i &lt; length; ++i) &#123;</span><br><span class="line">        while (numbers[i] != i) &#123;</span><br><span class="line">            if (numbers[i] == numbers[numbers[i]]) &#123;</span><br><span class="line">                *duplication = numbers[i];</span><br><span class="line">                return true;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            // 交换numbers[i]和numbers[numbers[i]]</span><br><span class="line">            int temp = numbers[i];</span><br><span class="line">            numbers[i] = numbers[temp];</span><br><span class="line">            numbers[temp] = temp;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return false;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h4 id="（二）：不修改数组找出重复的数字"><a href="#（二）：不修改数组找出重复的数字" class="headerlink" title="（二）：不修改数组找出重复的数字"></a>（二）：不修改数组找出重复的数字</h4><hr>
+<p>题目：在一个长度为n+1的数组里的所有数字都在1到n的范围内，所以数组中至少有一个数字是重复的。请找出数组中任意一个重复的数字，但不能修改输入的数组。例如，如果输入长度为8的数组{2, 3, 5, 4, 3, 2, 6, 7}，那么对应的输出是重复的数字2或者3。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line">/*******************************************************************</span><br><span class="line">Copyright(c) 2016, Harry He</span><br><span class="line">All rights reserved.</span><br><span class="line"></span><br><span class="line">Distributed under the BSD license.</span><br><span class="line">(See accompanying file LICENSE.txt at</span><br><span class="line">https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)</span><br><span class="line">*******************************************************************/</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#include &lt;iostream&gt;</span><br><span class="line"></span><br><span class="line">int countRange(const int* numbers, int length, int start, int end);</span><br><span class="line"></span><br><span class="line">// 参数:</span><br><span class="line">//        numbers:     一个整数数组</span><br><span class="line">//        length:      数组的长度</span><br><span class="line">// 返回值:</span><br><span class="line">//        正数  - 输入有效，并且数组中存在重复的数字，返回值为重复的数字</span><br><span class="line">//        负数  - 输入无效，或者数组中没有重复的数字</span><br><span class="line">int getDuplication(const int* numbers, int length)</span><br><span class="line">&#123;</span><br><span class="line">    if (numbers == nullptr || length &lt;= 0)</span><br><span class="line">        return -1;</span><br><span class="line"></span><br><span class="line">    int start = 1;</span><br><span class="line">    int end = length - 1;</span><br><span class="line">    while (end &gt;= start) &#123;</span><br><span class="line">        int middle = ((end - start) &gt;&gt; 1) + start;</span><br><span class="line">        int count = countRange(numbers, length, start, middle);</span><br><span class="line">        if (end == start) &#123;</span><br><span class="line">            if (count &gt; 1)</span><br><span class="line">                return start;</span><br><span class="line">            else</span><br><span class="line">                break;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        if (count &gt; (middle - start + 1))</span><br><span class="line">            end = middle;</span><br><span class="line">        else</span><br><span class="line">            start = middle + 1;</span><br><span class="line">    &#125;</span><br><span class="line">    return -1;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int countRange(const int* numbers, int length, int start, int end)</span><br><span class="line">&#123;</span><br><span class="line">    if (numbers == nullptr)</span><br><span class="line">        return 0;</span><br><span class="line"></span><br><span class="line">    int count = 0;</span><br><span class="line">    for (int i = 0; i &lt; length; i++)</span><br><span class="line">        if (numbers[i] &gt;= start &amp;&amp; numbers[i] &lt;= end)</span><br><span class="line">            ++count;</span><br><span class="line">    return count;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
 
@@ -453,7 +455,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/code/" rel="tag"># code</a>
+            <a href="/tags/code-array/" rel="tag"># code array</a>
           
         </div>
       
@@ -466,8 +468,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/03/18/3_FindDuplicationNoEdit/" rel="next" title="剑指_3_FindDuplicationNoEdit">
-                <i class="fa fa-chevron-left"></i> 剑指_3_FindDuplicationNoEdit
+              <a href="/2019/03/18/40_KLeastNumbers/" rel="next" title="剑指_40_KLeastNumbers">
+                <i class="fa fa-chevron-left"></i> 剑指_40_KLeastNumbers
               </a>
             
           </div>
@@ -549,7 +551,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">82</span>
+                    <span class="site-state-item-count">81</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -572,7 +574,17 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
@@ -610,7 +622,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#面试题3（一）：找出数组中重复的数字"><span class="nav-number">1.</span> <span class="nav-text">面试题3（一）：找出数组中重复的数字</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#（一）：找出数组中重复的数字"><span class="nav-number">1.</span> <span class="nav-text">（一）：找出数组中重复的数字</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#（二）：不修改数组找出重复的数字"><span class="nav-number">2.</span> <span class="nav-text">（二）：不修改数组找出重复的数字</span></a></li></ol></div>
             
 
           </div>

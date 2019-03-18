@@ -98,18 +98,18 @@
 
 
 
-  <meta name="description" content="面试题68：树中两个结点的最低公共祖先 题目：输入两个树结点，求它们的最低公共祖先。">
-<meta name="keywords" content="code">
+  <meta name="description" content="树中两个结点的最低公共祖先 题目：输入两个树结点，求它们的最低公共祖先。">
+<meta name="keywords" content="code tree">
 <meta property="og:type" content="article">
-<meta property="og:title" content="剑指_68_CommonParentInTree">
+<meta property="og:title" content="剑指_CommonParentInTree">
 <meta property="og:url" content="http://yoursite.com/2019/03/18/68_CommonParentInTree/index.html">
 <meta property="og:site_name" content="Andrew Chan">
-<meta property="og:description" content="面试题68：树中两个结点的最低公共祖先 题目：输入两个树结点，求它们的最低公共祖先。">
+<meta property="og:description" content="树中两个结点的最低公共祖先 题目：输入两个树结点，求它们的最低公共祖先。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-03-18T08:41:22.220Z">
+<meta property="og:updated_time" content="2019-03-18T11:25:15.972Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="剑指_68_CommonParentInTree">
-<meta name="twitter:description" content="面试题68：树中两个结点的最低公共祖先 题目：输入两个树结点，求它们的最低公共祖先。">
+<meta name="twitter:title" content="剑指_CommonParentInTree">
+<meta name="twitter:description" content="树中两个结点的最低公共祖先 题目：输入两个树结点，求它们的最低公共祖先。">
 
 
 
@@ -126,7 +126,7 @@
   };
 </script>
 
-  <title>剑指_68_CommonParentInTree | Andrew Chan</title>
+  <title>剑指_CommonParentInTree | Andrew Chan</title>
   
 
 
@@ -363,7 +363,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">剑指_68_CommonParentInTree
+          <h1 class="post-title" itemprop="name headline">剑指_CommonParentInTree
 
               
             
@@ -389,7 +389,7 @@
                 
               
 
-              <time title="Created: 2019-03-18 00:00:00 / Modified: 16:41:22" itemprop="dateCreated datePublished" datetime="2019-03-18T00:00:00+08:00">2019-03-18</time>
+              <time title="Created: 2019-03-18 00:00:00 / Modified: 19:25:15" itemprop="dateCreated datePublished" datetime="2019-03-18T00:00:00+08:00">2019-03-18</time>
             
 
             
@@ -428,8 +428,8 @@
       
 
       
-        <h4 id="面试题68：树中两个结点的最低公共祖先"><a href="#面试题68：树中两个结点的最低公共祖先" class="headerlink" title="面试题68：树中两个结点的最低公共祖先"></a>面试题68：树中两个结点的最低公共祖先</h4><hr>
-<p>题目：输入两个树结点，求它们的最低公共祖先。<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br></pre></td><td class="code"><pre><span class="line">/*******************************************************************</span><br><span class="line">Copyright(c) 2016, Harry He</span><br><span class="line">All rights reserved.</span><br><span class="line"></span><br><span class="line">Distributed under the BSD license.</span><br><span class="line">(See accompanying file LICENSE.txt at</span><br><span class="line">https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)</span><br><span class="line">*******************************************************************/</span><br><span class="line"></span><br><span class="line">//==================================================================</span><br><span class="line">// 《剑指Offer——名企面试官精讲典型编程题》代码</span><br><span class="line">// 作者：何海涛</span><br><span class="line">//==================================================================</span><br><span class="line"></span><br><span class="line">#include &quot;..\Utilities\Tree.h&quot;</span><br><span class="line">#include &lt;cstdio&gt;</span><br><span class="line">#include &lt;list&gt;</span><br><span class="line"></span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">bool GetNodePath(const TreeNode* pRoot, const TreeNode* pNode, list&lt;const TreeNode*&gt;&amp; path)</span><br><span class="line">&#123;</span><br><span class="line">    if (pRoot == pNode)</span><br><span class="line">        return true;</span><br><span class="line"></span><br><span class="line">    path.push_back(pRoot);</span><br><span class="line"></span><br><span class="line">    bool found = false;</span><br><span class="line"></span><br><span class="line">    vector&lt;TreeNode*&gt;::const_iterator i = pRoot-&gt;m_vChildren.begin();</span><br><span class="line">    while (!found &amp;&amp; i &lt; pRoot-&gt;m_vChildren.end()) &#123;</span><br><span class="line">        found = GetNodePath(*i, pNode, path);</span><br><span class="line">        ++i;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    if (!found)</span><br><span class="line">        path.pop_back();</span><br><span class="line"></span><br><span class="line">    return found;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">const TreeNode* GetLastCommonNode(</span><br><span class="line">    const list&lt;const TreeNode*&gt;&amp; path1,</span><br><span class="line">    const list&lt;const TreeNode*&gt;&amp; path2)</span><br><span class="line">&#123;</span><br><span class="line">    list&lt;const TreeNode*&gt;::const_iterator iterator1 = path1.begin();</span><br><span class="line">    list&lt;const TreeNode*&gt;::const_iterator iterator2 = path2.begin();</span><br><span class="line"></span><br><span class="line">    const TreeNode* pLast = nullptr;</span><br><span class="line"></span><br><span class="line">    while (iterator1 != path1.end() &amp;&amp; iterator2 != path2.end()) &#123;</span><br><span class="line">        if (*iterator1 == *iterator2)</span><br><span class="line">            pLast = *iterator1;</span><br><span class="line"></span><br><span class="line">        iterator1++;</span><br><span class="line">        iterator2++;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return pLast;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">const TreeNode* GetLastCommonParent(const TreeNode* pRoot, const TreeNode* pNode1, const TreeNode* pNode2)</span><br><span class="line">&#123;</span><br><span class="line">    if (pRoot == nullptr || pNode1 == nullptr || pNode2 == nullptr)</span><br><span class="line">        return nullptr;</span><br><span class="line"></span><br><span class="line">    list&lt;const TreeNode*&gt; path1;</span><br><span class="line">    GetNodePath(pRoot, pNode1, path1);</span><br><span class="line"></span><br><span class="line">    list&lt;const TreeNode*&gt; path2;</span><br><span class="line">    GetNodePath(pRoot, pNode2, path2);</span><br><span class="line"></span><br><span class="line">    return GetLastCommonNode(path1, path2);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+        <h4 id="树中两个结点的最低公共祖先"><a href="#树中两个结点的最低公共祖先" class="headerlink" title="树中两个结点的最低公共祖先"></a>树中两个结点的最低公共祖先</h4><hr>
+<p>题目：输入两个树结点，求它们的最低公共祖先。<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br></pre></td><td class="code"><pre><span class="line">/*******************************************************************</span><br><span class="line">Copyright(c) 2016, Harry He</span><br><span class="line">All rights reserved.</span><br><span class="line"></span><br><span class="line">Distributed under the BSD license.</span><br><span class="line">(See accompanying file LICENSE.txt at</span><br><span class="line">https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)</span><br><span class="line">*******************************************************************/</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#include &quot;..\Utilities\Tree.h&quot;</span><br><span class="line">#include &lt;cstdio&gt;</span><br><span class="line">#include &lt;list&gt;</span><br><span class="line"></span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">bool GetNodePath(const TreeNode* pRoot, const TreeNode* pNode, list&lt;const TreeNode*&gt;&amp; path)</span><br><span class="line">&#123;</span><br><span class="line">    if (pRoot == pNode)</span><br><span class="line">        return true;</span><br><span class="line"></span><br><span class="line">    path.push_back(pRoot);</span><br><span class="line"></span><br><span class="line">    bool found = false;</span><br><span class="line"></span><br><span class="line">    vector&lt;TreeNode*&gt;::const_iterator i = pRoot-&gt;m_vChildren.begin();</span><br><span class="line">    while (!found &amp;&amp; i &lt; pRoot-&gt;m_vChildren.end()) &#123;</span><br><span class="line">        found = GetNodePath(*i, pNode, path);</span><br><span class="line">        ++i;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    if (!found)</span><br><span class="line">        path.pop_back();</span><br><span class="line"></span><br><span class="line">    return found;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">const TreeNode* GetLastCommonNode(</span><br><span class="line">    const list&lt;const TreeNode*&gt;&amp; path1,</span><br><span class="line">    const list&lt;const TreeNode*&gt;&amp; path2)</span><br><span class="line">&#123;</span><br><span class="line">    list&lt;const TreeNode*&gt;::const_iterator iterator1 = path1.begin();</span><br><span class="line">    list&lt;const TreeNode*&gt;::const_iterator iterator2 = path2.begin();</span><br><span class="line"></span><br><span class="line">    const TreeNode* pLast = nullptr;</span><br><span class="line"></span><br><span class="line">    while (iterator1 != path1.end() &amp;&amp; iterator2 != path2.end()) &#123;</span><br><span class="line">        if (*iterator1 == *iterator2)</span><br><span class="line">            pLast = *iterator1;</span><br><span class="line"></span><br><span class="line">        iterator1++;</span><br><span class="line">        iterator2++;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return pLast;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">const TreeNode* GetLastCommonParent(const TreeNode* pRoot, const TreeNode* pNode1, const TreeNode* pNode2)</span><br><span class="line">&#123;</span><br><span class="line">    if (pRoot == nullptr || pNode1 == nullptr || pNode2 == nullptr)</span><br><span class="line">        return nullptr;</span><br><span class="line"></span><br><span class="line">    list&lt;const TreeNode*&gt; path1;</span><br><span class="line">    GetNodePath(pRoot, pNode1, path1);</span><br><span class="line"></span><br><span class="line">    list&lt;const TreeNode*&gt; path2;</span><br><span class="line">    GetNodePath(pRoot, pNode2, path2);</span><br><span class="line"></span><br><span class="line">    return GetLastCommonNode(path1, path2);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -453,7 +453,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/code/" rel="tag"># code</a>
+            <a href="/tags/code-tree/" rel="tag"># code tree</a>
           
         </div>
       
@@ -466,8 +466,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/03/18/6_PrintListInReversedOrder/" rel="next" title="剑指_6_PrintListInReversedOrder">
-                <i class="fa fa-chevron-left"></i> 剑指_6_PrintListInReversedOrder
+              <a href="/2019/03/18/6_PrintListInReversedOrder/" rel="next" title="剑指_PrintListInReversedOrder">
+                <i class="fa fa-chevron-left"></i> 剑指_PrintListInReversedOrder
               </a>
             
           </div>
@@ -476,8 +476,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/03/18/67_StringToInt/" rel="prev" title="剑指_67_StringToInt">
-                剑指_67_StringToInt <i class="fa fa-chevron-right"></i>
+              <a href="/2019/03/18/67_StringToInt/" rel="prev" title="剑指_StringToInt">
+                剑指_StringToInt <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -549,7 +549,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">82</span>
+                    <span class="site-state-item-count">81</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -572,7 +572,17 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
@@ -610,7 +620,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#面试题68：树中两个结点的最低公共祖先"><span class="nav-number">1.</span> <span class="nav-text">面试题68：树中两个结点的最低公共祖先</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#树中两个结点的最低公共祖先"><span class="nav-number">1.</span> <span class="nav-text">树中两个结点的最低公共祖先</span></a></li></ol></div>
             
 
           </div>

@@ -98,18 +98,18 @@
 
 
 
-  <meta name="description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210">
-<meta name="keywords" content="code">
+  <meta name="description" content="从尾到头打印链表 题目：输入一个链表的头结点，从尾到头反过来打印出每个结点的值。">
+<meta name="keywords" content="code list">
 <meta property="og:type" content="article">
-<meta property="og:title" content="剑指_6_PrintListInReversedOrder">
+<meta property="og:title" content="剑指_PrintListInReversedOrder">
 <meta property="og:url" content="http://yoursite.com/2019/03/18/6_PrintListInReversedOrder/index.html">
 <meta property="og:site_name" content="Andrew Chan">
-<meta property="og:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210">
+<meta property="og:description" content="从尾到头打印链表 题目：输入一个链表的头结点，从尾到头反过来打印出每个结点的值。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-03-18T08:13:17.234Z">
+<meta property="og:updated_time" content="2019-03-18T11:25:15.971Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="剑指_6_PrintListInReversedOrder">
-<meta name="twitter:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210">
+<meta name="twitter:title" content="剑指_PrintListInReversedOrder">
+<meta name="twitter:description" content="从尾到头打印链表 题目：输入一个链表的头结点，从尾到头反过来打印出每个结点的值。">
 
 
 
@@ -126,7 +126,7 @@
   };
 </script>
 
-  <title>剑指_6_PrintListInReversedOrder | Andrew Chan</title>
+  <title>剑指_PrintListInReversedOrder | Andrew Chan</title>
   
 
 
@@ -363,7 +363,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">剑指_6_PrintListInReversedOrder
+          <h1 class="post-title" itemprop="name headline">剑指_PrintListInReversedOrder
 
               
             
@@ -389,7 +389,7 @@
                 
               
 
-              <time title="Created: 2019-03-18 00:00:00 / Modified: 16:13:17" itemprop="dateCreated datePublished" datetime="2019-03-18T00:00:00+08:00">2019-03-18</time>
+              <time title="Created: 2019-03-18 00:00:00 / Modified: 19:25:15" itemprop="dateCreated datePublished" datetime="2019-03-18T00:00:00+08:00">2019-03-18</time>
             
 
             
@@ -428,7 +428,9 @@
       
 
       
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br></pre></td><td class="code"><pre><span class="line">/*******************************************************************</span><br><span class="line">Copyright(c) 2016, Harry He</span><br><span class="line">All rights reserved.</span><br><span class="line"></span><br><span class="line">Distributed under the BSD license.</span><br><span class="line">(See accompanying file LICENSE.txt at</span><br><span class="line">https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)</span><br><span class="line">*******************************************************************/</span><br><span class="line"></span><br><span class="line">//==================================================================</span><br><span class="line">// 《剑指Offer——名企面试官精讲典型编程题》代码</span><br><span class="line">// 作者：何海涛</span><br><span class="line">//==================================================================</span><br><span class="line"></span><br><span class="line">// 面试题6：从尾到头打印链表</span><br><span class="line">// 题目：输入一个链表的头结点，从尾到头反过来打印出每个结点的值。</span><br><span class="line"></span><br><span class="line">#include &quot;..\Utilities\List.h&quot;</span><br><span class="line">#include &lt;stack&gt;</span><br><span class="line"></span><br><span class="line">void PrintListReversingly_Iteratively(ListNode* pHead)</span><br><span class="line">&#123;</span><br><span class="line">    std::stack&lt;ListNode*&gt; nodes;</span><br><span class="line"></span><br><span class="line">    ListNode* pNode = pHead;</span><br><span class="line">    while (pNode != nullptr) &#123;</span><br><span class="line">        nodes.push(pNode);</span><br><span class="line">        pNode = pNode-&gt;m_pNext;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    while (!nodes.empty()) &#123;</span><br><span class="line">        pNode = nodes.top();</span><br><span class="line">        printf(&quot;%d\t&quot;, pNode-&gt;m_nValue);</span><br><span class="line">        nodes.pop();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void PrintListReversingly_Recursively(ListNode* pHead)</span><br><span class="line">&#123;</span><br><span class="line">    if (pHead != nullptr) &#123;</span><br><span class="line">        if (pHead-&gt;m_pNext != nullptr) &#123;</span><br><span class="line">            PrintListReversingly_Recursively(pHead-&gt;m_pNext);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        printf(&quot;%d\t&quot;, pHead-&gt;m_nValue);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// ====================测试代码====================</span><br><span class="line">void Test(ListNode* pHead)</span><br><span class="line">&#123;</span><br><span class="line">    PrintList(pHead);</span><br><span class="line">    PrintListReversingly_Iteratively(pHead);</span><br><span class="line">    printf(&quot;\n&quot;);</span><br><span class="line">    PrintListReversingly_Recursively(pHead);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 1-&gt;2-&gt;3-&gt;4-&gt;5</span><br><span class="line">void Test1()</span><br><span class="line">&#123;</span><br><span class="line">    printf(&quot;\nTest1 begins.\n&quot;);</span><br><span class="line"></span><br><span class="line">    ListNode* pNode1 = CreateListNode(1);</span><br><span class="line">    ListNode* pNode2 = CreateListNode(2);</span><br><span class="line">    ListNode* pNode3 = CreateListNode(3);</span><br><span class="line">    ListNode* pNode4 = CreateListNode(4);</span><br><span class="line">    ListNode* pNode5 = CreateListNode(5);</span><br><span class="line"></span><br><span class="line">    ConnectListNodes(pNode1, pNode2);</span><br><span class="line">    ConnectListNodes(pNode2, pNode3);</span><br><span class="line">    ConnectListNodes(pNode3, pNode4);</span><br><span class="line">    ConnectListNodes(pNode4, pNode5);</span><br><span class="line"></span><br><span class="line">    Test(pNode1);</span><br><span class="line"></span><br><span class="line">    DestroyList(pNode1);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 只有一个结点的链表: 1</span><br><span class="line">void Test2()</span><br><span class="line">&#123;</span><br><span class="line">    printf(&quot;\nTest2 begins.\n&quot;);</span><br><span class="line"></span><br><span class="line">    ListNode* pNode1 = CreateListNode(1);</span><br><span class="line"></span><br><span class="line">    Test(pNode1);</span><br><span class="line"></span><br><span class="line">    DestroyList(pNode1);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 空链表</span><br><span class="line">void Test3()</span><br><span class="line">&#123;</span><br><span class="line">    printf(&quot;\nTest3 begins.\n&quot;);</span><br><span class="line"></span><br><span class="line">    Test(nullptr);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main(int argc, char* argv[])</span><br><span class="line">&#123;</span><br><span class="line">    Test1();</span><br><span class="line">    Test2();</span><br><span class="line">    Test3();</span><br><span class="line"></span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h4 id="从尾到头打印链表"><a href="#从尾到头打印链表" class="headerlink" title="从尾到头打印链表"></a>从尾到头打印链表</h4><hr>
+<p>题目：输入一个链表的头结点，从尾到头反过来打印出每个结点的值。<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">/*******************************************************************</span><br><span class="line">Copyright(c) 2016, Harry He</span><br><span class="line">All rights reserved.</span><br><span class="line"></span><br><span class="line">Distributed under the BSD license.</span><br><span class="line">(See accompanying file LICENSE.txt at</span><br><span class="line">https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)</span><br><span class="line">*******************************************************************/</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#include &quot;..\Utilities\List.h&quot;</span><br><span class="line">#include &lt;stack&gt;</span><br><span class="line"></span><br><span class="line">void PrintListReversingly_Iteratively(ListNode* pHead)</span><br><span class="line">&#123;</span><br><span class="line">    std::stack&lt;ListNode*&gt; nodes;</span><br><span class="line"></span><br><span class="line">    ListNode* pNode = pHead;</span><br><span class="line">    while (pNode != nullptr) &#123;</span><br><span class="line">        nodes.push(pNode);</span><br><span class="line">        pNode = pNode-&gt;m_pNext;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    while (!nodes.empty()) &#123;</span><br><span class="line">        pNode = nodes.top();</span><br><span class="line">        printf(&quot;%d\t&quot;, pNode-&gt;m_nValue);</span><br><span class="line">        nodes.pop();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void PrintListReversingly_Recursively(ListNode* pHead)</span><br><span class="line">&#123;</span><br><span class="line">    if (pHead != nullptr) &#123;</span><br><span class="line">        if (pHead-&gt;m_pNext != nullptr) &#123;</span><br><span class="line">            PrintListReversingly_Recursively(pHead-&gt;m_pNext);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        printf(&quot;%d\t&quot;, pHead-&gt;m_nValue);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
       
     </div>
 
@@ -451,7 +453,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/code/" rel="tag"># code</a>
+            <a href="/tags/code-list/" rel="tag"># code list</a>
           
         </div>
       
@@ -464,8 +466,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/03/18/7_ConstructBinaryTree/" rel="next" title="剑指_7_ConstructBinaryTree">
-                <i class="fa fa-chevron-left"></i> 剑指_7_ConstructBinaryTree
+              <a href="/2019/03/18/7_ConstructBinaryTree/" rel="next" title="剑指_ConstructBinaryTree">
+                <i class="fa fa-chevron-left"></i> 剑指_ConstructBinaryTree
               </a>
             
           </div>
@@ -474,8 +476,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/03/18/68_CommonParentInTree/" rel="prev" title="剑指_68_CommonParentInTree">
-                剑指_68_CommonParentInTree <i class="fa fa-chevron-right"></i>
+              <a href="/2019/03/18/68_CommonParentInTree/" rel="prev" title="剑指_CommonParentInTree">
+                剑指_CommonParentInTree <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -520,8 +522,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -538,7 +549,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">82</span>
+                    <span class="site-state-item-count">81</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -561,7 +572,17 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
@@ -588,6 +609,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#从尾到头打印链表"><span class="nav-number">1.</span> <span class="nav-text">从尾到头打印链表</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       

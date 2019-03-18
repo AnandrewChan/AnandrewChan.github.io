@@ -98,18 +98,18 @@
 
 
 
-  <meta name="description" content="面试题62：圆圈中最后剩下的数字 题目：0, 1, …, n-1这n个数字排成一个圆圈，从数字0开始每次从这个圆圈里删除第m个数字。求出这个圆圈里剩下的最后一个数字。">
+  <meta name="description" content="圆圈中最后剩下的数字 题目：0, 1, …, n-1这n个数字排成一个圆圈，从数字0开始每次从这个圆圈里删除第m个数字。求出这个圆圈里剩下的最后一个数字。">
 <meta name="keywords" content="code">
 <meta property="og:type" content="article">
-<meta property="og:title" content="剑指_62_LastNumberInCircle">
+<meta property="og:title" content="剑指_LastNumberInCircle">
 <meta property="og:url" content="http://yoursite.com/2019/03/18/62_LastNumberInCircle/index.html">
 <meta property="og:site_name" content="Andrew Chan">
-<meta property="og:description" content="面试题62：圆圈中最后剩下的数字 题目：0, 1, …, n-1这n个数字排成一个圆圈，从数字0开始每次从这个圆圈里删除第m个数字。求出这个圆圈里剩下的最后一个数字。">
+<meta property="og:description" content="圆圈中最后剩下的数字 题目：0, 1, …, n-1这n个数字排成一个圆圈，从数字0开始每次从这个圆圈里删除第m个数字。求出这个圆圈里剩下的最后一个数字。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-03-18T08:46:02.907Z">
+<meta property="og:updated_time" content="2019-03-18T11:25:15.973Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="剑指_62_LastNumberInCircle">
-<meta name="twitter:description" content="面试题62：圆圈中最后剩下的数字 题目：0, 1, …, n-1这n个数字排成一个圆圈，从数字0开始每次从这个圆圈里删除第m个数字。求出这个圆圈里剩下的最后一个数字。">
+<meta name="twitter:title" content="剑指_LastNumberInCircle">
+<meta name="twitter:description" content="圆圈中最后剩下的数字 题目：0, 1, …, n-1这n个数字排成一个圆圈，从数字0开始每次从这个圆圈里删除第m个数字。求出这个圆圈里剩下的最后一个数字。">
 
 
 
@@ -126,7 +126,7 @@
   };
 </script>
 
-  <title>剑指_62_LastNumberInCircle | Andrew Chan</title>
+  <title>剑指_LastNumberInCircle | Andrew Chan</title>
   
 
 
@@ -363,7 +363,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">剑指_62_LastNumberInCircle
+          <h1 class="post-title" itemprop="name headline">剑指_LastNumberInCircle
 
               
             
@@ -389,7 +389,7 @@
                 
               
 
-              <time title="Created: 2019-03-18 00:00:00 / Modified: 16:46:02" itemprop="dateCreated datePublished" datetime="2019-03-18T00:00:00+08:00">2019-03-18</time>
+              <time title="Created: 2019-03-18 00:00:00 / Modified: 19:25:15" itemprop="dateCreated datePublished" datetime="2019-03-18T00:00:00+08:00">2019-03-18</time>
             
 
             
@@ -428,8 +428,8 @@
       
 
       
-        <h4 id="面试题62：圆圈中最后剩下的数字"><a href="#面试题62：圆圈中最后剩下的数字" class="headerlink" title="面试题62：圆圈中最后剩下的数字"></a>面试题62：圆圈中最后剩下的数字</h4><hr>
-<p>题目：0, 1, …, n-1这n个数字排成一个圆圈，从数字0开始每次从这个圆圈里删除第m个数字。求出这个圆圈里剩下的最后一个数字。<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line">/*******************************************************************</span><br><span class="line">Copyright(c) 2016, Harry He</span><br><span class="line">All rights reserved.</span><br><span class="line"></span><br><span class="line">Distributed under the BSD license.</span><br><span class="line">(See accompanying file LICENSE.txt at</span><br><span class="line">https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)</span><br><span class="line">*******************************************************************/</span><br><span class="line"></span><br><span class="line">//==================================================================</span><br><span class="line">// 《剑指Offer——名企面试官精讲典型编程题》代码</span><br><span class="line">// 作者：何海涛</span><br><span class="line">//==================================================================</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#include &lt;cstdio&gt;</span><br><span class="line">#include &lt;list&gt;</span><br><span class="line"></span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">// ====================方法1====================</span><br><span class="line">int LastRemaining_Solution1(unsigned int n, unsigned int m)</span><br><span class="line">&#123;</span><br><span class="line">    if (n &lt; 1 || m &lt; 1)</span><br><span class="line">        return -1;</span><br><span class="line"></span><br><span class="line">    unsigned int i = 0;</span><br><span class="line"></span><br><span class="line">    list&lt;int&gt; numbers;</span><br><span class="line">    for (i = 0; i &lt; n; ++i)</span><br><span class="line">        numbers.push_back(i);</span><br><span class="line"></span><br><span class="line">    list&lt;int&gt;::iterator current = numbers.begin();</span><br><span class="line">    while (numbers.size() &gt; 1) &#123;</span><br><span class="line">        for (int i = 1; i &lt; m; ++i) &#123;</span><br><span class="line">            current++;</span><br><span class="line">            if (current == numbers.end())</span><br><span class="line">                current = numbers.begin();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        list&lt;int&gt;::iterator next = ++current;</span><br><span class="line">        if (next == numbers.end())</span><br><span class="line">            next = numbers.begin();</span><br><span class="line"></span><br><span class="line">        --current;</span><br><span class="line">        numbers.erase(current);</span><br><span class="line">        current = next;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return *(current);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// ====================方法2====================</span><br><span class="line">int LastRemaining_Solution2(unsigned int n, unsigned int m)</span><br><span class="line">&#123;</span><br><span class="line">    if (n &lt; 1 || m &lt; 1)</span><br><span class="line">        return -1;</span><br><span class="line"></span><br><span class="line">    int last = 0;</span><br><span class="line">    for (int i = 2; i &lt;= n; i++)</span><br><span class="line">        last = (last + m) % i;</span><br><span class="line"></span><br><span class="line">    return last;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+        <h4 id="圆圈中最后剩下的数字"><a href="#圆圈中最后剩下的数字" class="headerlink" title="圆圈中最后剩下的数字"></a>圆圈中最后剩下的数字</h4><hr>
+<p>题目：0, 1, …, n-1这n个数字排成一个圆圈，从数字0开始每次从这个圆圈里删除第m个数字。求出这个圆圈里剩下的最后一个数字。<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line">/*******************************************************************</span><br><span class="line">Copyright(c) 2016, Harry He</span><br><span class="line">All rights reserved.</span><br><span class="line"></span><br><span class="line">Distributed under the BSD license.</span><br><span class="line">(See accompanying file LICENSE.txt at</span><br><span class="line">https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)</span><br><span class="line">*******************************************************************/</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#include &lt;cstdio&gt;</span><br><span class="line">#include &lt;list&gt;</span><br><span class="line"></span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">// ====================方法1====================</span><br><span class="line">int LastRemaining_Solution1(unsigned int n, unsigned int m)</span><br><span class="line">&#123;</span><br><span class="line">    if (n &lt; 1 || m &lt; 1)</span><br><span class="line">        return -1;</span><br><span class="line"></span><br><span class="line">    unsigned int i = 0;</span><br><span class="line"></span><br><span class="line">    list&lt;int&gt; numbers;</span><br><span class="line">    for (i = 0; i &lt; n; ++i)</span><br><span class="line">        numbers.push_back(i);</span><br><span class="line"></span><br><span class="line">    list&lt;int&gt;::iterator current = numbers.begin();</span><br><span class="line">    while (numbers.size() &gt; 1) &#123;</span><br><span class="line">        for (int i = 1; i &lt; m; ++i) &#123;</span><br><span class="line">            current++;</span><br><span class="line">            if (current == numbers.end())</span><br><span class="line">                current = numbers.begin();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        list&lt;int&gt;::iterator next = ++current;</span><br><span class="line">        if (next == numbers.end())</span><br><span class="line">            next = numbers.begin();</span><br><span class="line"></span><br><span class="line">        --current;</span><br><span class="line">        numbers.erase(current);</span><br><span class="line">        current = next;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return *(current);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// ====================方法2====================</span><br><span class="line">int LastRemaining_Solution2(unsigned int n, unsigned int m)</span><br><span class="line">&#123;</span><br><span class="line">    if (n &lt; 1 || m &lt; 1)</span><br><span class="line">        return -1;</span><br><span class="line"></span><br><span class="line">    int last = 0;</span><br><span class="line">    for (int i = 2; i &lt;= n; i++)</span><br><span class="line">        last = (last + m) % i;</span><br><span class="line"></span><br><span class="line">    return last;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -466,8 +466,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/03/18/63_MaximalProfit/" rel="next" title="剑指_63_MaximalProfit">
-                <i class="fa fa-chevron-left"></i> 剑指_63_MaximalProfit
+              <a href="/2019/03/18/63_MaximalProfit/" rel="next" title="剑指_MaximalProfit">
+                <i class="fa fa-chevron-left"></i> 剑指_MaximalProfit
               </a>
             
           </div>
@@ -476,8 +476,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/03/18/61_ContinousCards/" rel="prev" title="剑指_61_ContinousCards">
-                剑指_61_ContinousCards <i class="fa fa-chevron-right"></i>
+              <a href="/2019/03/18/61_ContinousCards/" rel="prev" title="剑指_ContinousCards">
+                剑指_ContinousCards <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -549,7 +549,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">82</span>
+                    <span class="site-state-item-count">81</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -572,7 +572,17 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
@@ -610,7 +620,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#面试题62：圆圈中最后剩下的数字"><span class="nav-number">1.</span> <span class="nav-text">面试题62：圆圈中最后剩下的数字</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#圆圈中最后剩下的数字"><span class="nav-number">1.</span> <span class="nav-text">圆圈中最后剩下的数字</span></a></li></ol></div>
             
 
           </div>

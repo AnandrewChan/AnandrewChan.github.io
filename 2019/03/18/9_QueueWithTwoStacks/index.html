@@ -98,18 +98,18 @@
 
 
 
-  <meta name="description" content="1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556/*******************************************************************Copyright(c) 2016, Harry HeAl">
-<meta name="keywords" content="code">
+  <meta name="description" content="用两个栈实现队列 题目：用两个栈实现一个队列。队列的声明如下，请实现它的两个函数appendTail 和deleteHead，分别完成在队列尾部插入结点和在队列头部删除结点的功能。">
+<meta name="keywords" content="code queue stack">
 <meta property="og:type" content="article">
-<meta property="og:title" content="剑指_9_QueueWithTwoStacks">
+<meta property="og:title" content="剑指_QueueWithTwoStacks">
 <meta property="og:url" content="http://yoursite.com/2019/03/18/9_QueueWithTwoStacks/index.html">
 <meta property="og:site_name" content="Andrew Chan">
-<meta property="og:description" content="1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556/*******************************************************************Copyright(c) 2016, Harry HeAl">
+<meta property="og:description" content="用两个栈实现队列 题目：用两个栈实现一个队列。队列的声明如下，请实现它的两个函数appendTail 和deleteHead，分别完成在队列尾部插入结点和在队列头部删除结点的功能。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-03-18T08:13:30.682Z">
+<meta property="og:updated_time" content="2019-03-18T11:25:15.972Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="剑指_9_QueueWithTwoStacks">
-<meta name="twitter:description" content="1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950515253545556/*******************************************************************Copyright(c) 2016, Harry HeAl">
+<meta name="twitter:title" content="剑指_QueueWithTwoStacks">
+<meta name="twitter:description" content="用两个栈实现队列 题目：用两个栈实现一个队列。队列的声明如下，请实现它的两个函数appendTail 和deleteHead，分别完成在队列尾部插入结点和在队列头部删除结点的功能。">
 
 
 
@@ -126,7 +126,7 @@
   };
 </script>
 
-  <title>剑指_9_QueueWithTwoStacks | Andrew Chan</title>
+  <title>剑指_QueueWithTwoStacks | Andrew Chan</title>
   
 
 
@@ -363,7 +363,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">剑指_9_QueueWithTwoStacks
+          <h1 class="post-title" itemprop="name headline">剑指_QueueWithTwoStacks
 
               
             
@@ -389,7 +389,7 @@
                 
               
 
-              <time title="Created: 2019-03-18 00:00:00 / Modified: 16:13:30" itemprop="dateCreated datePublished" datetime="2019-03-18T00:00:00+08:00">2019-03-18</time>
+              <time title="Created: 2019-03-18 00:00:00 / Modified: 19:25:15" itemprop="dateCreated datePublished" datetime="2019-03-18T00:00:00+08:00">2019-03-18</time>
             
 
             
@@ -428,7 +428,9 @@
       
 
       
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line">/*******************************************************************</span><br><span class="line">Copyright(c) 2016, Harry He</span><br><span class="line">All rights reserved.</span><br><span class="line"></span><br><span class="line">Distributed under the BSD license.</span><br><span class="line">(See accompanying file LICENSE.txt at</span><br><span class="line">https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)</span><br><span class="line">*******************************************************************/</span><br><span class="line"></span><br><span class="line">//==================================================================</span><br><span class="line">// 《剑指Offer——名企面试官精讲典型编程题》代码</span><br><span class="line">// 作者：何海涛</span><br><span class="line">//==================================================================</span><br><span class="line"></span><br><span class="line">// 面试题9：用两个栈实现队列</span><br><span class="line">// 题目：用两个栈实现一个队列。队列的声明如下，请实现它的两个函数appendTail</span><br><span class="line">// 和deleteHead，分别完成在队列尾部插入结点和在队列头部删除结点的功能。</span><br><span class="line"></span><br><span class="line">#include &quot;Queue.h&quot;</span><br><span class="line"></span><br><span class="line">// ====================测试代码====================</span><br><span class="line">void Test(char actual, char expected)</span><br><span class="line">&#123;</span><br><span class="line">    if (actual == expected)</span><br><span class="line">        printf(&quot;Test passed.\n&quot;);</span><br><span class="line">    else</span><br><span class="line">        printf(&quot;Test failed.\n&quot;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main(int argc, char* argv[])</span><br><span class="line">&#123;</span><br><span class="line">    CQueue&lt;char&gt; queue;</span><br><span class="line"></span><br><span class="line">    queue.appendTail(&apos;a&apos;);</span><br><span class="line">    queue.appendTail(&apos;b&apos;);</span><br><span class="line">    queue.appendTail(&apos;c&apos;);</span><br><span class="line"></span><br><span class="line">    char head = queue.deleteHead();</span><br><span class="line">    Test(head, &apos;a&apos;);</span><br><span class="line"></span><br><span class="line">    head = queue.deleteHead();</span><br><span class="line">    Test(head, &apos;b&apos;);</span><br><span class="line"></span><br><span class="line">    queue.appendTail(&apos;d&apos;);</span><br><span class="line">    head = queue.deleteHead();</span><br><span class="line">    Test(head, &apos;c&apos;);</span><br><span class="line"></span><br><span class="line">    queue.appendTail(&apos;e&apos;);</span><br><span class="line">    head = queue.deleteHead();</span><br><span class="line">    Test(head, &apos;d&apos;);</span><br><span class="line"></span><br><span class="line">    head = queue.deleteHead();</span><br><span class="line">    Test(head, &apos;e&apos;);</span><br><span class="line"></span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h4 id="用两个栈实现队列"><a href="#用两个栈实现队列" class="headerlink" title="用两个栈实现队列"></a>用两个栈实现队列</h4><hr>
+<p>题目：用两个栈实现一个队列。队列的声明如下，请实现它的两个函数appendTail 和deleteHead，分别完成在队列尾部插入结点和在队列头部删除结点的功能。<br><a id="more"></a></p>
+
       
     </div>
 
@@ -451,7 +453,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/code/" rel="tag"># code</a>
+            <a href="/tags/code-queue-stack/" rel="tag"># code queue stack</a>
           
         </div>
       
@@ -464,8 +466,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/03/18/18_DeleteDuplicatedNode/" rel="next" title="剑指_18_DeleteDuplicatedNode">
-                <i class="fa fa-chevron-left"></i> 剑指_18_DeleteDuplicatedNode
+              <a href="/2019/03/18/8_NextNodeInBinaryTrees/" rel="next" title="剑指_NextNodeInBinaryTrees">
+                <i class="fa fa-chevron-left"></i> 剑指_NextNodeInBinaryTrees
               </a>
             
           </div>
@@ -474,8 +476,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/03/18/8_NextNodeInBinaryTrees/" rel="prev" title="剑指_8_NextNodeInBinaryTrees">
-                剑指_8_NextNodeInBinaryTrees <i class="fa fa-chevron-right"></i>
+              <a href="/2019/03/18/7_ConstructBinaryTree/" rel="prev" title="剑指_ConstructBinaryTree">
+                剑指_ConstructBinaryTree <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -520,8 +522,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -538,7 +549,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">82</span>
+                    <span class="site-state-item-count">81</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -561,7 +572,17 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
@@ -588,6 +609,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#用两个栈实现队列"><span class="nav-number">1.</span> <span class="nav-text">用两个栈实现队列</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       

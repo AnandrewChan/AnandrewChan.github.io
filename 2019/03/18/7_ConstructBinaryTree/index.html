@@ -98,18 +98,18 @@
 
 
 
-  <meta name="description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210">
-<meta name="keywords" content="code">
+  <meta name="description" content="重建二叉树 题目：输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。例如输入前序遍历序列{1, 2, 4, 7, 3, 5, 6, 8}和中序遍历序列{4, 7, 2, 1, 5, 3, 8, 6}，则重建出图2.6所示的二叉树并输出它的头结点。">
+<meta name="keywords" content="code tree">
 <meta property="og:type" content="article">
-<meta property="og:title" content="剑指_7_ConstructBinaryTree">
+<meta property="og:title" content="剑指_ConstructBinaryTree">
 <meta property="og:url" content="http://yoursite.com/2019/03/18/7_ConstructBinaryTree/index.html">
 <meta property="og:site_name" content="Andrew Chan">
-<meta property="og:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210">
+<meta property="og:description" content="重建二叉树 题目：输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。例如输入前序遍历序列{1, 2, 4, 7, 3, 5, 6, 8}和中序遍历序列{4, 7, 2, 1, 5, 3, 8, 6}，则重建出图2.6所示的二叉树并输出它的头结点。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-03-18T08:13:22.192Z">
+<meta property="og:updated_time" content="2019-03-18T11:25:15.972Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="剑指_7_ConstructBinaryTree">
-<meta name="twitter:description" content="12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788899091929394959697989910010110210">
+<meta name="twitter:title" content="剑指_ConstructBinaryTree">
+<meta name="twitter:description" content="重建二叉树 题目：输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。例如输入前序遍历序列{1, 2, 4, 7, 3, 5, 6, 8}和中序遍历序列{4, 7, 2, 1, 5, 3, 8, 6}，则重建出图2.6所示的二叉树并输出它的头结点。">
 
 
 
@@ -126,7 +126,7 @@
   };
 </script>
 
-  <title>剑指_7_ConstructBinaryTree | Andrew Chan</title>
+  <title>剑指_ConstructBinaryTree | Andrew Chan</title>
   
 
 
@@ -363,7 +363,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">剑指_7_ConstructBinaryTree
+          <h1 class="post-title" itemprop="name headline">剑指_ConstructBinaryTree
 
               
             
@@ -389,7 +389,7 @@
                 
               
 
-              <time title="Created: 2019-03-18 00:00:00 / Modified: 16:13:22" itemprop="dateCreated datePublished" datetime="2019-03-18T00:00:00+08:00">2019-03-18</time>
+              <time title="Created: 2019-03-18 00:00:00 / Modified: 19:25:15" itemprop="dateCreated datePublished" datetime="2019-03-18T00:00:00+08:00">2019-03-18</time>
             
 
             
@@ -428,7 +428,9 @@
       
 
       
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br></pre></td><td class="code"><pre><span class="line">/*******************************************************************</span><br><span class="line">Copyright(c) 2016, Harry He</span><br><span class="line">All rights reserved.</span><br><span class="line"></span><br><span class="line">Distributed under the BSD license.</span><br><span class="line">(See accompanying file LICENSE.txt at</span><br><span class="line">https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)</span><br><span class="line">*******************************************************************/</span><br><span class="line"></span><br><span class="line">//==================================================================</span><br><span class="line">// 《剑指Offer——名企面试官精讲典型编程题》代码</span><br><span class="line">// 作者：何海涛</span><br><span class="line">//==================================================================</span><br><span class="line"></span><br><span class="line">// 面试题7：重建二叉树</span><br><span class="line">// 题目：输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。假设输</span><br><span class="line">// 入的前序遍历和中序遍历的结果中都不含重复的数字。例如输入前序遍历序列&#123;1,</span><br><span class="line">// 2, 4, 7, 3, 5, 6, 8&#125;和中序遍历序列&#123;4, 7, 2, 1, 5, 3, 8, 6&#125;，则重建出</span><br><span class="line">// 图2.6所示的二叉树并输出它的头结点。</span><br><span class="line"></span><br><span class="line">#include &quot;..\Utilities\BinaryTree.h&quot;</span><br><span class="line">#include &lt;cstdio&gt;</span><br><span class="line">#include &lt;exception&gt;</span><br><span class="line"></span><br><span class="line">BinaryTreeNode* ConstructCore(int* startPreorder, int* endPreorder, int* startInorder, int* endInorder);</span><br><span class="line"></span><br><span class="line">BinaryTreeNode* Construct(int* preorder, int* inorder, int length)</span><br><span class="line">&#123;</span><br><span class="line">    if (preorder == nullptr || inorder == nullptr || length &lt;= 0)</span><br><span class="line">        return nullptr;</span><br><span class="line"></span><br><span class="line">    return ConstructCore(preorder, preorder + length - 1,</span><br><span class="line">        inorder, inorder + length - 1);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">BinaryTreeNode* ConstructCore(</span><br><span class="line">    int* startPreorder, int* endPreorder,</span><br><span class="line">    int* startInorder, int* endInorder)</span><br><span class="line">&#123;</span><br><span class="line">    // 前序遍历序列的第一个数字是根结点的值</span><br><span class="line">    int rootValue = startPreorder[0];</span><br><span class="line">    BinaryTreeNode* root = new BinaryTreeNode();</span><br><span class="line">    root-&gt;m_nValue = rootValue;</span><br><span class="line">    root-&gt;m_pLeft = root-&gt;m_pRight = nullptr;</span><br><span class="line"></span><br><span class="line">    if (startPreorder == endPreorder) &#123;</span><br><span class="line">        if (startInorder == endInorder &amp;&amp; *startPreorder == *startInorder)</span><br><span class="line">            return root;</span><br><span class="line">        else</span><br><span class="line">            throw std::exception(&quot;Invalid input.&quot;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // 在中序遍历中找到根结点的值</span><br><span class="line">    int* rootInorder = startInorder;</span><br><span class="line">    while (rootInorder &lt;= endInorder &amp;&amp; *rootInorder != rootValue)</span><br><span class="line">        ++rootInorder;</span><br><span class="line"></span><br><span class="line">    if (rootInorder == endInorder &amp;&amp; *rootInorder != rootValue)</span><br><span class="line">        throw std::exception(&quot;Invalid input.&quot;);</span><br><span class="line"></span><br><span class="line">    int leftLength = rootInorder - startInorder;</span><br><span class="line">    int* leftPreorderEnd = startPreorder + leftLength;</span><br><span class="line">    if (leftLength &gt; 0) &#123;</span><br><span class="line">        // 构建左子树</span><br><span class="line">        root-&gt;m_pLeft = ConstructCore(startPreorder + 1, leftPreorderEnd,</span><br><span class="line">            startInorder, rootInorder - 1);</span><br><span class="line">    &#125;</span><br><span class="line">    if (leftLength &lt; endPreorder - startPreorder) &#123;</span><br><span class="line">        // 构建右子树</span><br><span class="line">        root-&gt;m_pRight = ConstructCore(leftPreorderEnd + 1, endPreorder,</span><br><span class="line">            rootInorder + 1, endInorder);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return root;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// ====================测试代码====================</span><br><span class="line">void Test(char* testName, int* preorder, int* inorder, int length)</span><br><span class="line">&#123;</span><br><span class="line">    if (testName != nullptr)</span><br><span class="line">        printf(&quot;%s begins:\n&quot;, testName);</span><br><span class="line"></span><br><span class="line">    printf(&quot;The preorder sequence is: &quot;);</span><br><span class="line">    for (int i = 0; i &lt; length; ++i)</span><br><span class="line">        printf(&quot;%d &quot;, preorder[i]);</span><br><span class="line">    printf(&quot;\n&quot;);</span><br><span class="line"></span><br><span class="line">    printf(&quot;The inorder sequence is: &quot;);</span><br><span class="line">    for (int i = 0; i &lt; length; ++i)</span><br><span class="line">        printf(&quot;%d &quot;, inorder[i]);</span><br><span class="line">    printf(&quot;\n&quot;);</span><br><span class="line"></span><br><span class="line">    try &#123;</span><br><span class="line">        BinaryTreeNode* root = Construct(preorder, inorder, length);</span><br><span class="line">        PrintTree(root);</span><br><span class="line"></span><br><span class="line">        DestroyTree(root);</span><br><span class="line">    &#125; catch (std::exception&amp; exception) &#123;</span><br><span class="line">        printf(&quot;Invalid Input.\n&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 普通二叉树</span><br><span class="line">//              1</span><br><span class="line">//           /     \</span><br><span class="line">//          2       3</span><br><span class="line">//         /       / \</span><br><span class="line">//        4       5   6</span><br><span class="line">//         \         /</span><br><span class="line">//          7       8</span><br><span class="line">void Test1()</span><br><span class="line">&#123;</span><br><span class="line">    const int length = 8;</span><br><span class="line">    int preorder[length] = &#123; 1, 2, 4, 7, 3, 5, 6, 8 &#125;;</span><br><span class="line">    int inorder[length] = &#123; 4, 7, 2, 1, 5, 3, 8, 6 &#125;;</span><br><span class="line"></span><br><span class="line">    Test(&quot;Test1&quot;, preorder, inorder, length);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 所有结点都没有右子结点</span><br><span class="line">//            1</span><br><span class="line">//           /</span><br><span class="line">//          2</span><br><span class="line">//         /</span><br><span class="line">//        3</span><br><span class="line">//       /</span><br><span class="line">//      4</span><br><span class="line">//     /</span><br><span class="line">//    5</span><br><span class="line">void Test2()</span><br><span class="line">&#123;</span><br><span class="line">    const int length = 5;</span><br><span class="line">    int preorder[length] = &#123; 1, 2, 3, 4, 5 &#125;;</span><br><span class="line">    int inorder[length] = &#123; 5, 4, 3, 2, 1 &#125;;</span><br><span class="line"></span><br><span class="line">    Test(&quot;Test2&quot;, preorder, inorder, length);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 所有结点都没有左子结点</span><br><span class="line">//            1</span><br><span class="line">//             \ </span><br><span class="line">//              2</span><br><span class="line">//               \ </span><br><span class="line">//                3</span><br><span class="line">//                 \</span><br><span class="line">//                  4</span><br><span class="line">//                   \</span><br><span class="line">//                    5</span><br><span class="line">void Test3()</span><br><span class="line">&#123;</span><br><span class="line">    const int length = 5;</span><br><span class="line">    int preorder[length] = &#123; 1, 2, 3, 4, 5 &#125;;</span><br><span class="line">    int inorder[length] = &#123; 1, 2, 3, 4, 5 &#125;;</span><br><span class="line"></span><br><span class="line">    Test(&quot;Test3&quot;, preorder, inorder, length);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 树中只有一个结点</span><br><span class="line">void Test4()</span><br><span class="line">&#123;</span><br><span class="line">    const int length = 1;</span><br><span class="line">    int preorder[length] = &#123; 1 &#125;;</span><br><span class="line">    int inorder[length] = &#123; 1 &#125;;</span><br><span class="line"></span><br><span class="line">    Test(&quot;Test4&quot;, preorder, inorder, length);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 完全二叉树</span><br><span class="line">//              1</span><br><span class="line">//           /     \</span><br><span class="line">//          2       3</span><br><span class="line">//         / \     / \</span><br><span class="line">//        4   5   6   7</span><br><span class="line">void Test5()</span><br><span class="line">&#123;</span><br><span class="line">    const int length = 7;</span><br><span class="line">    int preorder[length] = &#123; 1, 2, 4, 5, 3, 6, 7 &#125;;</span><br><span class="line">    int inorder[length] = &#123; 4, 2, 5, 1, 6, 3, 7 &#125;;</span><br><span class="line"></span><br><span class="line">    Test(&quot;Test5&quot;, preorder, inorder, length);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 输入空指针</span><br><span class="line">void Test6()</span><br><span class="line">&#123;</span><br><span class="line">    Test(&quot;Test6&quot;, nullptr, nullptr, 0);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 输入的两个序列不匹配</span><br><span class="line">void Test7()</span><br><span class="line">&#123;</span><br><span class="line">    const int length = 7;</span><br><span class="line">    int preorder[length] = &#123; 1, 2, 4, 5, 3, 6, 7 &#125;;</span><br><span class="line">    int inorder[length] = &#123; 4, 2, 8, 1, 6, 3, 7 &#125;;</span><br><span class="line"></span><br><span class="line">    Test(&quot;Test7: for unmatched input&quot;, preorder, inorder, length);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main(int argc, char* argv[])</span><br><span class="line">&#123;</span><br><span class="line">    Test1();</span><br><span class="line">    Test2();</span><br><span class="line">    Test3();</span><br><span class="line">    Test4();</span><br><span class="line">    Test5();</span><br><span class="line">    Test6();</span><br><span class="line">    Test7();</span><br><span class="line"></span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h4 id="重建二叉树"><a href="#重建二叉树" class="headerlink" title="重建二叉树"></a>重建二叉树</h4><hr>
+<p>题目：输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。例如输入前序遍历序列{1, 2, 4, 7, 3, 5, 6, 8}和中序遍历序列{4, 7, 2, 1, 5, 3, 8, 6}，则重建出图2.6所示的二叉树并输出它的头结点。<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br></pre></td><td class="code"><pre><span class="line">/*******************************************************************</span><br><span class="line">Copyright(c) 2016, Harry He</span><br><span class="line">All rights reserved.</span><br><span class="line"></span><br><span class="line">Distributed under the BSD license.</span><br><span class="line">(See accompanying file LICENSE.txt at</span><br><span class="line">https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)</span><br><span class="line">*******************************************************************/</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#include &quot;..\Utilities\BinaryTree.h&quot;</span><br><span class="line">#include &lt;cstdio&gt;</span><br><span class="line">#include &lt;exception&gt;</span><br><span class="line"></span><br><span class="line">BinaryTreeNode* ConstructCore(int* startPreorder, int* endPreorder, int* startInorder, int* endInorder);</span><br><span class="line"></span><br><span class="line">BinaryTreeNode* Construct(int* preorder, int* inorder, int length)</span><br><span class="line">&#123;</span><br><span class="line">    if (preorder == nullptr || inorder == nullptr || length &lt;= 0)</span><br><span class="line">        return nullptr;</span><br><span class="line"></span><br><span class="line">    return ConstructCore(preorder, preorder + length - 1,</span><br><span class="line">        inorder, inorder + length - 1);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">BinaryTreeNode* ConstructCore(</span><br><span class="line">    int* startPreorder, int* endPreorder,</span><br><span class="line">    int* startInorder, int* endInorder)</span><br><span class="line">&#123;</span><br><span class="line">    // 前序遍历序列的第一个数字是根结点的值</span><br><span class="line">    int rootValue = startPreorder[0];</span><br><span class="line">    BinaryTreeNode* root = new BinaryTreeNode();</span><br><span class="line">    root-&gt;m_nValue = rootValue;</span><br><span class="line">    root-&gt;m_pLeft = root-&gt;m_pRight = nullptr;</span><br><span class="line"></span><br><span class="line">    if (startPreorder == endPreorder) &#123;</span><br><span class="line">        if (startInorder == endInorder &amp;&amp; *startPreorder == *startInorder)</span><br><span class="line">            return root;</span><br><span class="line">        else</span><br><span class="line">            throw std::exception(&quot;Invalid input.&quot;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // 在中序遍历中找到根结点的值</span><br><span class="line">    int* rootInorder = startInorder;</span><br><span class="line">    while (rootInorder &lt;= endInorder &amp;&amp; *rootInorder != rootValue)</span><br><span class="line">        ++rootInorder;</span><br><span class="line"></span><br><span class="line">    if (rootInorder == endInorder &amp;&amp; *rootInorder != rootValue)</span><br><span class="line">        throw std::exception(&quot;Invalid input.&quot;);</span><br><span class="line"></span><br><span class="line">    int leftLength = rootInorder - startInorder;</span><br><span class="line">    int* leftPreorderEnd = startPreorder + leftLength;</span><br><span class="line">    if (leftLength &gt; 0) &#123;</span><br><span class="line">        // 构建左子树</span><br><span class="line">        root-&gt;m_pLeft = ConstructCore(startPreorder + 1, leftPreorderEnd,</span><br><span class="line">            startInorder, rootInorder - 1);</span><br><span class="line">    &#125;</span><br><span class="line">    if (leftLength &lt; endPreorder - startPreorder) &#123;</span><br><span class="line">        // 构建右子树</span><br><span class="line">        root-&gt;m_pRight = ConstructCore(leftPreorderEnd + 1, endPreorder,</span><br><span class="line">            rootInorder + 1, endInorder);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return root;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+
       
     </div>
 
@@ -451,7 +453,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/code/" rel="tag"># code</a>
+            <a href="/tags/code-tree/" rel="tag"># code tree</a>
           
         </div>
       
@@ -464,8 +466,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/03/18/26_SubstructureInTree/" rel="next" title="剑指_26_SubstructureInTree">
-                <i class="fa fa-chevron-left"></i> 剑指_26_SubstructureInTree
+              <a href="/2019/03/18/9_QueueWithTwoStacks/" rel="next" title="剑指_QueueWithTwoStacks">
+                <i class="fa fa-chevron-left"></i> 剑指_QueueWithTwoStacks
               </a>
             
           </div>
@@ -474,8 +476,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/03/18/6_PrintListInReversedOrder/" rel="prev" title="剑指_6_PrintListInReversedOrder">
-                剑指_6_PrintListInReversedOrder <i class="fa fa-chevron-right"></i>
+              <a href="/2019/03/18/6_PrintListInReversedOrder/" rel="prev" title="剑指_PrintListInReversedOrder">
+                剑指_PrintListInReversedOrder <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -520,8 +522,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -538,7 +549,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">82</span>
+                    <span class="site-state-item-count">81</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -561,7 +572,17 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
@@ -588,6 +609,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#重建二叉树"><span class="nav-number">1.</span> <span class="nav-text">重建二叉树</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       

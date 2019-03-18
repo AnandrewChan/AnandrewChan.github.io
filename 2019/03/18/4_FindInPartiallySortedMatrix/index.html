@@ -98,18 +98,18 @@
 
 
 
-  <meta name="description" content="面试题4：二维数组中的查找 题目：在一个二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。">
-<meta name="keywords" content="code">
+  <meta name="description" content="二维数组中的查找 题目：在一个二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。">
+<meta name="keywords" content="code array">
 <meta property="og:type" content="article">
-<meta property="og:title" content="剑指_4_FindInPartiallySortedMatrix">
+<meta property="og:title" content="剑指_FindInPartiallySortedMatrix">
 <meta property="og:url" content="http://yoursite.com/2019/03/18/4_FindInPartiallySortedMatrix/index.html">
 <meta property="og:site_name" content="Andrew Chan">
-<meta property="og:description" content="面试题4：二维数组中的查找 题目：在一个二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。">
+<meta property="og:description" content="二维数组中的查找 题目：在一个二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-03-18T08:37:26.854Z">
+<meta property="og:updated_time" content="2019-03-18T11:25:15.972Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="剑指_4_FindInPartiallySortedMatrix">
-<meta name="twitter:description" content="面试题4：二维数组中的查找 题目：在一个二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。">
+<meta name="twitter:title" content="剑指_FindInPartiallySortedMatrix">
+<meta name="twitter:description" content="二维数组中的查找 题目：在一个二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。">
 
 
 
@@ -126,7 +126,7 @@
   };
 </script>
 
-  <title>剑指_4_FindInPartiallySortedMatrix | Andrew Chan</title>
+  <title>剑指_FindInPartiallySortedMatrix | Andrew Chan</title>
   
 
 
@@ -363,7 +363,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">剑指_4_FindInPartiallySortedMatrix
+          <h1 class="post-title" itemprop="name headline">剑指_FindInPartiallySortedMatrix
 
               
             
@@ -389,7 +389,7 @@
                 
               
 
-              <time title="Created: 2019-03-18 00:00:00 / Modified: 16:37:26" itemprop="dateCreated datePublished" datetime="2019-03-18T00:00:00+08:00">2019-03-18</time>
+              <time title="Created: 2019-03-18 00:00:00 / Modified: 19:25:15" itemprop="dateCreated datePublished" datetime="2019-03-18T00:00:00+08:00">2019-03-18</time>
             
 
             
@@ -428,8 +428,8 @@
       
 
       
-        <h4 id="面试题4：二维数组中的查找"><a href="#面试题4：二维数组中的查找" class="headerlink" title="面试题4：二维数组中的查找"></a>面试题4：二维数组中的查找</h4><hr>
-<p>题目：在一个二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">/*******************************************************************</span><br><span class="line">Copyright(c) 2016, Harry He</span><br><span class="line">All rights reserved.</span><br><span class="line"></span><br><span class="line">Distributed under the BSD license.</span><br><span class="line">(See accompanying file LICENSE.txt at</span><br><span class="line">https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)</span><br><span class="line">*******************************************************************/</span><br><span class="line"></span><br><span class="line">//==================================================================</span><br><span class="line">// 《剑指Offer——名企面试官精讲典型编程题》代码</span><br><span class="line">// 作者：何海涛</span><br><span class="line">//==================================================================</span><br><span class="line"></span><br><span class="line">#include &lt;cstdio&gt;</span><br><span class="line"></span><br><span class="line">bool Find(int* matrix, int rows, int columns, int number)</span><br><span class="line">&#123;</span><br><span class="line">    bool found = false;</span><br><span class="line"></span><br><span class="line">    if (matrix != nullptr &amp;&amp; rows &gt; 0 &amp;&amp; columns &gt; 0) &#123;</span><br><span class="line">        int row = 0;</span><br><span class="line">        int column = columns - 1;</span><br><span class="line">        while (row &lt; rows &amp;&amp; column &gt;= 0) &#123;</span><br><span class="line">            if (matrix[row * columns + column] == number) &#123;</span><br><span class="line">                found = true;</span><br><span class="line">                break;</span><br><span class="line">            &#125; else if (matrix[row * columns + column] &gt; number)</span><br><span class="line">                --column;</span><br><span class="line">            else</span><br><span class="line">                ++row;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return found;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+        <h4 id="二维数组中的查找"><a href="#二维数组中的查找" class="headerlink" title="二维数组中的查找"></a>二维数组中的查找</h4><hr>
+<p>题目：在一个二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">/*******************************************************************</span><br><span class="line">Copyright(c) 2016, Harry He</span><br><span class="line">All rights reserved.</span><br><span class="line"></span><br><span class="line">Distributed under the BSD license.</span><br><span class="line">(See accompanying file LICENSE.txt at</span><br><span class="line">https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)</span><br><span class="line">*******************************************************************/</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">#include &lt;cstdio&gt;</span><br><span class="line"></span><br><span class="line">bool Find(int* matrix, int rows, int columns, int number)</span><br><span class="line">&#123;</span><br><span class="line">    bool found = false;</span><br><span class="line"></span><br><span class="line">    if (matrix != nullptr &amp;&amp; rows &gt; 0 &amp;&amp; columns &gt; 0) &#123;</span><br><span class="line">        int row = 0;</span><br><span class="line">        int column = columns - 1;</span><br><span class="line">        while (row &lt; rows &amp;&amp; column &gt;= 0) &#123;</span><br><span class="line">            if (matrix[row * columns + column] == number) &#123;</span><br><span class="line">                found = true;</span><br><span class="line">                break;</span><br><span class="line">            &#125; else if (matrix[row * columns + column] &gt; number)</span><br><span class="line">                --column;</span><br><span class="line">            else</span><br><span class="line">                ++row;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return found;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 
       
     </div>
@@ -453,7 +453,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/code/" rel="tag"># code</a>
+            <a href="/tags/code-array/" rel="tag"># code array</a>
           
         </div>
       
@@ -476,8 +476,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/03/18/14_CuttingRope/" rel="prev" title="剑指_14_CuttingRope">
-                剑指_14_CuttingRope <i class="fa fa-chevron-right"></i>
+              <a href="/2019/03/18/12_StringPathInMatrix/" rel="prev" title="剑指_12_StringPathInMatrix">
+                剑指_12_StringPathInMatrix <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -549,7 +549,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">82</span>
+                    <span class="site-state-item-count">81</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -572,7 +572,17 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">7</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
@@ -610,7 +620,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#面试题4：二维数组中的查找"><span class="nav-number">1.</span> <span class="nav-text">面试题4：二维数组中的查找</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#二维数组中的查找"><span class="nav-number">1.</span> <span class="nav-text">二维数组中的查找</span></a></li></ol></div>
             
 
           </div>
