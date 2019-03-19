@@ -772,6 +772,148 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/18/34_PathInTree/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Andrew Chan">
+      <meta itemprop="description" content="Personnal blogs">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Andrew Chan">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/03/18/34_PathInTree/" class="post-title-link" itemprop="url">剑指_34_PathInTree</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-03-18 00:00:00 / Modified: 16:19:46" itemprop="dateCreated datePublished" datetime="2019-03-18T00:00:00+08:00">2019-03-18</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br></pre></td><td class="code"><pre><span class="line">/*******************************************************************</span><br><span class="line">Copyright(c) 2016, Harry He</span><br><span class="line">All rights reserved.</span><br><span class="line"></span><br><span class="line">Distributed under the BSD license.</span><br><span class="line">(See accompanying file LICENSE.txt at</span><br><span class="line">https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)</span><br><span class="line">*******************************************************************/</span><br><span class="line"></span><br><span class="line">//==================================================================</span><br><span class="line">// 《剑指Offer——名企面试官精讲典型编程题》代码</span><br><span class="line">// 作者：何海涛</span><br><span class="line">//==================================================================</span><br><span class="line"></span><br><span class="line">// 面试题34：二叉树中和为某一值的路径</span><br><span class="line">// 题目：输入一棵二叉树和一个整数，打印出二叉树中结点值的和为输入整数的所</span><br><span class="line">// 有路径。从树的根结点开始往下一直到叶结点所经过的结点形成一条路径。</span><br><span class="line"></span><br><span class="line">#include &quot;..\Utilities\BinaryTree.h&quot;</span><br><span class="line">#include &lt;cstdio&gt;</span><br><span class="line">#include &lt;vector&gt;</span><br><span class="line"></span><br><span class="line">void FindPath(BinaryTreeNode* pRoot, int expectedSum, std::vector&lt;int&gt;&amp; path, int&amp; currentSum);</span><br><span class="line"></span><br><span class="line">void FindPath(BinaryTreeNode* pRoot, int expectedSum)</span><br><span class="line">&#123;</span><br><span class="line">    if (pRoot == nullptr)</span><br><span class="line">        return;</span><br><span class="line"></span><br><span class="line">    std::vector&lt;int&gt; path;</span><br><span class="line">    int currentSum = 0;</span><br><span class="line">    FindPath(pRoot, expectedSum, path, currentSum);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void FindPath(</span><br><span class="line">    BinaryTreeNode* pRoot,</span><br><span class="line">    int expectedSum,</span><br><span class="line">    std::vector&lt;int&gt;&amp; path,</span><br><span class="line">    int&amp; currentSum)</span><br><span class="line">&#123;</span><br><span class="line">    currentSum += pRoot-&gt;m_nValue;</span><br><span class="line">    path.push_back(pRoot-&gt;m_nValue);</span><br><span class="line"></span><br><span class="line">    // 如果是叶结点，并且路径上结点的和等于输入的值</span><br><span class="line">    // 打印出这条路径</span><br><span class="line">    bool isLeaf = pRoot-&gt;m_pLeft == nullptr &amp;&amp; pRoot-&gt;m_pRight == nullptr;</span><br><span class="line">    if (currentSum == expectedSum &amp;&amp; isLeaf) &#123;</span><br><span class="line">        printf(&quot;A path is found: &quot;);</span><br><span class="line">        std::vector&lt;int&gt;::iterator iter = path.begin();</span><br><span class="line">        for (; iter != path.end(); ++iter)</span><br><span class="line">            printf(&quot;%d\t&quot;, *iter);</span><br><span class="line"></span><br><span class="line">        printf(&quot;\n&quot;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // 如果不是叶结点，则遍历它的子结点</span><br><span class="line">    if (pRoot-&gt;m_pLeft != nullptr)</span><br><span class="line">        FindPath(pRoot-&gt;m_pLeft, expectedSum, path, currentSum);</span><br><span class="line">    if (pRoot-&gt;m_pRight != nullptr)</span><br><span class="line">        FindPath(pRoot-&gt;m_pRight, expectedSum, path, currentSum);</span><br><span class="line"></span><br><span class="line">    // 在返回到父结点之前，在路径上删除当前结点，</span><br><span class="line">    // 并在currentSum中减去当前结点的值</span><br><span class="line">    currentSum -= pRoot-&gt;m_nValue;</span><br><span class="line">    path.pop_back();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// ====================测试代码====================</span><br><span class="line">void Test(char* testName, BinaryTreeNode* pRoot, int expectedSum)</span><br><span class="line">&#123;</span><br><span class="line">    if (testName != nullptr)</span><br><span class="line">        printf(&quot;%s begins:\n&quot;, testName);</span><br><span class="line"></span><br><span class="line">    FindPath(pRoot, expectedSum);</span><br><span class="line"></span><br><span class="line">    printf(&quot;\n&quot;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//            10</span><br><span class="line">//         /      \</span><br><span class="line">//        5        12</span><br><span class="line">//       /\        </span><br><span class="line">//      4  7</span><br><span class="line">// 有两条路径上的结点和为22</span><br><span class="line">void Test1()</span><br><span class="line">&#123;</span><br><span class="line">    BinaryTreeNode* pNode10 = CreateBinaryTreeNode(10);</span><br><span class="line">    BinaryTreeNode* pNode5 = CreateBinaryTreeNode(5);</span><br><span class="line">    BinaryTreeNode* pNode12 = CreateBinaryTreeNode(12);</span><br><span class="line">    BinaryTreeNode* pNode4 = CreateBinaryTreeNode(4);</span><br><span class="line">    BinaryTreeNode* pNode7 = CreateBinaryTreeNode(7);</span><br><span class="line"></span><br><span class="line">    ConnectTreeNodes(pNode10, pNode5, pNode12);</span><br><span class="line">    ConnectTreeNodes(pNode5, pNode4, pNode7);</span><br><span class="line"></span><br><span class="line">    printf(&quot;Two paths should be found in Test1.\n&quot;);</span><br><span class="line">    Test(&quot;Test1&quot;, pNode10, 22);</span><br><span class="line"></span><br><span class="line">    DestroyTree(pNode10);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//            10</span><br><span class="line">//         /      \</span><br><span class="line">//        5        12</span><br><span class="line">//       /\        </span><br><span class="line">//      4  7</span><br><span class="line">// 没有路径上的结点和为15</span><br><span class="line">void Test2()</span><br><span class="line">&#123;</span><br><span class="line">    BinaryTreeNode* pNode10 = CreateBinaryTreeNode(10);</span><br><span class="line">    BinaryTreeNode* pNode5 = CreateBinaryTreeNode(5);</span><br><span class="line">    BinaryTreeNode* pNode12 = CreateBinaryTreeNode(12);</span><br><span class="line">    BinaryTreeNode* pNode4 = CreateBinaryTreeNode(4);</span><br><span class="line">    BinaryTreeNode* pNode7 = CreateBinaryTreeNode(7);</span><br><span class="line"></span><br><span class="line">    ConnectTreeNodes(pNode10, pNode5, pNode12);</span><br><span class="line">    ConnectTreeNodes(pNode5, pNode4, pNode7);</span><br><span class="line"></span><br><span class="line">    printf(&quot;No paths should be found in Test2.\n&quot;);</span><br><span class="line">    Test(&quot;Test2&quot;, pNode10, 15);</span><br><span class="line"></span><br><span class="line">    DestroyTree(pNode10);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//               5</span><br><span class="line">//              /</span><br><span class="line">//             4</span><br><span class="line">//            /</span><br><span class="line">//           3</span><br><span class="line">//          /</span><br><span class="line">//         2</span><br><span class="line">//        /</span><br><span class="line">//       1</span><br><span class="line">// 有一条路径上面的结点和为15</span><br><span class="line">void Test3()</span><br><span class="line">&#123;</span><br><span class="line">    BinaryTreeNode* pNode5 = CreateBinaryTreeNode(5);</span><br><span class="line">    BinaryTreeNode* pNode4 = CreateBinaryTreeNode(4);</span><br><span class="line">    BinaryTreeNode* pNode3 = CreateBinaryTreeNode(3);</span><br><span class="line">    BinaryTreeNode* pNode2 = CreateBinaryTreeNode(2);</span><br><span class="line">    BinaryTreeNode* pNode1 = CreateBinaryTreeNode(1);</span><br><span class="line"></span><br><span class="line">    ConnectTreeNodes(pNode5, pNode4, nullptr);</span><br><span class="line">    ConnectTreeNodes(pNode4, pNode3, nullptr);</span><br><span class="line">    ConnectTreeNodes(pNode3, pNode2, nullptr);</span><br><span class="line">    ConnectTreeNodes(pNode2, pNode1, nullptr);</span><br><span class="line"></span><br><span class="line">    printf(&quot;One path should be found in Test3.\n&quot;);</span><br><span class="line">    Test(&quot;Test3&quot;, pNode5, 15);</span><br><span class="line"></span><br><span class="line">    DestroyTree(pNode5);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 1</span><br><span class="line">//  \</span><br><span class="line">//   2</span><br><span class="line">//    \</span><br><span class="line">//     3</span><br><span class="line">//      \</span><br><span class="line">//       4</span><br><span class="line">//        \</span><br><span class="line">//         5</span><br><span class="line">// 没有路径上面的结点和为16</span><br><span class="line">void Test4()</span><br><span class="line">&#123;</span><br><span class="line">    BinaryTreeNode* pNode1 = CreateBinaryTreeNode(1);</span><br><span class="line">    BinaryTreeNode* pNode2 = CreateBinaryTreeNode(2);</span><br><span class="line">    BinaryTreeNode* pNode3 = CreateBinaryTreeNode(3);</span><br><span class="line">    BinaryTreeNode* pNode4 = CreateBinaryTreeNode(4);</span><br><span class="line">    BinaryTreeNode* pNode5 = CreateBinaryTreeNode(5);</span><br><span class="line"></span><br><span class="line">    ConnectTreeNodes(pNode1, nullptr, pNode2);</span><br><span class="line">    ConnectTreeNodes(pNode2, nullptr, pNode3);</span><br><span class="line">    ConnectTreeNodes(pNode3, nullptr, pNode4);</span><br><span class="line">    ConnectTreeNodes(pNode4, nullptr, pNode5);</span><br><span class="line"></span><br><span class="line">    printf(&quot;No paths should be found in Test4.\n&quot;);</span><br><span class="line">    Test(&quot;Test4&quot;, pNode1, 16);</span><br><span class="line"></span><br><span class="line">    DestroyTree(pNode1);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 树中只有1个结点</span><br><span class="line">void Test5()</span><br><span class="line">&#123;</span><br><span class="line">    BinaryTreeNode* pNode1 = CreateBinaryTreeNode(1);</span><br><span class="line"></span><br><span class="line">    printf(&quot;One path should be found in Test5.\n&quot;);</span><br><span class="line">    Test(&quot;Test5&quot;, pNode1, 1);</span><br><span class="line"></span><br><span class="line">    DestroyTree(pNode1);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 树中没有结点</span><br><span class="line">void Test6()</span><br><span class="line">&#123;</span><br><span class="line">    printf(&quot;No paths should be found in Test6.\n&quot;);</span><br><span class="line">    Test(&quot;Test6&quot;, nullptr, 0);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main(int argc, char* argv[])</span><br><span class="line">&#123;</span><br><span class="line">    Test1();</span><br><span class="line">    Test2();</span><br><span class="line">    Test3();</span><br><span class="line">    Test4();</span><br><span class="line">    Test5();</span><br><span class="line">    Test6();</span><br><span class="line"></span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/18/33_SquenceOfBST/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1198,148 +1340,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/18/34_PathInTree/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Andrew Chan">
-      <meta itemprop="description" content="Personnal blogs">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Andrew Chan">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/03/18/34_PathInTree/" class="post-title-link" itemprop="url">剑指_34_PathInTree</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-03-18 00:00:00 / Modified: 16:19:46" itemprop="dateCreated datePublished" datetime="2019-03-18T00:00:00+08:00">2019-03-18</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br></pre></td><td class="code"><pre><span class="line">/*******************************************************************</span><br><span class="line">Copyright(c) 2016, Harry He</span><br><span class="line">All rights reserved.</span><br><span class="line"></span><br><span class="line">Distributed under the BSD license.</span><br><span class="line">(See accompanying file LICENSE.txt at</span><br><span class="line">https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)</span><br><span class="line">*******************************************************************/</span><br><span class="line"></span><br><span class="line">//==================================================================</span><br><span class="line">// 《剑指Offer——名企面试官精讲典型编程题》代码</span><br><span class="line">// 作者：何海涛</span><br><span class="line">//==================================================================</span><br><span class="line"></span><br><span class="line">// 面试题34：二叉树中和为某一值的路径</span><br><span class="line">// 题目：输入一棵二叉树和一个整数，打印出二叉树中结点值的和为输入整数的所</span><br><span class="line">// 有路径。从树的根结点开始往下一直到叶结点所经过的结点形成一条路径。</span><br><span class="line"></span><br><span class="line">#include &quot;..\Utilities\BinaryTree.h&quot;</span><br><span class="line">#include &lt;cstdio&gt;</span><br><span class="line">#include &lt;vector&gt;</span><br><span class="line"></span><br><span class="line">void FindPath(BinaryTreeNode* pRoot, int expectedSum, std::vector&lt;int&gt;&amp; path, int&amp; currentSum);</span><br><span class="line"></span><br><span class="line">void FindPath(BinaryTreeNode* pRoot, int expectedSum)</span><br><span class="line">&#123;</span><br><span class="line">    if (pRoot == nullptr)</span><br><span class="line">        return;</span><br><span class="line"></span><br><span class="line">    std::vector&lt;int&gt; path;</span><br><span class="line">    int currentSum = 0;</span><br><span class="line">    FindPath(pRoot, expectedSum, path, currentSum);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void FindPath(</span><br><span class="line">    BinaryTreeNode* pRoot,</span><br><span class="line">    int expectedSum,</span><br><span class="line">    std::vector&lt;int&gt;&amp; path,</span><br><span class="line">    int&amp; currentSum)</span><br><span class="line">&#123;</span><br><span class="line">    currentSum += pRoot-&gt;m_nValue;</span><br><span class="line">    path.push_back(pRoot-&gt;m_nValue);</span><br><span class="line"></span><br><span class="line">    // 如果是叶结点，并且路径上结点的和等于输入的值</span><br><span class="line">    // 打印出这条路径</span><br><span class="line">    bool isLeaf = pRoot-&gt;m_pLeft == nullptr &amp;&amp; pRoot-&gt;m_pRight == nullptr;</span><br><span class="line">    if (currentSum == expectedSum &amp;&amp; isLeaf) &#123;</span><br><span class="line">        printf(&quot;A path is found: &quot;);</span><br><span class="line">        std::vector&lt;int&gt;::iterator iter = path.begin();</span><br><span class="line">        for (; iter != path.end(); ++iter)</span><br><span class="line">            printf(&quot;%d\t&quot;, *iter);</span><br><span class="line"></span><br><span class="line">        printf(&quot;\n&quot;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    // 如果不是叶结点，则遍历它的子结点</span><br><span class="line">    if (pRoot-&gt;m_pLeft != nullptr)</span><br><span class="line">        FindPath(pRoot-&gt;m_pLeft, expectedSum, path, currentSum);</span><br><span class="line">    if (pRoot-&gt;m_pRight != nullptr)</span><br><span class="line">        FindPath(pRoot-&gt;m_pRight, expectedSum, path, currentSum);</span><br><span class="line"></span><br><span class="line">    // 在返回到父结点之前，在路径上删除当前结点，</span><br><span class="line">    // 并在currentSum中减去当前结点的值</span><br><span class="line">    currentSum -= pRoot-&gt;m_nValue;</span><br><span class="line">    path.pop_back();</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// ====================测试代码====================</span><br><span class="line">void Test(char* testName, BinaryTreeNode* pRoot, int expectedSum)</span><br><span class="line">&#123;</span><br><span class="line">    if (testName != nullptr)</span><br><span class="line">        printf(&quot;%s begins:\n&quot;, testName);</span><br><span class="line"></span><br><span class="line">    FindPath(pRoot, expectedSum);</span><br><span class="line"></span><br><span class="line">    printf(&quot;\n&quot;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//            10</span><br><span class="line">//         /      \</span><br><span class="line">//        5        12</span><br><span class="line">//       /\        </span><br><span class="line">//      4  7</span><br><span class="line">// 有两条路径上的结点和为22</span><br><span class="line">void Test1()</span><br><span class="line">&#123;</span><br><span class="line">    BinaryTreeNode* pNode10 = CreateBinaryTreeNode(10);</span><br><span class="line">    BinaryTreeNode* pNode5 = CreateBinaryTreeNode(5);</span><br><span class="line">    BinaryTreeNode* pNode12 = CreateBinaryTreeNode(12);</span><br><span class="line">    BinaryTreeNode* pNode4 = CreateBinaryTreeNode(4);</span><br><span class="line">    BinaryTreeNode* pNode7 = CreateBinaryTreeNode(7);</span><br><span class="line"></span><br><span class="line">    ConnectTreeNodes(pNode10, pNode5, pNode12);</span><br><span class="line">    ConnectTreeNodes(pNode5, pNode4, pNode7);</span><br><span class="line"></span><br><span class="line">    printf(&quot;Two paths should be found in Test1.\n&quot;);</span><br><span class="line">    Test(&quot;Test1&quot;, pNode10, 22);</span><br><span class="line"></span><br><span class="line">    DestroyTree(pNode10);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//            10</span><br><span class="line">//         /      \</span><br><span class="line">//        5        12</span><br><span class="line">//       /\        </span><br><span class="line">//      4  7</span><br><span class="line">// 没有路径上的结点和为15</span><br><span class="line">void Test2()</span><br><span class="line">&#123;</span><br><span class="line">    BinaryTreeNode* pNode10 = CreateBinaryTreeNode(10);</span><br><span class="line">    BinaryTreeNode* pNode5 = CreateBinaryTreeNode(5);</span><br><span class="line">    BinaryTreeNode* pNode12 = CreateBinaryTreeNode(12);</span><br><span class="line">    BinaryTreeNode* pNode4 = CreateBinaryTreeNode(4);</span><br><span class="line">    BinaryTreeNode* pNode7 = CreateBinaryTreeNode(7);</span><br><span class="line"></span><br><span class="line">    ConnectTreeNodes(pNode10, pNode5, pNode12);</span><br><span class="line">    ConnectTreeNodes(pNode5, pNode4, pNode7);</span><br><span class="line"></span><br><span class="line">    printf(&quot;No paths should be found in Test2.\n&quot;);</span><br><span class="line">    Test(&quot;Test2&quot;, pNode10, 15);</span><br><span class="line"></span><br><span class="line">    DestroyTree(pNode10);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//               5</span><br><span class="line">//              /</span><br><span class="line">//             4</span><br><span class="line">//            /</span><br><span class="line">//           3</span><br><span class="line">//          /</span><br><span class="line">//         2</span><br><span class="line">//        /</span><br><span class="line">//       1</span><br><span class="line">// 有一条路径上面的结点和为15</span><br><span class="line">void Test3()</span><br><span class="line">&#123;</span><br><span class="line">    BinaryTreeNode* pNode5 = CreateBinaryTreeNode(5);</span><br><span class="line">    BinaryTreeNode* pNode4 = CreateBinaryTreeNode(4);</span><br><span class="line">    BinaryTreeNode* pNode3 = CreateBinaryTreeNode(3);</span><br><span class="line">    BinaryTreeNode* pNode2 = CreateBinaryTreeNode(2);</span><br><span class="line">    BinaryTreeNode* pNode1 = CreateBinaryTreeNode(1);</span><br><span class="line"></span><br><span class="line">    ConnectTreeNodes(pNode5, pNode4, nullptr);</span><br><span class="line">    ConnectTreeNodes(pNode4, pNode3, nullptr);</span><br><span class="line">    ConnectTreeNodes(pNode3, pNode2, nullptr);</span><br><span class="line">    ConnectTreeNodes(pNode2, pNode1, nullptr);</span><br><span class="line"></span><br><span class="line">    printf(&quot;One path should be found in Test3.\n&quot;);</span><br><span class="line">    Test(&quot;Test3&quot;, pNode5, 15);</span><br><span class="line"></span><br><span class="line">    DestroyTree(pNode5);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 1</span><br><span class="line">//  \</span><br><span class="line">//   2</span><br><span class="line">//    \</span><br><span class="line">//     3</span><br><span class="line">//      \</span><br><span class="line">//       4</span><br><span class="line">//        \</span><br><span class="line">//         5</span><br><span class="line">// 没有路径上面的结点和为16</span><br><span class="line">void Test4()</span><br><span class="line">&#123;</span><br><span class="line">    BinaryTreeNode* pNode1 = CreateBinaryTreeNode(1);</span><br><span class="line">    BinaryTreeNode* pNode2 = CreateBinaryTreeNode(2);</span><br><span class="line">    BinaryTreeNode* pNode3 = CreateBinaryTreeNode(3);</span><br><span class="line">    BinaryTreeNode* pNode4 = CreateBinaryTreeNode(4);</span><br><span class="line">    BinaryTreeNode* pNode5 = CreateBinaryTreeNode(5);</span><br><span class="line"></span><br><span class="line">    ConnectTreeNodes(pNode1, nullptr, pNode2);</span><br><span class="line">    ConnectTreeNodes(pNode2, nullptr, pNode3);</span><br><span class="line">    ConnectTreeNodes(pNode3, nullptr, pNode4);</span><br><span class="line">    ConnectTreeNodes(pNode4, nullptr, pNode5);</span><br><span class="line"></span><br><span class="line">    printf(&quot;No paths should be found in Test4.\n&quot;);</span><br><span class="line">    Test(&quot;Test4&quot;, pNode1, 16);</span><br><span class="line"></span><br><span class="line">    DestroyTree(pNode1);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 树中只有1个结点</span><br><span class="line">void Test5()</span><br><span class="line">&#123;</span><br><span class="line">    BinaryTreeNode* pNode1 = CreateBinaryTreeNode(1);</span><br><span class="line"></span><br><span class="line">    printf(&quot;One path should be found in Test5.\n&quot;);</span><br><span class="line">    Test(&quot;Test5&quot;, pNode1, 1);</span><br><span class="line"></span><br><span class="line">    DestroyTree(pNode1);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 树中没有结点</span><br><span class="line">void Test6()</span><br><span class="line">&#123;</span><br><span class="line">    printf(&quot;No paths should be found in Test6.\n&quot;);</span><br><span class="line">    Test(&quot;Test6&quot;, nullptr, 0);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main(int argc, char* argv[])</span><br><span class="line">&#123;</span><br><span class="line">    Test1();</span><br><span class="line">    Test2();</span><br><span class="line">    Test3();</span><br><span class="line">    Test4();</span><br><span class="line">    Test5();</span><br><span class="line">    Test6();</span><br><span class="line"></span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/18/36_ConvertBinarySearchTree/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1427,148 +1427,6 @@
         
           
             <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br></pre></td><td class="code"><pre><span class="line">/*******************************************************************</span><br><span class="line">Copyright(c) 2016, Harry He</span><br><span class="line">All rights reserved.</span><br><span class="line"></span><br><span class="line">Distributed under the BSD license.</span><br><span class="line">(See accompanying file LICENSE.txt at</span><br><span class="line">https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)</span><br><span class="line">*******************************************************************/</span><br><span class="line"></span><br><span class="line">//==================================================================</span><br><span class="line">// 《剑指Offer——名企面试官精讲典型编程题》代码</span><br><span class="line">// 作者：何海涛</span><br><span class="line">//==================================================================</span><br><span class="line"></span><br><span class="line">// 面试题36：二叉搜索树与双向链表</span><br><span class="line">// 题目：输入一棵二叉搜索树，将该二叉搜索树转换成一个排序的双向链表。要求</span><br><span class="line">// 不能创建任何新的结点，只能调整树中结点指针的指向。</span><br><span class="line"></span><br><span class="line">#include &quot;..\Utilities\BinaryTree.h&quot;</span><br><span class="line">#include &lt;cstdio&gt;</span><br><span class="line"></span><br><span class="line">void ConvertNode(BinaryTreeNode* pNode, BinaryTreeNode** pLastNodeInList);</span><br><span class="line"></span><br><span class="line">BinaryTreeNode* Convert(BinaryTreeNode* pRootOfTree)</span><br><span class="line">&#123;</span><br><span class="line">    BinaryTreeNode* pLastNodeInList = nullptr;</span><br><span class="line">    ConvertNode(pRootOfTree, &amp;pLastNodeInList);</span><br><span class="line"></span><br><span class="line">    // pLastNodeInList指向双向链表的尾结点，</span><br><span class="line">    // 我们需要返回头结点</span><br><span class="line">    BinaryTreeNode* pHeadOfList = pLastNodeInList;</span><br><span class="line">    while (pHeadOfList != nullptr &amp;&amp; pHeadOfList-&gt;m_pLeft != nullptr)</span><br><span class="line">        pHeadOfList = pHeadOfList-&gt;m_pLeft;</span><br><span class="line"></span><br><span class="line">    return pHeadOfList;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void ConvertNode(BinaryTreeNode* pNode, BinaryTreeNode** pLastNodeInList)</span><br><span class="line">&#123;</span><br><span class="line">    if (pNode == nullptr)</span><br><span class="line">        return;</span><br><span class="line"></span><br><span class="line">    BinaryTreeNode* pCurrent = pNode;</span><br><span class="line"></span><br><span class="line">    if (pCurrent-&gt;m_pLeft != nullptr)</span><br><span class="line">        ConvertNode(pCurrent-&gt;m_pLeft, pLastNodeInList);</span><br><span class="line"></span><br><span class="line">    pCurrent-&gt;m_pLeft = *pLastNodeInList;</span><br><span class="line">    if (*pLastNodeInList != nullptr)</span><br><span class="line">        (*pLastNodeInList)-&gt;m_pRight = pCurrent;</span><br><span class="line"></span><br><span class="line">    *pLastNodeInList = pCurrent;</span><br><span class="line"></span><br><span class="line">    if (pCurrent-&gt;m_pRight != nullptr)</span><br><span class="line">        ConvertNode(pCurrent-&gt;m_pRight, pLastNodeInList);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// ====================测试代码====================</span><br><span class="line">void PrintDoubleLinkedList(BinaryTreeNode* pHeadOfList)</span><br><span class="line">&#123;</span><br><span class="line">    BinaryTreeNode* pNode = pHeadOfList;</span><br><span class="line"></span><br><span class="line">    printf(&quot;The nodes from left to right are:\n&quot;);</span><br><span class="line">    while (pNode != nullptr) &#123;</span><br><span class="line">        printf(&quot;%d\t&quot;, pNode-&gt;m_nValue);</span><br><span class="line"></span><br><span class="line">        if (pNode-&gt;m_pRight == nullptr)</span><br><span class="line">            break;</span><br><span class="line">        pNode = pNode-&gt;m_pRight;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    printf(&quot;\nThe nodes from right to left are:\n&quot;);</span><br><span class="line">    while (pNode != nullptr) &#123;</span><br><span class="line">        printf(&quot;%d\t&quot;, pNode-&gt;m_nValue);</span><br><span class="line"></span><br><span class="line">        if (pNode-&gt;m_pLeft == nullptr)</span><br><span class="line">            break;</span><br><span class="line">        pNode = pNode-&gt;m_pLeft;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    printf(&quot;\n&quot;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void DestroyList(BinaryTreeNode* pHeadOfList)</span><br><span class="line">&#123;</span><br><span class="line">    BinaryTreeNode* pNode = pHeadOfList;</span><br><span class="line">    while (pNode != nullptr) &#123;</span><br><span class="line">        BinaryTreeNode* pNext = pNode-&gt;m_pRight;</span><br><span class="line"></span><br><span class="line">        delete pNode;</span><br><span class="line">        pNode = pNext;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void Test(char* testName, BinaryTreeNode* pRootOfTree)</span><br><span class="line">&#123;</span><br><span class="line">    if (testName != nullptr)</span><br><span class="line">        printf(&quot;%s begins:\n&quot;, testName);</span><br><span class="line"></span><br><span class="line">    PrintTree(pRootOfTree);</span><br><span class="line"></span><br><span class="line">    BinaryTreeNode* pHeadOfList = Convert(pRootOfTree);</span><br><span class="line"></span><br><span class="line">    PrintDoubleLinkedList(pHeadOfList);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//            10</span><br><span class="line">//         /      \</span><br><span class="line">//        6        14</span><br><span class="line">//       /\        /\</span><br><span class="line">//      4  8     12  16</span><br><span class="line">void Test1()</span><br><span class="line">&#123;</span><br><span class="line">    BinaryTreeNode* pNode10 = CreateBinaryTreeNode(10);</span><br><span class="line">    BinaryTreeNode* pNode6 = CreateBinaryTreeNode(6);</span><br><span class="line">    BinaryTreeNode* pNode14 = CreateBinaryTreeNode(14);</span><br><span class="line">    BinaryTreeNode* pNode4 = CreateBinaryTreeNode(4);</span><br><span class="line">    BinaryTreeNode* pNode8 = CreateBinaryTreeNode(8);</span><br><span class="line">    BinaryTreeNode* pNode12 = CreateBinaryTreeNode(12);</span><br><span class="line">    BinaryTreeNode* pNode16 = CreateBinaryTreeNode(16);</span><br><span class="line"></span><br><span class="line">    ConnectTreeNodes(pNode10, pNode6, pNode14);</span><br><span class="line">    ConnectTreeNodes(pNode6, pNode4, pNode8);</span><br><span class="line">    ConnectTreeNodes(pNode14, pNode12, pNode16);</span><br><span class="line"></span><br><span class="line">    Test(&quot;Test1&quot;, pNode10);</span><br><span class="line"></span><br><span class="line">    DestroyList(pNode4);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//               5</span><br><span class="line">//              /</span><br><span class="line">//             4</span><br><span class="line">//            /</span><br><span class="line">//           3</span><br><span class="line">//          /</span><br><span class="line">//         2</span><br><span class="line">//        /</span><br><span class="line">//       1</span><br><span class="line">void Test2()</span><br><span class="line">&#123;</span><br><span class="line">    BinaryTreeNode* pNode5 = CreateBinaryTreeNode(5);</span><br><span class="line">    BinaryTreeNode* pNode4 = CreateBinaryTreeNode(4);</span><br><span class="line">    BinaryTreeNode* pNode3 = CreateBinaryTreeNode(3);</span><br><span class="line">    BinaryTreeNode* pNode2 = CreateBinaryTreeNode(2);</span><br><span class="line">    BinaryTreeNode* pNode1 = CreateBinaryTreeNode(1);</span><br><span class="line"></span><br><span class="line">    ConnectTreeNodes(pNode5, pNode4, nullptr);</span><br><span class="line">    ConnectTreeNodes(pNode4, pNode3, nullptr);</span><br><span class="line">    ConnectTreeNodes(pNode3, pNode2, nullptr);</span><br><span class="line">    ConnectTreeNodes(pNode2, pNode1, nullptr);</span><br><span class="line"></span><br><span class="line">    Test(&quot;Test2&quot;, pNode5);</span><br><span class="line"></span><br><span class="line">    DestroyList(pNode1);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 1</span><br><span class="line">//  \</span><br><span class="line">//   2</span><br><span class="line">//    \</span><br><span class="line">//     3</span><br><span class="line">//      \</span><br><span class="line">//       4</span><br><span class="line">//        \</span><br><span class="line">//         5</span><br><span class="line">void Test3()</span><br><span class="line">&#123;</span><br><span class="line">    BinaryTreeNode* pNode1 = CreateBinaryTreeNode(1);</span><br><span class="line">    BinaryTreeNode* pNode2 = CreateBinaryTreeNode(2);</span><br><span class="line">    BinaryTreeNode* pNode3 = CreateBinaryTreeNode(3);</span><br><span class="line">    BinaryTreeNode* pNode4 = CreateBinaryTreeNode(4);</span><br><span class="line">    BinaryTreeNode* pNode5 = CreateBinaryTreeNode(5);</span><br><span class="line"></span><br><span class="line">    ConnectTreeNodes(pNode1, nullptr, pNode2);</span><br><span class="line">    ConnectTreeNodes(pNode2, nullptr, pNode3);</span><br><span class="line">    ConnectTreeNodes(pNode3, nullptr, pNode4);</span><br><span class="line">    ConnectTreeNodes(pNode4, nullptr, pNode5);</span><br><span class="line"></span><br><span class="line">    Test(&quot;Test3&quot;, pNode1);</span><br><span class="line"></span><br><span class="line">    DestroyList(pNode1);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 树中只有1个结点</span><br><span class="line">void Test4()</span><br><span class="line">&#123;</span><br><span class="line">    BinaryTreeNode* pNode1 = CreateBinaryTreeNode(1);</span><br><span class="line">    Test(&quot;Test4&quot;, pNode1);</span><br><span class="line"></span><br><span class="line">    DestroyList(pNode1);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 树中没有结点</span><br><span class="line">void Test5()</span><br><span class="line">&#123;</span><br><span class="line">    Test(&quot;Test5&quot;, nullptr);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main(int argc, char* argv[])</span><br><span class="line">&#123;</span><br><span class="line">    Test1();</span><br><span class="line">    Test2();</span><br><span class="line">    Test3();</span><br><span class="line">    Test4();</span><br><span class="line">    Test5();</span><br><span class="line"></span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/18/37_SerializeBinaryTrees/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Andrew Chan">
-      <meta itemprop="description" content="Personnal blogs">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Andrew Chan">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/03/18/37_SerializeBinaryTrees/" class="post-title-link" itemprop="url">剑指_37_SerializeBinaryTrees</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-03-18 00:00:00 / Modified: 16:19:29" itemprop="dateCreated datePublished" datetime="2019-03-18T00:00:00+08:00">2019-03-18</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br></pre></td><td class="code"><pre><span class="line">/*******************************************************************</span><br><span class="line">Copyright(c) 2016, Harry He</span><br><span class="line">All rights reserved.</span><br><span class="line"></span><br><span class="line">Distributed under the BSD license.</span><br><span class="line">(See accompanying file LICENSE.txt at</span><br><span class="line">https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)</span><br><span class="line">*******************************************************************/</span><br><span class="line"></span><br><span class="line">//==================================================================</span><br><span class="line">// 《剑指Offer——名企面试官精讲典型编程题》代码</span><br><span class="line">// 作者：何海涛</span><br><span class="line">//==================================================================</span><br><span class="line"></span><br><span class="line">// 面试题37：序列化二叉树</span><br><span class="line">// 题目：请实现两个函数，分别用来序列化和反序列化二叉树。</span><br><span class="line"></span><br><span class="line">#include &quot;..\Utilities\BinaryTree.h&quot;</span><br><span class="line">#include &lt;cstdio&gt;</span><br><span class="line">#include &lt;fstream&gt;</span><br><span class="line">#include &lt;iostream&gt;</span><br><span class="line"></span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">void Serialize(const BinaryTreeNode* pRoot, ostream&amp; stream)</span><br><span class="line">&#123;</span><br><span class="line">    if (pRoot == nullptr) &#123;</span><br><span class="line">        stream &lt;&lt; &quot;$,&quot;;</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    stream &lt;&lt; pRoot-&gt;m_nValue &lt;&lt; &apos;,&apos;;</span><br><span class="line">    Serialize(pRoot-&gt;m_pLeft, stream);</span><br><span class="line">    Serialize(pRoot-&gt;m_pRight, stream);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">bool ReadStream(istream&amp; stream, int* number)</span><br><span class="line">&#123;</span><br><span class="line">    if (stream.eof())</span><br><span class="line">        return false;</span><br><span class="line"></span><br><span class="line">    char buffer[32];</span><br><span class="line">    buffer[0] = &apos;\0&apos;;</span><br><span class="line"></span><br><span class="line">    char ch;</span><br><span class="line">    stream &gt;&gt; ch;</span><br><span class="line">    int i = 0;</span><br><span class="line">    while (!stream.eof() &amp;&amp; ch != &apos;,&apos;) &#123;</span><br><span class="line">        buffer[i++] = ch;</span><br><span class="line">        stream &gt;&gt; ch;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    bool isNumeric = false;</span><br><span class="line">    if (i &gt; 0 &amp;&amp; buffer[0] != &apos;$&apos;) &#123;</span><br><span class="line">        *number = atoi(buffer);</span><br><span class="line">        isNumeric = true;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return isNumeric;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void Deserialize(BinaryTreeNode** pRoot, istream&amp; stream)</span><br><span class="line">&#123;</span><br><span class="line">    int number;</span><br><span class="line">    if (ReadStream(stream, &amp;number)) &#123;</span><br><span class="line">        *pRoot = new BinaryTreeNode();</span><br><span class="line">        (*pRoot)-&gt;m_nValue = number;</span><br><span class="line">        (*pRoot)-&gt;m_pLeft = nullptr;</span><br><span class="line">        (*pRoot)-&gt;m_pRight = nullptr;</span><br><span class="line"></span><br><span class="line">        Deserialize(&amp;((*pRoot)-&gt;m_pLeft), stream);</span><br><span class="line">        Deserialize(&amp;((*pRoot)-&gt;m_pRight), stream);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// ==================== Test Code ====================</span><br><span class="line">bool isSameTree(const BinaryTreeNode* pRoot1, const BinaryTreeNode* pRoot2)</span><br><span class="line">&#123;</span><br><span class="line">    if (pRoot1 == nullptr &amp;&amp; pRoot2 == nullptr)</span><br><span class="line">        return true;</span><br><span class="line"></span><br><span class="line">    if (pRoot1 == nullptr || pRoot2 == nullptr)</span><br><span class="line">        return false;</span><br><span class="line"></span><br><span class="line">    if (pRoot1-&gt;m_nValue != pRoot2-&gt;m_nValue)</span><br><span class="line">        return false;</span><br><span class="line"></span><br><span class="line">    return isSameTree(pRoot1-&gt;m_pLeft, pRoot2-&gt;m_pLeft) &amp;&amp; isSameTree(pRoot1-&gt;m_pRight, pRoot2-&gt;m_pRight);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void Test(const char* testName, const BinaryTreeNode* pRoot)</span><br><span class="line">&#123;</span><br><span class="line">    if (testName != nullptr)</span><br><span class="line">        printf(&quot;%s begins: \n&quot;, testName);</span><br><span class="line"></span><br><span class="line">    PrintTree(pRoot);</span><br><span class="line"></span><br><span class="line">    char* fileName = &quot;test.txt&quot;;</span><br><span class="line">    ofstream fileOut;</span><br><span class="line">    fileOut.open(fileName);</span><br><span class="line"></span><br><span class="line">    Serialize(pRoot, fileOut);</span><br><span class="line">    fileOut.close();</span><br><span class="line"></span><br><span class="line">    // print the serialized file</span><br><span class="line">    ifstream fileIn1;</span><br><span class="line">    char ch;</span><br><span class="line">    fileIn1.open(fileName);</span><br><span class="line">    while (!fileIn1.eof()) &#123;</span><br><span class="line">        fileIn1 &gt;&gt; ch;</span><br><span class="line">        cout &lt;&lt; ch;</span><br><span class="line">    &#125;</span><br><span class="line">    fileIn1.close();</span><br><span class="line">    cout &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">    ifstream fileIn2;</span><br><span class="line">    fileIn2.open(fileName);</span><br><span class="line">    BinaryTreeNode* pNewRoot = nullptr;</span><br><span class="line">    Deserialize(&amp;pNewRoot, fileIn2);</span><br><span class="line">    fileIn2.close();</span><br><span class="line"></span><br><span class="line">    PrintTree(pNewRoot);</span><br><span class="line"></span><br><span class="line">    if (isSameTree(pRoot, pNewRoot))</span><br><span class="line">        printf(&quot;The deserialized tree is same as the oritinal tree.\n\n&quot;);</span><br><span class="line">    else</span><br><span class="line">        printf(&quot;The deserialized tree is NOT same as the oritinal tree.\n\n&quot;);</span><br><span class="line"></span><br><span class="line">    DestroyTree(pNewRoot);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//            8</span><br><span class="line">//        6      10</span><br><span class="line">//       5 7    9  11</span><br><span class="line">void Test1()</span><br><span class="line">&#123;</span><br><span class="line">    BinaryTreeNode* pNode8 = CreateBinaryTreeNode(8);</span><br><span class="line">    BinaryTreeNode* pNode6 = CreateBinaryTreeNode(6);</span><br><span class="line">    BinaryTreeNode* pNode10 = CreateBinaryTreeNode(10);</span><br><span class="line">    BinaryTreeNode* pNode5 = CreateBinaryTreeNode(5);</span><br><span class="line">    BinaryTreeNode* pNode7 = CreateBinaryTreeNode(7);</span><br><span class="line">    BinaryTreeNode* pNode9 = CreateBinaryTreeNode(9);</span><br><span class="line">    BinaryTreeNode* pNode11 = CreateBinaryTreeNode(11);</span><br><span class="line"></span><br><span class="line">    ConnectTreeNodes(pNode8, pNode6, pNode10);</span><br><span class="line">    ConnectTreeNodes(pNode6, pNode5, pNode7);</span><br><span class="line">    ConnectTreeNodes(pNode10, pNode9, pNode11);</span><br><span class="line"></span><br><span class="line">    Test(&quot;Test1&quot;, pNode8);</span><br><span class="line"></span><br><span class="line">    DestroyTree(pNode8);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//            5</span><br><span class="line">//          4</span><br><span class="line">//        3</span><br><span class="line">//      2</span><br><span class="line">void Test2()</span><br><span class="line">&#123;</span><br><span class="line">    BinaryTreeNode* pNode5 = CreateBinaryTreeNode(5);</span><br><span class="line">    BinaryTreeNode* pNode4 = CreateBinaryTreeNode(4);</span><br><span class="line">    BinaryTreeNode* pNode3 = CreateBinaryTreeNode(3);</span><br><span class="line">    BinaryTreeNode* pNode2 = CreateBinaryTreeNode(2);</span><br><span class="line"></span><br><span class="line">    ConnectTreeNodes(pNode5, pNode4, nullptr);</span><br><span class="line">    ConnectTreeNodes(pNode4, pNode3, nullptr);</span><br><span class="line">    ConnectTreeNodes(pNode3, pNode2, nullptr);</span><br><span class="line"></span><br><span class="line">    Test(&quot;Test2&quot;, pNode5);</span><br><span class="line"></span><br><span class="line">    DestroyTree(pNode5);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//        5</span><br><span class="line">//         4</span><br><span class="line">//          3</span><br><span class="line">//           2</span><br><span class="line">void Test3()</span><br><span class="line">&#123;</span><br><span class="line">    BinaryTreeNode* pNode5 = CreateBinaryTreeNode(5);</span><br><span class="line">    BinaryTreeNode* pNode4 = CreateBinaryTreeNode(4);</span><br><span class="line">    BinaryTreeNode* pNode3 = CreateBinaryTreeNode(3);</span><br><span class="line">    BinaryTreeNode* pNode2 = CreateBinaryTreeNode(2);</span><br><span class="line"></span><br><span class="line">    ConnectTreeNodes(pNode5, nullptr, pNode4);</span><br><span class="line">    ConnectTreeNodes(pNode4, nullptr, pNode3);</span><br><span class="line">    ConnectTreeNodes(pNode3, nullptr, pNode2);</span><br><span class="line"></span><br><span class="line">    Test(&quot;Test3&quot;, pNode5);</span><br><span class="line"></span><br><span class="line">    DestroyTree(pNode5);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void Test4()</span><br><span class="line">&#123;</span><br><span class="line">    BinaryTreeNode* pNode5 = CreateBinaryTreeNode(5);</span><br><span class="line"></span><br><span class="line">    Test(&quot;Test4&quot;, pNode5);</span><br><span class="line"></span><br><span class="line">    DestroyTree(pNode5);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void Test5()</span><br><span class="line">&#123;</span><br><span class="line">    Test(&quot;Test5&quot;, nullptr);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//        5</span><br><span class="line">//         5</span><br><span class="line">//          5</span><br><span class="line">//         5</span><br><span class="line">//        5</span><br><span class="line">//       5 5</span><br><span class="line">//      5   5</span><br><span class="line">void Test6()</span><br><span class="line">&#123;</span><br><span class="line">    BinaryTreeNode* pNode1 = CreateBinaryTreeNode(5);</span><br><span class="line">    BinaryTreeNode* pNode2 = CreateBinaryTreeNode(5);</span><br><span class="line">    BinaryTreeNode* pNode3 = CreateBinaryTreeNode(5);</span><br><span class="line">    BinaryTreeNode* pNode4 = CreateBinaryTreeNode(5);</span><br><span class="line">    BinaryTreeNode* pNode5 = CreateBinaryTreeNode(5);</span><br><span class="line">    BinaryTreeNode* pNode61 = CreateBinaryTreeNode(5);</span><br><span class="line">    BinaryTreeNode* pNode62 = CreateBinaryTreeNode(5);</span><br><span class="line">    BinaryTreeNode* pNode71 = CreateBinaryTreeNode(5);</span><br><span class="line">    BinaryTreeNode* pNode72 = CreateBinaryTreeNode(5);</span><br><span class="line"></span><br><span class="line">    ConnectTreeNodes(pNode1, nullptr, pNode2);</span><br><span class="line">    ConnectTreeNodes(pNode2, nullptr, pNode3);</span><br><span class="line">    ConnectTreeNodes(pNode3, pNode4, nullptr);</span><br><span class="line">    ConnectTreeNodes(pNode4, pNode5, nullptr);</span><br><span class="line">    ConnectTreeNodes(pNode5, pNode61, pNode62);</span><br><span class="line">    ConnectTreeNodes(pNode61, pNode71, nullptr);</span><br><span class="line">    ConnectTreeNodes(pNode62, nullptr, pNode72);</span><br><span class="line"></span><br><span class="line">    Test(&quot;Test6&quot;, pNode1);</span><br><span class="line"></span><br><span class="line">    DestroyTree(pNode1);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main(int argc, char* argv[])</span><br><span class="line">&#123;</span><br><span class="line">    Test1();</span><br><span class="line">    Test2();</span><br><span class="line">    Test3();</span><br><span class="line">    Test4();</span><br><span class="line">    Test5();</span><br><span class="line">    Test6();</span><br><span class="line"></span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
           
         
       
@@ -1766,6 +1624,148 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/18/37_SerializeBinaryTrees/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Andrew Chan">
+      <meta itemprop="description" content="Personnal blogs">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Andrew Chan">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/03/18/37_SerializeBinaryTrees/" class="post-title-link" itemprop="url">剑指_37_SerializeBinaryTrees</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-03-18 00:00:00 / Modified: 16:19:29" itemprop="dateCreated datePublished" datetime="2019-03-18T00:00:00+08:00">2019-03-18</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br></pre></td><td class="code"><pre><span class="line">/*******************************************************************</span><br><span class="line">Copyright(c) 2016, Harry He</span><br><span class="line">All rights reserved.</span><br><span class="line"></span><br><span class="line">Distributed under the BSD license.</span><br><span class="line">(See accompanying file LICENSE.txt at</span><br><span class="line">https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)</span><br><span class="line">*******************************************************************/</span><br><span class="line"></span><br><span class="line">//==================================================================</span><br><span class="line">// 《剑指Offer——名企面试官精讲典型编程题》代码</span><br><span class="line">// 作者：何海涛</span><br><span class="line">//==================================================================</span><br><span class="line"></span><br><span class="line">// 面试题37：序列化二叉树</span><br><span class="line">// 题目：请实现两个函数，分别用来序列化和反序列化二叉树。</span><br><span class="line"></span><br><span class="line">#include &quot;..\Utilities\BinaryTree.h&quot;</span><br><span class="line">#include &lt;cstdio&gt;</span><br><span class="line">#include &lt;fstream&gt;</span><br><span class="line">#include &lt;iostream&gt;</span><br><span class="line"></span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">void Serialize(const BinaryTreeNode* pRoot, ostream&amp; stream)</span><br><span class="line">&#123;</span><br><span class="line">    if (pRoot == nullptr) &#123;</span><br><span class="line">        stream &lt;&lt; &quot;$,&quot;;</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    stream &lt;&lt; pRoot-&gt;m_nValue &lt;&lt; &apos;,&apos;;</span><br><span class="line">    Serialize(pRoot-&gt;m_pLeft, stream);</span><br><span class="line">    Serialize(pRoot-&gt;m_pRight, stream);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">bool ReadStream(istream&amp; stream, int* number)</span><br><span class="line">&#123;</span><br><span class="line">    if (stream.eof())</span><br><span class="line">        return false;</span><br><span class="line"></span><br><span class="line">    char buffer[32];</span><br><span class="line">    buffer[0] = &apos;\0&apos;;</span><br><span class="line"></span><br><span class="line">    char ch;</span><br><span class="line">    stream &gt;&gt; ch;</span><br><span class="line">    int i = 0;</span><br><span class="line">    while (!stream.eof() &amp;&amp; ch != &apos;,&apos;) &#123;</span><br><span class="line">        buffer[i++] = ch;</span><br><span class="line">        stream &gt;&gt; ch;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    bool isNumeric = false;</span><br><span class="line">    if (i &gt; 0 &amp;&amp; buffer[0] != &apos;$&apos;) &#123;</span><br><span class="line">        *number = atoi(buffer);</span><br><span class="line">        isNumeric = true;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return isNumeric;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void Deserialize(BinaryTreeNode** pRoot, istream&amp; stream)</span><br><span class="line">&#123;</span><br><span class="line">    int number;</span><br><span class="line">    if (ReadStream(stream, &amp;number)) &#123;</span><br><span class="line">        *pRoot = new BinaryTreeNode();</span><br><span class="line">        (*pRoot)-&gt;m_nValue = number;</span><br><span class="line">        (*pRoot)-&gt;m_pLeft = nullptr;</span><br><span class="line">        (*pRoot)-&gt;m_pRight = nullptr;</span><br><span class="line"></span><br><span class="line">        Deserialize(&amp;((*pRoot)-&gt;m_pLeft), stream);</span><br><span class="line">        Deserialize(&amp;((*pRoot)-&gt;m_pRight), stream);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// ==================== Test Code ====================</span><br><span class="line">bool isSameTree(const BinaryTreeNode* pRoot1, const BinaryTreeNode* pRoot2)</span><br><span class="line">&#123;</span><br><span class="line">    if (pRoot1 == nullptr &amp;&amp; pRoot2 == nullptr)</span><br><span class="line">        return true;</span><br><span class="line"></span><br><span class="line">    if (pRoot1 == nullptr || pRoot2 == nullptr)</span><br><span class="line">        return false;</span><br><span class="line"></span><br><span class="line">    if (pRoot1-&gt;m_nValue != pRoot2-&gt;m_nValue)</span><br><span class="line">        return false;</span><br><span class="line"></span><br><span class="line">    return isSameTree(pRoot1-&gt;m_pLeft, pRoot2-&gt;m_pLeft) &amp;&amp; isSameTree(pRoot1-&gt;m_pRight, pRoot2-&gt;m_pRight);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void Test(const char* testName, const BinaryTreeNode* pRoot)</span><br><span class="line">&#123;</span><br><span class="line">    if (testName != nullptr)</span><br><span class="line">        printf(&quot;%s begins: \n&quot;, testName);</span><br><span class="line"></span><br><span class="line">    PrintTree(pRoot);</span><br><span class="line"></span><br><span class="line">    char* fileName = &quot;test.txt&quot;;</span><br><span class="line">    ofstream fileOut;</span><br><span class="line">    fileOut.open(fileName);</span><br><span class="line"></span><br><span class="line">    Serialize(pRoot, fileOut);</span><br><span class="line">    fileOut.close();</span><br><span class="line"></span><br><span class="line">    // print the serialized file</span><br><span class="line">    ifstream fileIn1;</span><br><span class="line">    char ch;</span><br><span class="line">    fileIn1.open(fileName);</span><br><span class="line">    while (!fileIn1.eof()) &#123;</span><br><span class="line">        fileIn1 &gt;&gt; ch;</span><br><span class="line">        cout &lt;&lt; ch;</span><br><span class="line">    &#125;</span><br><span class="line">    fileIn1.close();</span><br><span class="line">    cout &lt;&lt; endl;</span><br><span class="line"></span><br><span class="line">    ifstream fileIn2;</span><br><span class="line">    fileIn2.open(fileName);</span><br><span class="line">    BinaryTreeNode* pNewRoot = nullptr;</span><br><span class="line">    Deserialize(&amp;pNewRoot, fileIn2);</span><br><span class="line">    fileIn2.close();</span><br><span class="line"></span><br><span class="line">    PrintTree(pNewRoot);</span><br><span class="line"></span><br><span class="line">    if (isSameTree(pRoot, pNewRoot))</span><br><span class="line">        printf(&quot;The deserialized tree is same as the oritinal tree.\n\n&quot;);</span><br><span class="line">    else</span><br><span class="line">        printf(&quot;The deserialized tree is NOT same as the oritinal tree.\n\n&quot;);</span><br><span class="line"></span><br><span class="line">    DestroyTree(pNewRoot);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//            8</span><br><span class="line">//        6      10</span><br><span class="line">//       5 7    9  11</span><br><span class="line">void Test1()</span><br><span class="line">&#123;</span><br><span class="line">    BinaryTreeNode* pNode8 = CreateBinaryTreeNode(8);</span><br><span class="line">    BinaryTreeNode* pNode6 = CreateBinaryTreeNode(6);</span><br><span class="line">    BinaryTreeNode* pNode10 = CreateBinaryTreeNode(10);</span><br><span class="line">    BinaryTreeNode* pNode5 = CreateBinaryTreeNode(5);</span><br><span class="line">    BinaryTreeNode* pNode7 = CreateBinaryTreeNode(7);</span><br><span class="line">    BinaryTreeNode* pNode9 = CreateBinaryTreeNode(9);</span><br><span class="line">    BinaryTreeNode* pNode11 = CreateBinaryTreeNode(11);</span><br><span class="line"></span><br><span class="line">    ConnectTreeNodes(pNode8, pNode6, pNode10);</span><br><span class="line">    ConnectTreeNodes(pNode6, pNode5, pNode7);</span><br><span class="line">    ConnectTreeNodes(pNode10, pNode9, pNode11);</span><br><span class="line"></span><br><span class="line">    Test(&quot;Test1&quot;, pNode8);</span><br><span class="line"></span><br><span class="line">    DestroyTree(pNode8);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//            5</span><br><span class="line">//          4</span><br><span class="line">//        3</span><br><span class="line">//      2</span><br><span class="line">void Test2()</span><br><span class="line">&#123;</span><br><span class="line">    BinaryTreeNode* pNode5 = CreateBinaryTreeNode(5);</span><br><span class="line">    BinaryTreeNode* pNode4 = CreateBinaryTreeNode(4);</span><br><span class="line">    BinaryTreeNode* pNode3 = CreateBinaryTreeNode(3);</span><br><span class="line">    BinaryTreeNode* pNode2 = CreateBinaryTreeNode(2);</span><br><span class="line"></span><br><span class="line">    ConnectTreeNodes(pNode5, pNode4, nullptr);</span><br><span class="line">    ConnectTreeNodes(pNode4, pNode3, nullptr);</span><br><span class="line">    ConnectTreeNodes(pNode3, pNode2, nullptr);</span><br><span class="line"></span><br><span class="line">    Test(&quot;Test2&quot;, pNode5);</span><br><span class="line"></span><br><span class="line">    DestroyTree(pNode5);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//        5</span><br><span class="line">//         4</span><br><span class="line">//          3</span><br><span class="line">//           2</span><br><span class="line">void Test3()</span><br><span class="line">&#123;</span><br><span class="line">    BinaryTreeNode* pNode5 = CreateBinaryTreeNode(5);</span><br><span class="line">    BinaryTreeNode* pNode4 = CreateBinaryTreeNode(4);</span><br><span class="line">    BinaryTreeNode* pNode3 = CreateBinaryTreeNode(3);</span><br><span class="line">    BinaryTreeNode* pNode2 = CreateBinaryTreeNode(2);</span><br><span class="line"></span><br><span class="line">    ConnectTreeNodes(pNode5, nullptr, pNode4);</span><br><span class="line">    ConnectTreeNodes(pNode4, nullptr, pNode3);</span><br><span class="line">    ConnectTreeNodes(pNode3, nullptr, pNode2);</span><br><span class="line"></span><br><span class="line">    Test(&quot;Test3&quot;, pNode5);</span><br><span class="line"></span><br><span class="line">    DestroyTree(pNode5);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void Test4()</span><br><span class="line">&#123;</span><br><span class="line">    BinaryTreeNode* pNode5 = CreateBinaryTreeNode(5);</span><br><span class="line"></span><br><span class="line">    Test(&quot;Test4&quot;, pNode5);</span><br><span class="line"></span><br><span class="line">    DestroyTree(pNode5);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void Test5()</span><br><span class="line">&#123;</span><br><span class="line">    Test(&quot;Test5&quot;, nullptr);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//        5</span><br><span class="line">//         5</span><br><span class="line">//          5</span><br><span class="line">//         5</span><br><span class="line">//        5</span><br><span class="line">//       5 5</span><br><span class="line">//      5   5</span><br><span class="line">void Test6()</span><br><span class="line">&#123;</span><br><span class="line">    BinaryTreeNode* pNode1 = CreateBinaryTreeNode(5);</span><br><span class="line">    BinaryTreeNode* pNode2 = CreateBinaryTreeNode(5);</span><br><span class="line">    BinaryTreeNode* pNode3 = CreateBinaryTreeNode(5);</span><br><span class="line">    BinaryTreeNode* pNode4 = CreateBinaryTreeNode(5);</span><br><span class="line">    BinaryTreeNode* pNode5 = CreateBinaryTreeNode(5);</span><br><span class="line">    BinaryTreeNode* pNode61 = CreateBinaryTreeNode(5);</span><br><span class="line">    BinaryTreeNode* pNode62 = CreateBinaryTreeNode(5);</span><br><span class="line">    BinaryTreeNode* pNode71 = CreateBinaryTreeNode(5);</span><br><span class="line">    BinaryTreeNode* pNode72 = CreateBinaryTreeNode(5);</span><br><span class="line"></span><br><span class="line">    ConnectTreeNodes(pNode1, nullptr, pNode2);</span><br><span class="line">    ConnectTreeNodes(pNode2, nullptr, pNode3);</span><br><span class="line">    ConnectTreeNodes(pNode3, pNode4, nullptr);</span><br><span class="line">    ConnectTreeNodes(pNode4, pNode5, nullptr);</span><br><span class="line">    ConnectTreeNodes(pNode5, pNode61, pNode62);</span><br><span class="line">    ConnectTreeNodes(pNode61, pNode71, nullptr);</span><br><span class="line">    ConnectTreeNodes(pNode62, nullptr, pNode72);</span><br><span class="line"></span><br><span class="line">    Test(&quot;Test6&quot;, pNode1);</span><br><span class="line"></span><br><span class="line">    DestroyTree(pNode1);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main(int argc, char* argv[])</span><br><span class="line">&#123;</span><br><span class="line">    Test1();</span><br><span class="line">    Test2();</span><br><span class="line">    Test3();</span><br><span class="line">    Test4();</span><br><span class="line">    Test5();</span><br><span class="line">    Test6();</span><br><span class="line"></span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/18/39_MoreThanHalfNumber/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1857,156 +1857,6 @@
         
       
     </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/18/3_FindDuplication/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Andrew Chan">
-      <meta itemprop="description" content="Personnal blogs">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Andrew Chan">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/03/18/3_FindDuplication/" class="post-title-link" itemprop="url">剑指_FindDuplication</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-03-18 00:00:00 / Modified: 19:30:43" itemprop="dateCreated datePublished" datetime="2019-03-18T00:00:00+08:00">2019-03-18</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h4 id="（一）：找出数组中重复的数字"><a href="#（一）：找出数组中重复的数字" class="headerlink" title="（一）：找出数组中重复的数字"></a>（一）：找出数组中重复的数字</h4><hr>
-<p>题目：在一个长度为n的数组里的所有数字都在0到n-1的范围内。数组中某些数字是重复的，但不知道有几个数字重复了，也不知道每个数字重复了几次。请找出数组中任意一个重复的数字。例如，如果输入长度为7的数组{2, 3, 1, 0, 2, 5, 3}，那么对应的输出是重复的数字2或者3。<br>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/2019/03/18/3_FindDuplication/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </p></div>
 
     
 
@@ -2342,148 +2192,6 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/18/42_GreatestSumOfSubarrays/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Andrew Chan">
-      <meta itemprop="description" content="Personnal blogs">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Andrew Chan">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/03/18/42_GreatestSumOfSubarrays/" class="post-title-link" itemprop="url">剑指_42_GreatestSumOfSubarrays</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-
-              
-                
-              
-
-              <time title="Created: 2019-03-18 00:00:00 / Modified: 16:18:55" itemprop="dateCreated datePublished" datetime="2019-03-18T00:00:00+08:00">2019-03-18</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br></pre></td><td class="code"><pre><span class="line">/*******************************************************************</span><br><span class="line">Copyright(c) 2016, Harry He</span><br><span class="line">All rights reserved.</span><br><span class="line"></span><br><span class="line">Distributed under the BSD license.</span><br><span class="line">(See accompanying file LICENSE.txt at</span><br><span class="line">https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)</span><br><span class="line">*******************************************************************/</span><br><span class="line"></span><br><span class="line">//==================================================================</span><br><span class="line">// 《剑指Offer——名企面试官精讲典型编程题》代码</span><br><span class="line">// 作者：何海涛</span><br><span class="line">//==================================================================</span><br><span class="line"></span><br><span class="line">// 面试题42：连续子数组的最大和</span><br><span class="line">// 题目：输入一个整型数组，数组里有正数也有负数。数组中一个或连续的多个整</span><br><span class="line">// 数组成一个子数组。求所有子数组的和的最大值。要求时间复杂度为O(n)。</span><br><span class="line"></span><br><span class="line">#include &lt;cstdio&gt;</span><br><span class="line"></span><br><span class="line">bool g_InvalidInput = false;</span><br><span class="line"></span><br><span class="line">int FindGreatestSumOfSubArray(int* pData, int nLength)</span><br><span class="line">&#123;</span><br><span class="line">    if ((pData == nullptr) || (nLength &lt;= 0)) &#123;</span><br><span class="line">        g_InvalidInput = true;</span><br><span class="line">        return 0;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    g_InvalidInput = false;</span><br><span class="line"></span><br><span class="line">    int nCurSum = 0;</span><br><span class="line">    int nGreatestSum = 0x80000000;</span><br><span class="line">    for (int i = 0; i &lt; nLength; ++i) &#123;</span><br><span class="line">        if (nCurSum &lt;= 0)</span><br><span class="line">            nCurSum = pData[i];</span><br><span class="line">        else</span><br><span class="line">            nCurSum += pData[i];</span><br><span class="line"></span><br><span class="line">        if (nCurSum &gt; nGreatestSum)</span><br><span class="line">            nGreatestSum = nCurSum;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return nGreatestSum;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// ====================测试代码====================</span><br><span class="line">void Test(char* testName, int* pData, int nLength, int expected, bool expectedFlag)</span><br><span class="line">&#123;</span><br><span class="line">    if (testName != nullptr)</span><br><span class="line">        printf(&quot;%s begins: \n&quot;, testName);</span><br><span class="line"></span><br><span class="line">    int result = FindGreatestSumOfSubArray(pData, nLength);</span><br><span class="line">    if (result == expected &amp;&amp; expectedFlag == g_InvalidInput)</span><br><span class="line">        printf(&quot;Passed.\n&quot;);</span><br><span class="line">    else</span><br><span class="line">        printf(&quot;Failed.\n&quot;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 1, -2, 3, 10, -4, 7, 2, -5</span><br><span class="line">void Test1()</span><br><span class="line">&#123;</span><br><span class="line">    int data[] = &#123; 1, -2, 3, 10, -4, 7, 2, -5 &#125;;</span><br><span class="line">    Test(&quot;Test1&quot;, data, sizeof(data) / sizeof(int), 18, false);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 所有数字都是负数</span><br><span class="line">// -2, -8, -1, -5, -9</span><br><span class="line">void Test2()</span><br><span class="line">&#123;</span><br><span class="line">    int data[] = &#123; -2, -8, -1, -5, -9 &#125;;</span><br><span class="line">    Test(&quot;Test2&quot;, data, sizeof(data) / sizeof(int), -1, false);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 所有数字都是正数</span><br><span class="line">// 2, 8, 1, 5, 9</span><br><span class="line">void Test3()</span><br><span class="line">&#123;</span><br><span class="line">    int data[] = &#123; 2, 8, 1, 5, 9 &#125;;</span><br><span class="line">    Test(&quot;Test3&quot;, data, sizeof(data) / sizeof(int), 25, false);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 无效输入</span><br><span class="line">void Test4()</span><br><span class="line">&#123;</span><br><span class="line">    Test(&quot;Test4&quot;, nullptr, 0, 0, true);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main(int argc, char* argv[])</span><br><span class="line">&#123;</span><br><span class="line">    Test1();</span><br><span class="line">    Test2();</span><br><span class="line">    Test3();</span><br><span class="line">    Test4();</span><br><span class="line"></span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-          
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/18/43_NumberOf1/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -2571,6 +2279,148 @@
         
           
             <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br></pre></td><td class="code"><pre><span class="line">/*******************************************************************</span><br><span class="line">Copyright(c) 2016, Harry He</span><br><span class="line">All rights reserved.</span><br><span class="line"></span><br><span class="line">Distributed under the BSD license.</span><br><span class="line">(See accompanying file LICENSE.txt at</span><br><span class="line">https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)</span><br><span class="line">*******************************************************************/</span><br><span class="line"></span><br><span class="line">//==================================================================</span><br><span class="line">// 《剑指Offer——名企面试官精讲典型编程题》代码</span><br><span class="line">// 作者：何海涛</span><br><span class="line">//==================================================================</span><br><span class="line"></span><br><span class="line">// 面试题43：从1到n整数中1出现的次数</span><br><span class="line">// 题目：输入一个整数n，求从1到n这n个整数的十进制表示中1出现的次数。例如</span><br><span class="line">// 输入12，从1到12这些整数中包含1 的数字有1，10，11和12，1一共出现了5次。</span><br><span class="line"></span><br><span class="line">#include &lt;cstdio&gt;</span><br><span class="line">#include &lt;cstdlib&gt;</span><br><span class="line">#include &lt;cstring&gt;</span><br><span class="line"></span><br><span class="line">// ====================方法一====================</span><br><span class="line">int NumberOf1(unsigned int n);</span><br><span class="line"></span><br><span class="line">int NumberOf1Between1AndN_Solution1(unsigned int n)</span><br><span class="line">&#123;</span><br><span class="line">    int number = 0;</span><br><span class="line"></span><br><span class="line">    for (unsigned int i = 1; i &lt;= n; ++i)</span><br><span class="line">        number += NumberOf1(i);</span><br><span class="line"></span><br><span class="line">    return number;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int NumberOf1(unsigned int n)</span><br><span class="line">&#123;</span><br><span class="line">    int number = 0;</span><br><span class="line">    while (n) &#123;</span><br><span class="line">        if (n % 10 == 1)</span><br><span class="line">            number++;</span><br><span class="line"></span><br><span class="line">        n = n / 10;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return number;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// ====================方法二====================</span><br><span class="line">int NumberOf1(const char* strN);</span><br><span class="line">int PowerBase10(unsigned int n);</span><br><span class="line"></span><br><span class="line">int NumberOf1Between1AndN_Solution2(int n)</span><br><span class="line">&#123;</span><br><span class="line">    if (n &lt;= 0)</span><br><span class="line">        return 0;</span><br><span class="line"></span><br><span class="line">    char strN[50];</span><br><span class="line">    sprintf(strN, &quot;%d&quot;, n);</span><br><span class="line"></span><br><span class="line">    return NumberOf1(strN);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int NumberOf1(const char* strN)</span><br><span class="line">&#123;</span><br><span class="line">    if (!strN || *strN &lt; &apos;0&apos; || *strN &gt; &apos;9&apos; || *strN == &apos;\0&apos;)</span><br><span class="line">        return 0;</span><br><span class="line"></span><br><span class="line">    int first = *strN - &apos;0&apos;;</span><br><span class="line">    unsigned int length = static_cast&lt;unsigned int&gt;(strlen(strN));</span><br><span class="line"></span><br><span class="line">    if (length == 1 &amp;&amp; first == 0)</span><br><span class="line">        return 0;</span><br><span class="line"></span><br><span class="line">    if (length == 1 &amp;&amp; first &gt; 0)</span><br><span class="line">        return 1;</span><br><span class="line"></span><br><span class="line">    // 假设strN是&quot;21345&quot;</span><br><span class="line">    // numFirstDigit是数字10000-19999的第一个位中1的数目</span><br><span class="line">    int numFirstDigit = 0;</span><br><span class="line">    if (first &gt; 1)</span><br><span class="line">        numFirstDigit = PowerBase10(length - 1);</span><br><span class="line">    else if (first == 1)</span><br><span class="line">        numFirstDigit = atoi(strN + 1) + 1;</span><br><span class="line"></span><br><span class="line">    // numOtherDigits是01346-21345除了第一位之外的数位中1的数目</span><br><span class="line">    int numOtherDigits = first * (length - 1) * PowerBase10(length - 2);</span><br><span class="line">    // numRecursive是1-1345中1的数目</span><br><span class="line">    int numRecursive = NumberOf1(strN + 1);</span><br><span class="line"></span><br><span class="line">    return numFirstDigit + numOtherDigits + numRecursive;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int PowerBase10(unsigned int n)</span><br><span class="line">&#123;</span><br><span class="line">    int result = 1;</span><br><span class="line">    for (unsigned int i = 0; i &lt; n; ++i)</span><br><span class="line">        result *= 10;</span><br><span class="line"></span><br><span class="line">    return result;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// ====================测试代码====================</span><br><span class="line">void Test(const char* testName, int n, int expected)</span><br><span class="line">&#123;</span><br><span class="line">    if (testName != nullptr)</span><br><span class="line">        printf(&quot;%s begins: \n&quot;, testName);</span><br><span class="line"></span><br><span class="line">    if (NumberOf1Between1AndN_Solution1(n) == expected)</span><br><span class="line">        printf(&quot;Solution1 passed.\n&quot;);</span><br><span class="line">    else</span><br><span class="line">        printf(&quot;Solution1 failed.\n&quot;);</span><br><span class="line"></span><br><span class="line">    if (NumberOf1Between1AndN_Solution2(n) == expected)</span><br><span class="line">        printf(&quot;Solution2 passed.\n&quot;);</span><br><span class="line">    else</span><br><span class="line">        printf(&quot;Solution2 failed.\n&quot;);</span><br><span class="line"></span><br><span class="line">    printf(&quot;\n&quot;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void Test()</span><br><span class="line">&#123;</span><br><span class="line">    Test(&quot;Test1&quot;, 1, 1);</span><br><span class="line">    Test(&quot;Test2&quot;, 5, 1);</span><br><span class="line">    Test(&quot;Test3&quot;, 10, 2);</span><br><span class="line">    Test(&quot;Test4&quot;, 55, 16);</span><br><span class="line">    Test(&quot;Test5&quot;, 99, 20);</span><br><span class="line">    Test(&quot;Test6&quot;, 10000, 4001);</span><br><span class="line">    Test(&quot;Test7&quot;, 21345, 18821);</span><br><span class="line">    Test(&quot;Test8&quot;, 0, 0);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main(int argc, char* argv[])</span><br><span class="line">&#123;</span><br><span class="line">    Test();</span><br><span class="line"></span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/18/42_GreatestSumOfSubarrays/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Andrew Chan">
+      <meta itemprop="description" content="Personnal blogs">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Andrew Chan">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/03/18/42_GreatestSumOfSubarrays/" class="post-title-link" itemprop="url">剑指_42_GreatestSumOfSubarrays</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-03-18 00:00:00 / Modified: 16:18:55" itemprop="dateCreated datePublished" datetime="2019-03-18T00:00:00+08:00">2019-03-18</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br></pre></td><td class="code"><pre><span class="line">/*******************************************************************</span><br><span class="line">Copyright(c) 2016, Harry He</span><br><span class="line">All rights reserved.</span><br><span class="line"></span><br><span class="line">Distributed under the BSD license.</span><br><span class="line">(See accompanying file LICENSE.txt at</span><br><span class="line">https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)</span><br><span class="line">*******************************************************************/</span><br><span class="line"></span><br><span class="line">//==================================================================</span><br><span class="line">// 《剑指Offer——名企面试官精讲典型编程题》代码</span><br><span class="line">// 作者：何海涛</span><br><span class="line">//==================================================================</span><br><span class="line"></span><br><span class="line">// 面试题42：连续子数组的最大和</span><br><span class="line">// 题目：输入一个整型数组，数组里有正数也有负数。数组中一个或连续的多个整</span><br><span class="line">// 数组成一个子数组。求所有子数组的和的最大值。要求时间复杂度为O(n)。</span><br><span class="line"></span><br><span class="line">#include &lt;cstdio&gt;</span><br><span class="line"></span><br><span class="line">bool g_InvalidInput = false;</span><br><span class="line"></span><br><span class="line">int FindGreatestSumOfSubArray(int* pData, int nLength)</span><br><span class="line">&#123;</span><br><span class="line">    if ((pData == nullptr) || (nLength &lt;= 0)) &#123;</span><br><span class="line">        g_InvalidInput = true;</span><br><span class="line">        return 0;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    g_InvalidInput = false;</span><br><span class="line"></span><br><span class="line">    int nCurSum = 0;</span><br><span class="line">    int nGreatestSum = 0x80000000;</span><br><span class="line">    for (int i = 0; i &lt; nLength; ++i) &#123;</span><br><span class="line">        if (nCurSum &lt;= 0)</span><br><span class="line">            nCurSum = pData[i];</span><br><span class="line">        else</span><br><span class="line">            nCurSum += pData[i];</span><br><span class="line"></span><br><span class="line">        if (nCurSum &gt; nGreatestSum)</span><br><span class="line">            nGreatestSum = nCurSum;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    return nGreatestSum;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// ====================测试代码====================</span><br><span class="line">void Test(char* testName, int* pData, int nLength, int expected, bool expectedFlag)</span><br><span class="line">&#123;</span><br><span class="line">    if (testName != nullptr)</span><br><span class="line">        printf(&quot;%s begins: \n&quot;, testName);</span><br><span class="line"></span><br><span class="line">    int result = FindGreatestSumOfSubArray(pData, nLength);</span><br><span class="line">    if (result == expected &amp;&amp; expectedFlag == g_InvalidInput)</span><br><span class="line">        printf(&quot;Passed.\n&quot;);</span><br><span class="line">    else</span><br><span class="line">        printf(&quot;Failed.\n&quot;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 1, -2, 3, 10, -4, 7, 2, -5</span><br><span class="line">void Test1()</span><br><span class="line">&#123;</span><br><span class="line">    int data[] = &#123; 1, -2, 3, 10, -4, 7, 2, -5 &#125;;</span><br><span class="line">    Test(&quot;Test1&quot;, data, sizeof(data) / sizeof(int), 18, false);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 所有数字都是负数</span><br><span class="line">// -2, -8, -1, -5, -9</span><br><span class="line">void Test2()</span><br><span class="line">&#123;</span><br><span class="line">    int data[] = &#123; -2, -8, -1, -5, -9 &#125;;</span><br><span class="line">    Test(&quot;Test2&quot;, data, sizeof(data) / sizeof(int), -1, false);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 所有数字都是正数</span><br><span class="line">// 2, 8, 1, 5, 9</span><br><span class="line">void Test3()</span><br><span class="line">&#123;</span><br><span class="line">    int data[] = &#123; 2, 8, 1, 5, 9 &#125;;</span><br><span class="line">    Test(&quot;Test3&quot;, data, sizeof(data) / sizeof(int), 25, false);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// 无效输入</span><br><span class="line">void Test4()</span><br><span class="line">&#123;</span><br><span class="line">    Test(&quot;Test4&quot;, nullptr, 0, 0, true);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main(int argc, char* argv[])</span><br><span class="line">&#123;</span><br><span class="line">    Test1();</span><br><span class="line">    Test2();</span><br><span class="line">    Test3();</span><br><span class="line">    Test4();</span><br><span class="line"></span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
           
         
       
@@ -2910,6 +2760,148 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/18/47_MaxValueOfGifts/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Andrew Chan">
+      <meta itemprop="description" content="Personnal blogs">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Andrew Chan">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/03/18/47_MaxValueOfGifts/" class="post-title-link" itemprop="url">剑指_47_MaxValueOfGifts</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-03-18 00:00:00 / Modified: 16:18:34" itemprop="dateCreated datePublished" datetime="2019-03-18T00:00:00+08:00">2019-03-18</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br></pre></td><td class="code"><pre><span class="line">/*******************************************************************</span><br><span class="line">Copyright(c) 2016, Harry He</span><br><span class="line">All rights reserved.</span><br><span class="line"></span><br><span class="line">Distributed under the BSD license.</span><br><span class="line">(See accompanying file LICENSE.txt at</span><br><span class="line">https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)</span><br><span class="line">*******************************************************************/</span><br><span class="line"></span><br><span class="line">//==================================================================</span><br><span class="line">// 《剑指Offer——名企面试官精讲典型编程题》代码</span><br><span class="line">// 作者：何海涛</span><br><span class="line">//==================================================================</span><br><span class="line"></span><br><span class="line">// 面试题47：礼物的最大价值</span><br><span class="line">// 题目：在一个m×n的棋盘的每一格都放有一个礼物，每个礼物都有一定的价值</span><br><span class="line">// （价值大于0）。你可以从棋盘的左上角开始拿格子里的礼物，并每次向左或</span><br><span class="line">// 者向下移动一格直到到达棋盘的右下角。给定一个棋盘及其上面的礼物，请计</span><br><span class="line">// 算你最多能拿到多少价值的礼物？</span><br><span class="line"></span><br><span class="line">#include &lt;algorithm&gt;</span><br><span class="line">#include &lt;iostream&gt;</span><br><span class="line"></span><br><span class="line">int getMaxValue_solution1(const int* values, int rows, int cols)</span><br><span class="line">&#123;</span><br><span class="line">    if (values == nullptr || rows &lt;= 0 || cols &lt;= 0)</span><br><span class="line">        return 0;</span><br><span class="line"></span><br><span class="line">    int** maxValues = new int*[rows];</span><br><span class="line">    for (int i = 0; i &lt; rows; ++i)</span><br><span class="line">        maxValues[i] = new int[cols];</span><br><span class="line"></span><br><span class="line">    for (int i = 0; i &lt; rows; ++i) &#123;</span><br><span class="line">        for (int j = 0; j &lt; cols; ++j) &#123;</span><br><span class="line">            int left = 0;</span><br><span class="line">            int up = 0;</span><br><span class="line"></span><br><span class="line">            if (i &gt; 0)</span><br><span class="line">                up = maxValues[i - 1][j];</span><br><span class="line"></span><br><span class="line">            if (j &gt; 0)</span><br><span class="line">                left = maxValues[i][j - 1];</span><br><span class="line"></span><br><span class="line">            maxValues[i][j] = std::max(left, up) + values[i * cols + j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    int maxValue = maxValues[rows - 1][cols - 1];</span><br><span class="line"></span><br><span class="line">    for (int i = 0; i &lt; rows; ++i)</span><br><span class="line">        delete[] maxValues[i];</span><br><span class="line">    delete[] maxValues;</span><br><span class="line"></span><br><span class="line">    return maxValue;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int getMaxValue_solution2(const int* values, int rows, int cols)</span><br><span class="line">&#123;</span><br><span class="line">    if (values == nullptr || rows &lt;= 0 || cols &lt;= 0)</span><br><span class="line">        return 0;</span><br><span class="line"></span><br><span class="line">    int* maxValues = new int[cols];</span><br><span class="line">    for (int i = 0; i &lt; rows; ++i) &#123;</span><br><span class="line">        for (int j = 0; j &lt; cols; ++j) &#123;</span><br><span class="line">            int left = 0;</span><br><span class="line">            int up = 0;</span><br><span class="line"></span><br><span class="line">            if (i &gt; 0)</span><br><span class="line">                up = maxValues[j];</span><br><span class="line"></span><br><span class="line">            if (j &gt; 0)</span><br><span class="line">                left = maxValues[j - 1];</span><br><span class="line"></span><br><span class="line">            maxValues[j] = std::max(left, up) + values[i * cols + j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    int maxValue = maxValues[cols - 1];</span><br><span class="line"></span><br><span class="line">    delete[] maxValues;</span><br><span class="line"></span><br><span class="line">    return maxValue;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// ====================测试代码====================</span><br><span class="line">void test(const char* testName, const int* values, int rows, int cols, int expected)</span><br><span class="line">&#123;</span><br><span class="line">    if (getMaxValue_solution1(values, rows, cols) == expected)</span><br><span class="line">        std::cout &lt;&lt; testName &lt;&lt; &quot;: solution1 passed.&quot; &lt;&lt; std::endl;</span><br><span class="line">    else</span><br><span class="line">        std::cout &lt;&lt; testName &lt;&lt; &quot;: solution1 FAILED.&quot; &lt;&lt; std::endl;</span><br><span class="line"></span><br><span class="line">    if (getMaxValue_solution2(values, rows, cols) == expected)</span><br><span class="line">        std::cout &lt;&lt; testName &lt;&lt; &quot;: solution2 passed.&quot; &lt;&lt; std::endl;</span><br><span class="line">    else</span><br><span class="line">        std::cout &lt;&lt; testName &lt;&lt; &quot;: solution2 FAILED.&quot; &lt;&lt; std::endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void test1()</span><br><span class="line">&#123;</span><br><span class="line">    // 三行三列</span><br><span class="line">    int values[][3] = &#123;</span><br><span class="line">        &#123; 1, 2, 3 &#125;,</span><br><span class="line">        &#123; 4, 5, 6 &#125;,</span><br><span class="line">        &#123; 7, 8, 9 &#125;</span><br><span class="line">    &#125;;</span><br><span class="line">    int expected = 29;</span><br><span class="line">    test(&quot;test1&quot;, (const int*)values, 3, 3, expected);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void test2()</span><br><span class="line">&#123;</span><br><span class="line">    //四行四列</span><br><span class="line">    int values[][4] = &#123;</span><br><span class="line">        &#123; 1, 10, 3, 8 &#125;,</span><br><span class="line">        &#123; 12, 2, 9, 6 &#125;,</span><br><span class="line">        &#123; 5, 7, 4, 11 &#125;,</span><br><span class="line">        &#123; 3, 7, 16, 5 &#125;</span><br><span class="line">    &#125;;</span><br><span class="line">    int expected = 53;</span><br><span class="line">    test(&quot;test2&quot;, (const int*)values, 4, 4, expected);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void test3()</span><br><span class="line">&#123;</span><br><span class="line">    // 一行四列</span><br><span class="line">    int values[][4] = &#123;</span><br><span class="line">        &#123; 1, 10, 3, 8 &#125;</span><br><span class="line">    &#125;;</span><br><span class="line">    int expected = 22;</span><br><span class="line">    test(&quot;test3&quot;, (const int*)values, 1, 4, expected);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void test4()</span><br><span class="line">&#123;</span><br><span class="line">    int values[4][1] = &#123;</span><br><span class="line">        &#123; 1 &#125;,</span><br><span class="line">        &#123; 12 &#125;,</span><br><span class="line">        &#123; 5 &#125;,</span><br><span class="line">        &#123; 3 &#125;</span><br><span class="line">    &#125;;</span><br><span class="line">    int expected = 21;</span><br><span class="line">    test(&quot;test4&quot;, (const int*)values, 4, 1, expected);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void test5()</span><br><span class="line">&#123;</span><br><span class="line">    // 一行一列</span><br><span class="line">    int values[][1] = &#123;</span><br><span class="line">        &#123; 3 &#125;</span><br><span class="line">    &#125;;</span><br><span class="line">    int expected = 3;</span><br><span class="line">    test(&quot;test5&quot;, (const int*)values, 1, 1, expected);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void test6()</span><br><span class="line">&#123;</span><br><span class="line">    // 空指针</span><br><span class="line">    int expected = 0;</span><br><span class="line">    test(&quot;test6&quot;, nullptr, 0, 0, expected);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main(int argc, char* argv[])</span><br><span class="line">&#123;</span><br><span class="line">    test1();</span><br><span class="line">    test2();</span><br><span class="line">    test3();</span><br><span class="line">    test4();</span><br><span class="line">    test5();</span><br><span class="line"></span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/18/46_TranslateNumbersToStrings/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -3052,7 +3044,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/18/47_MaxValueOfGifts/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/18/48_LongestSubstringWithoutDup/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Andrew Chan">
@@ -3072,7 +3064,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/03/18/47_MaxValueOfGifts/" class="post-title-link" itemprop="url">剑指_47_MaxValueOfGifts</a>
+                <a href="/2019/03/18/48_LongestSubstringWithoutDup/" class="post-title-link" itemprop="url">剑指_LongestSubstringWithoutDup</a>
               
             
           </h1>
@@ -3097,7 +3089,7 @@
                 
               
 
-              <time title="Created: 2019-03-18 00:00:00 / Modified: 16:18:34" itemprop="dateCreated datePublished" datetime="2019-03-18T00:00:00+08:00">2019-03-18</time>
+              <time title="Created: 2019-03-18 00:00:00 / Modified: 19:31:17" itemprop="dateCreated datePublished" datetime="2019-03-18T00:00:00+08:00">2019-03-18</time>
             
 
             
@@ -3137,9 +3129,17 @@
 
       
         
+          <h4 id="面试题48：最长不含重复字符的子字符串"><a href="#面试题48：最长不含重复字符的子字符串" class="headerlink" title="面试题48：最长不含重复字符的子字符串"></a>面试题48：最长不含重复字符的子字符串</h4><hr>
+<p>题目：请从字符串中找出一个最长的不包含重复字符的子字符串，计算该最长子字符串的长度。假设字符串中只包含从’a’到’z’的字符。</p>
+          <!--noindex-->
           
-            <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br></pre></td><td class="code"><pre><span class="line">/*******************************************************************</span><br><span class="line">Copyright(c) 2016, Harry He</span><br><span class="line">All rights reserved.</span><br><span class="line"></span><br><span class="line">Distributed under the BSD license.</span><br><span class="line">(See accompanying file LICENSE.txt at</span><br><span class="line">https://github.com/zhedahht/CodingInterviewChinese2/blob/master/LICENSE.txt)</span><br><span class="line">*******************************************************************/</span><br><span class="line"></span><br><span class="line">//==================================================================</span><br><span class="line">// 《剑指Offer——名企面试官精讲典型编程题》代码</span><br><span class="line">// 作者：何海涛</span><br><span class="line">//==================================================================</span><br><span class="line"></span><br><span class="line">// 面试题47：礼物的最大价值</span><br><span class="line">// 题目：在一个m×n的棋盘的每一格都放有一个礼物，每个礼物都有一定的价值</span><br><span class="line">// （价值大于0）。你可以从棋盘的左上角开始拿格子里的礼物，并每次向左或</span><br><span class="line">// 者向下移动一格直到到达棋盘的右下角。给定一个棋盘及其上面的礼物，请计</span><br><span class="line">// 算你最多能拿到多少价值的礼物？</span><br><span class="line"></span><br><span class="line">#include &lt;algorithm&gt;</span><br><span class="line">#include &lt;iostream&gt;</span><br><span class="line"></span><br><span class="line">int getMaxValue_solution1(const int* values, int rows, int cols)</span><br><span class="line">&#123;</span><br><span class="line">    if (values == nullptr || rows &lt;= 0 || cols &lt;= 0)</span><br><span class="line">        return 0;</span><br><span class="line"></span><br><span class="line">    int** maxValues = new int*[rows];</span><br><span class="line">    for (int i = 0; i &lt; rows; ++i)</span><br><span class="line">        maxValues[i] = new int[cols];</span><br><span class="line"></span><br><span class="line">    for (int i = 0; i &lt; rows; ++i) &#123;</span><br><span class="line">        for (int j = 0; j &lt; cols; ++j) &#123;</span><br><span class="line">            int left = 0;</span><br><span class="line">            int up = 0;</span><br><span class="line"></span><br><span class="line">            if (i &gt; 0)</span><br><span class="line">                up = maxValues[i - 1][j];</span><br><span class="line"></span><br><span class="line">            if (j &gt; 0)</span><br><span class="line">                left = maxValues[i][j - 1];</span><br><span class="line"></span><br><span class="line">            maxValues[i][j] = std::max(left, up) + values[i * cols + j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    int maxValue = maxValues[rows - 1][cols - 1];</span><br><span class="line"></span><br><span class="line">    for (int i = 0; i &lt; rows; ++i)</span><br><span class="line">        delete[] maxValues[i];</span><br><span class="line">    delete[] maxValues;</span><br><span class="line"></span><br><span class="line">    return maxValue;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int getMaxValue_solution2(const int* values, int rows, int cols)</span><br><span class="line">&#123;</span><br><span class="line">    if (values == nullptr || rows &lt;= 0 || cols &lt;= 0)</span><br><span class="line">        return 0;</span><br><span class="line"></span><br><span class="line">    int* maxValues = new int[cols];</span><br><span class="line">    for (int i = 0; i &lt; rows; ++i) &#123;</span><br><span class="line">        for (int j = 0; j &lt; cols; ++j) &#123;</span><br><span class="line">            int left = 0;</span><br><span class="line">            int up = 0;</span><br><span class="line"></span><br><span class="line">            if (i &gt; 0)</span><br><span class="line">                up = maxValues[j];</span><br><span class="line"></span><br><span class="line">            if (j &gt; 0)</span><br><span class="line">                left = maxValues[j - 1];</span><br><span class="line"></span><br><span class="line">            maxValues[j] = std::max(left, up) + values[i * cols + j];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    int maxValue = maxValues[cols - 1];</span><br><span class="line"></span><br><span class="line">    delete[] maxValues;</span><br><span class="line"></span><br><span class="line">    return maxValue;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">// ====================测试代码====================</span><br><span class="line">void test(const char* testName, const int* values, int rows, int cols, int expected)</span><br><span class="line">&#123;</span><br><span class="line">    if (getMaxValue_solution1(values, rows, cols) == expected)</span><br><span class="line">        std::cout &lt;&lt; testName &lt;&lt; &quot;: solution1 passed.&quot; &lt;&lt; std::endl;</span><br><span class="line">    else</span><br><span class="line">        std::cout &lt;&lt; testName &lt;&lt; &quot;: solution1 FAILED.&quot; &lt;&lt; std::endl;</span><br><span class="line"></span><br><span class="line">    if (getMaxValue_solution2(values, rows, cols) == expected)</span><br><span class="line">        std::cout &lt;&lt; testName &lt;&lt; &quot;: solution2 passed.&quot; &lt;&lt; std::endl;</span><br><span class="line">    else</span><br><span class="line">        std::cout &lt;&lt; testName &lt;&lt; &quot;: solution2 FAILED.&quot; &lt;&lt; std::endl;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void test1()</span><br><span class="line">&#123;</span><br><span class="line">    // 三行三列</span><br><span class="line">    int values[][3] = &#123;</span><br><span class="line">        &#123; 1, 2, 3 &#125;,</span><br><span class="line">        &#123; 4, 5, 6 &#125;,</span><br><span class="line">        &#123; 7, 8, 9 &#125;</span><br><span class="line">    &#125;;</span><br><span class="line">    int expected = 29;</span><br><span class="line">    test(&quot;test1&quot;, (const int*)values, 3, 3, expected);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void test2()</span><br><span class="line">&#123;</span><br><span class="line">    //四行四列</span><br><span class="line">    int values[][4] = &#123;</span><br><span class="line">        &#123; 1, 10, 3, 8 &#125;,</span><br><span class="line">        &#123; 12, 2, 9, 6 &#125;,</span><br><span class="line">        &#123; 5, 7, 4, 11 &#125;,</span><br><span class="line">        &#123; 3, 7, 16, 5 &#125;</span><br><span class="line">    &#125;;</span><br><span class="line">    int expected = 53;</span><br><span class="line">    test(&quot;test2&quot;, (const int*)values, 4, 4, expected);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void test3()</span><br><span class="line">&#123;</span><br><span class="line">    // 一行四列</span><br><span class="line">    int values[][4] = &#123;</span><br><span class="line">        &#123; 1, 10, 3, 8 &#125;</span><br><span class="line">    &#125;;</span><br><span class="line">    int expected = 22;</span><br><span class="line">    test(&quot;test3&quot;, (const int*)values, 1, 4, expected);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void test4()</span><br><span class="line">&#123;</span><br><span class="line">    int values[4][1] = &#123;</span><br><span class="line">        &#123; 1 &#125;,</span><br><span class="line">        &#123; 12 &#125;,</span><br><span class="line">        &#123; 5 &#125;,</span><br><span class="line">        &#123; 3 &#125;</span><br><span class="line">    &#125;;</span><br><span class="line">    int expected = 21;</span><br><span class="line">    test(&quot;test4&quot;, (const int*)values, 4, 1, expected);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void test5()</span><br><span class="line">&#123;</span><br><span class="line">    // 一行一列</span><br><span class="line">    int values[][1] = &#123;</span><br><span class="line">        &#123; 3 &#125;</span><br><span class="line">    &#125;;</span><br><span class="line">    int expected = 3;</span><br><span class="line">    test(&quot;test5&quot;, (const int*)values, 1, 1, expected);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">void test6()</span><br><span class="line">&#123;</span><br><span class="line">    // 空指针</span><br><span class="line">    int expected = 0;</span><br><span class="line">    test(&quot;test6&quot;, nullptr, 0, 0, expected);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main(int argc, char* argv[])</span><br><span class="line">&#123;</span><br><span class="line">    test1();</span><br><span class="line">    test2();</span><br><span class="line">    test3();</span><br><span class="line">    test4();</span><br><span class="line">    test5();</span><br><span class="line"></span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/03/18/48_LongestSubstringWithoutDup/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
           
+          <!--/noindex-->
         
       
     </div>
@@ -3262,7 +3262,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">8</span>
+                      
+                    
+                    <span class="site-state-item-count">9</span>
                     <span class="site-state-item-name">tags</span>
                   </a>
                 </div>
