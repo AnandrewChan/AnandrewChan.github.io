@@ -1,5 +1,5 @@
 ---
-title: queue_array
+title: Queue in Array
 date: 2019-03-16
 tags: ds
 ---
